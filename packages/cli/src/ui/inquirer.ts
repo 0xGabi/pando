@@ -1,101 +1,83 @@
-import * as display from '@ui/display'
+import { PWebsocketProvider } from '@pando/types'
 import * as inquirer from 'inquirer'
 import HDWalletProvider from 'truffle-hdwallet-provider'
 import Web3 from 'web3'
+import * as display from './display'
 
-export const questions = {
+const _provider = (configuration): PWebsocketProvider => {
+  const url =
+    configuration.ethereum.gateway.protocol +
+    '://' +
+    configuration.ethereum.gateway.host +
+    ':' +
+    configuration.ethereum.gateway.port
+
+  return new Web3.providers.WebsocketProvider(url) as PWebsocketProvider
+}
+
+const questions = {
   /* tslint:disable:object-literal-sort-keys */
-
-  signer: {
-    name: 'type',
-    type: 'list',
-    message: 'Account type',
-    choices: ['Unlocked account', 'HD wallet / mnemonic']
-  },
-  mnemonic: {
-    name: 'words',
-    type: 'input',
-    message: 'Mnemonic: '
-  },
   ethereum: {
-    name: 'ethereum.gateway',
-    type: 'input',
-    message: 'Ethereum node URL: ',
-    default: 'http://localhost:8545',
-    validate: async (value: string) => {
-      const regex = new RegExp(
-        /(?:^|\s)((https?:\/\/)?(?:localhost|[\w-]+(?:\.[\w-]+)+)(:\d+)?(\/\S*)?)/
-      )
-
-      if (value.match(regex)) {
-        const provider = new Web3.providers.HttpProvider(value)
-        const web3 = new Web3(provider)
-        try {
-          await web3.eth.getAccounts()
-          return true
-        } catch (err) {
-          return 'Unable to connect to ' + value
-        }
-      } else {
-        return 'Invalid URL'
-      }
-    }
-  },
-
-  /* tslint:disable:object-literal-sort-keys */
-  ipfs: {
-    name: 'ipfs.gateway',
-    type: 'input',
-    message: 'IPFS node URL: ',
-    default: 'http://localhost:5001',
-    validate: async (value: string) => {
-      const regex = new RegExp(
-        /(?:^|\s)((https?:\/\/)?(?:localhost|[\w-]+(?:\.[\w-]+)+)(:\d+)?(\/\S*)?)/
-      )
-      if (value.match(regex)) {
-        return true
-      } else {
-        return 'Invalid URL'
-      }
-    }
-  },
-
-  author: async (provider: any): Promise<any> => {
-    const question = {
-      name: 'author.account',
-      type: 'list',
-      message: 'Account: ',
-      choices: async (): Promise<string[]> => {
-        const web3 = new Web3(provider)
-        const accounts = await web3.eth.getAccounts()
-        return accounts
+    gateway: {
+      protocol: {
+        name: 'result',
+        type: 'list',
+        message: 'Ethereum gateway protocol',
+        choices: ['ws', 'ipc'],
+        default: 'ws'
       },
-      default: 0
+      host: {
+        name: 'result',
+        type: 'input',
+        message: 'Ethereum gateway host',
+        default: 'localhost',
+      },
+      port: {
+        name: 'result',
+        type: 'input',
+        message: 'Ethereum gateway port',
+        default: '8545',
+      }
+    },
+    account: async (provider: any): Promise<any> => {
+      const question = {
+        name: 'result',
+        type: 'list',
+        message: 'Ethereum account',
+        choices: async (): Promise<string[]> => {
+          const web3     = new Web3(provider)
+          const accounts = await web3.eth.getAccounts()
+          return accounts
+        },
+        default: 0
+      }
+      return question
     }
-    return question
   }
 }
 
 export const prompt = {
   configure: async (): Promise<any> => {
-    let provider
-    let author = { author: { account: '' } }
-
-    const ipfs = await inquirer.prompt(questions.ipfs)
-    const ethereum = await inquirer.prompt(questions.ethereum)
-    const signer = await inquirer.prompt(questions.signer)
-    if (signer.type === 'Unlocked account') {
-      provider = new Web3.providers.HttpProvider(ethereum.gateway)
-      author = await inquirer.prompt(await questions.author(provider))
-    } else if (signer.type === 'HD wallet / mnemonic') {
-      const mnemonic = await inquirer.prompt(await questions.mnemonic)
-      ethereum.ethereum.mnemonic = mnemonic.words
-      provider = new HDWalletProvider(mnemonic.words, ethereum.gateway)
-      const web3 = new Web3(provider)
-      author.author.account = (await web3.eth.getAccounts())[0]
+    const configuration = {
+      ethereum: {
+        account: undefined,
+        gateway: {
+          protocol: undefined,
+          host: undefined,
+          port: undefined
+        }
+      }
     }
 
-    return { ...author, ...ethereum, ...ipfs }
+    configuration.ethereum.gateway.protocol = (await inquirer.prompt(questions.ethereum.gateway.protocol)).result
+    configuration.ethereum.gateway.host = (await inquirer.prompt(questions.ethereum.gateway.host)).result
+    configuration.ethereum.gateway.port = (await inquirer.prompt(questions.ethereum.gateway.port)).result
+
+    const provider = _provider(configuration)
+    configuration.ethereum.account = (await inquirer.prompt(await questions.ethereum.account(provider))).result
+    provider.connection.close()
+
+    return configuration
   }
 }
 /* tslint:enable:object-literal-sort-keys */

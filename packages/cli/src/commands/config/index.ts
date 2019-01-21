@@ -1,44 +1,42 @@
-import * as config from '@lib/config'
-import Pando from '@pando/pando.js'
-import { Repository } from '@pando/pando.js'
-import * as display from '@ui/display'
-import prompt from '@ui/inquirer'
+import json from 'jsonfile'
+import os from 'os'
+import path from 'path'
 import yargs from 'yargs'
+import * as display from '../../ui/display'
+import prompt from '../../ui/inquirer'
 
 const builder = () => {
   return yargs
     .option('global', {
       alias: 'g',
       describe: 'Configure pando globally',
-      type: 'boolean'
+      type: 'boolean',
     })
+    .strict(false)
     .help()
     .version(false)
 }
 
 const handler = async argv => {
   try {
+    const configuration = await prompt.configure()
+
     if (argv.global) {
-      const configuration = await prompt.configure()
-      config.save(configuration)
+      await json.writeFile(path.join(os.homedir(), '.pandorc'), configuration)
     } else {
-      const configuration = await prompt.configure()
-      const pando = await Pando.create(configuration)
-      const repository = await pando.repositories.load()
-      repository.config = configuration
+      await json.writeFile(path.join(process.cwd(), '.pando', '.pandorc'), configuration)
     }
-    display.status('updated')
   } catch (err) {
-    display.error(err.message)
+    console.log(err)
   }
 }
 
 /* tslint:disable:object-literal-sort-keys */
-export const configure = {
+export const config = {
   command: 'configure',
   aliases: ['config'],
   desc: 'Configure pando',
   builder,
-  handler
+  handler,
 }
 /* tslint:enable:object-literal-sort-keys */

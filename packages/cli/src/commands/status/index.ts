@@ -1,50 +1,57 @@
-import * as config from '@lib/config'
 import Pando from '@pando/pando.js'
-import * as display from '@ui/display'
 import chalk from 'chalk'
-import Table from 'cli-table'
-
+import Listr from 'listr'
 import yargs from 'yargs'
 
+
 const builder = () => {
-  return yargs.help().version(false)
+  return yargs
+    .strict(false)
+    .help()
+    .version(false)
 }
 
-const handler = async argv => {
-  try {
-    const pando = await Pando.load()
-    const repository = await pando.repositories.load()
-    const branch = repository.currentBranchName
-    const status = await repository.status()
+const handler = async (argv) => {
+  const pando = await Pando.create(argv.configuration)
 
-    /* tslint:disable:no-console */
-    console.log('[' + chalk.magenta(branch) + ']')
-    console.log()
-    console.log(chalk.grey('Modifications to be snapshot'))
-    for (const path of status.unsnapshot) {
-      console.log('\t* ' + chalk.green(path))
+  try {
+    const plant  = await pando.plants.load()
+    const fiber  = await plant.fibers.current()
+    const status = await fiber.status()
+
+    // console.log(status)
+
+    if (status.modified.length > 0) {
+        console.log(chalk.green.bold.underline('Tracked files with modifications'))
+        console.log('➜ these files will be automatically considered for snapshot')
+        console.log("➜ use pando untrack <f> if you don't want to track modifications to file f")
+        console.log('')
+        for (const file of status.modified) {
+            console.log('+ ' + file)
+        }
+        console.log('')
     }
-    console.log()
-    console.log(chalk.grey('Modifications not staged for snapshot'))
-    for (const path of status.modified) {
-      console.log('\t* ' + chalk.red(path))
+
+    if (status.untracked.length > 0) {
+        console.log(chalk.yellow.bold.underline('Untracked files'))
+        console.log("➜ these files won't be considered for snapshot")
+        console.log("➜ use pando track <f> if you want to track modifications to file f")
+        console.log('')
+        for (const file of status.untracked) {
+            console.log('+ ' + file)
+        }
+        console.log('')
     }
-    console.log()
-    console.log(chalk.grey('Untracked files'))
-    for (const path of status.untracked) {
-      console.log('\t* ' + path)
-    }
-    console.log()
-    /* tslint:enable:no-console */
-  } catch (err) {
-    display.error(err.message)
-  }
+
+  } catch (err) {}
+
+  await pando.close()
 }
 
 /* tslint:disable:object-literal-sort-keys */
 export const status = {
   command: 'status',
-  desc: 'Show working tree status',
+  desc: 'Show plant status',
   builder,
   handler
 }

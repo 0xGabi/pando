@@ -1,35 +1,38 @@
-import * as config from '@lib/config'
 import Pando from '@pando/pando.js'
-import * as display from '@ui/display'
 import chalk from 'chalk'
+import ora from 'ora'
 import yargs from 'yargs'
 
 const builder = () => {
-  return yargs.help().version(false)
+  return yargs
+    .strict(false)
+    .help()
+    .version(false)
 }
 
-const handler = async () => {
-  try {
-    if (!config.exists()) {
-      display.error('Pando not configured yet')
-      display.error('Run pando config --global')
-    } else {
-      const pando = await Pando.create(config.load())
-      const repository = await pando.repositories.create()
+const handler = async argv => {
+  let pando
+  let spinner
 
-      display.status('initialized', process.cwd())
-    }
+  try {
+    spinner = ora(chalk.dim('Initializing plant')).start()
+    pando = await Pando.create(argv.configuration)
+    await pando.plants.create()
+
+    spinner.succeed(chalk.dim('Plant initialized'))
   } catch (err) {
-    display.error(err.message)
+    spinner.fail(chalk.dim(err.message))
   }
+
+  await pando.close()
 }
 
 /* tslint:disable:object-literal-sort-keys */
 export const init = {
   command: 'initialize',
   aliases: ['init'],
-  desc: 'Initialize repository',
+  desc: 'Initialize plant',
   builder,
-  handler
+  handler,
 }
 /* tslint:enable:object-literal-sort-keys */

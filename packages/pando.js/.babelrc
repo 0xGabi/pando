@@ -1,3 +1,14 @@
 {
-  "presets": ["es2015"]
+
+  "plugins": ["@babel/plugin-transform-destructuring"],
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": true
+        }
+      }
+    ]
+  ]
 }

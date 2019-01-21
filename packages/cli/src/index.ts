@@ -1,20 +1,29 @@
+#!/usr/bin/env node
+
+import find from 'find-up'
+import fs from 'fs'
+import path from 'path'
 import yargs from 'yargs'
 import * as commands from './commands'
+import configuration from './configuration'
 
 const argv = yargs
+  .config(configuration())
   .usage('pando <command>')
-  .command(commands.configure)
+  .command(commands.config)
   .command(commands.init)
-  .command(commands.stage)
-  .command(commands.snapshot)
-  .command(commands.fetch)
-  .command(commands.push)
-  .command(commands.pull)
+  .command(commands.track)
+  .command(commands.untrack)
   .command(commands.status)
+  .command(commands.snapshot)
   .command(commands.log)
-  .command(commands.branch)
-  .command(commands.remote)
-  .command(commands.clone)
+  .command(commands.revert)
+  .command(commands.switch_)
+  .command(commands.fibers)
+  .command(commands.organizations)
+  .command(commands.organisms)
+  .command(commands.individuate)
+  .command(commands.extract)
   .demandCommand(1, 'No command provided')
   .strict()
   .help()

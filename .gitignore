@@ -1,7 +1,15 @@
 # pando
-.pando
+.pando/
 
- Logs
+# Aragon apps build output
+# dist/
+
+# Contracts build output
+# build/
+
+.docz
+
+# Logs
 logs
 *.log
 npm-debug.log*
@@ -65,18 +73,6 @@ typings/
 
 # parcel-bundler cache (https://parceljs.org/)
 .cache
-
-# next.js build output
-.next
-
-# nuxt.js build output
-.nuxt
-
-# vuepress build output
-.vuepress/dist
-
-# Serverless directories
-.serverless
 
 # macOS DS_Store
 .DS_Store

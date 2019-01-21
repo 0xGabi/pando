@@ -1,6 +1,5 @@
-import * as config from '@lib/config'
 import Pando from '@pando/pando.js'
-import * as display from '@ui/display'
+import Listr from 'listr'
 import yargs from 'yargs'
 
 const builder = () => {
@@ -8,28 +7,38 @@ const builder = () => {
     .option('message', {
       alias: 'm',
       description: 'A message describing the snapshot',
-      required: true
+      required: false
     })
     .help()
+    .strict(false)
     .version(false)
 }
 
-const handler = async argv => {
+const handler = async (argv) => {
+  const pando = await Pando.create(argv.configuration)
+
   try {
-    const pando = await Pando.load()
-    const repository = await pando.repositories.load()
-    const snapshot = await repository.snapshot(argv.message)
-    const cid = await snapshot.cid()
-    display.status('snapshot', cid.toBaseEncodedString())
-  } catch (err) {
-    display.error(err.message)
-  }
+    const plant = await pando.plants.load()
+    const fiber = await plant.fibers.current()
+
+    const tasks = new Listr([{
+      title: 'Creating snapshot',
+      task: async () => {
+        await fiber.snapshot(argv.message)
+      }
+    }])
+
+    await tasks.run()
+  } catch (err) {}
+
+  await pando.close()
 }
 
+/* tslint:disable:object-literal-sort-keys */
 export const snapshot = {
   command: 'snapshot',
-  aliases: ['commit'],
   desc: 'Snapshot modifications',
   builder,
   handler
 }
+/* tslint:enable:object-literal-sort-keys */
