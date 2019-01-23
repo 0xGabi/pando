@@ -29624,7 +29624,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.0-beta.2",
-  "updatedAt": "2019-01-16T11:41:26.413Z",
+  "updatedAt": "2019-01-22T13:03:13.074Z",
   "devdoc": {
     "methods": {
       "changeController(address)": {

@@ -29629,7 +29629,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.0-beta.2",
-  "updatedAt": "2019-01-16T11:41:26.430Z",
+  "updatedAt": "2019-01-22T13:03:13.090Z",
   "devdoc": {
     "methods": {
       "createCloneToken(address,uint256,string,uint8,string,bool)": {

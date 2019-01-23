@@ -36,9 +36,8 @@ function getOrganism(address) {
         organism.getRFIMetadata(length).subscribe(async hash => {
           console.log('Getting getRFIMetadata: ' + hash)
           const metadata = (await ipfs.dag.get(hash)).value
-          const files = await ipfs.ls(metadata.tree)
-          console.log('Gonna resolve with : ' + { address: address, message: metadata.message, files: files })
-          resolve({ address: address, message: metadata.message, files: files })
+
+          resolve({ address: address, message: metadata.message, tree: metadata.tree })
         })
       } else {
         resolve({ address: address, message: undefined, files: undefined })

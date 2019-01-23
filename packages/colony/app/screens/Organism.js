@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
-import { EmptyStateCard, IconHome } from '@aragon/ui'
+import { EmptyStateCard, IconHome, Text } from '@aragon/ui'
 import Browser from '../components/Browser'
 
 import data from '../data'
@@ -8,7 +8,7 @@ import data from '../data'
 const Container = styled.div`
   margin: 0 auto;
   padding: 2rem;
-  max-width: 600px;
+  max-width: 980px;
   width: 100%;
 `
 
@@ -37,54 +37,69 @@ const Seperator = styled.span`
   margin: 0 0.25rem;
 `
 
-export default function Organism(props) {
-  let browser
+const Message = styled.div`
+  margin-bottom: 10px;
+`
 
-  const organism = props.organism
+export default class Organism extends React.Component {
+  constructor(props) {
+    super(props)
+  }
 
-  const [state, setState] = useState([{ depth: 1, parent: '' }])
+  state = {
+    nav: [{ depth: 1, parent: '' }],
+  }
 
-  const content = state.map((item, idx) => {
-    if (state.length < 2) {
-      return <ActiveText>{organism.message}</ActiveText>
-    } else {
-      if (idx === 0) {
-        return <LinkBold onClick={() => setState([state[0]])}>{organism.address}</LinkBold>
-      }
-      if (state.length - 1 === idx) {
+  render() {
+    const { organism } = this.props
+    const { nav } = this.state
+
+    let browser
+
+    const content = nav.map((item, idx) => {
+      if (nav.length < 2) {
+        return (
+          <Message>
+            <Text size="xxlarge" key={idx}>
+              {organism.message}
+            </Text>
+          </Message>
+        )
+      } else {
+        if (idx === 0) {
+          return (
+            <LinkBold key={idx} onClick={() => setState([state[0]])}>
+              {organism.address}
+            </LinkBold>
+          )
+        }
+        if (nav.length - 1 === idx) {
+          return (
+            <span>
+              <Seperator key={idx}>/</Seperator>
+              <ActiveText key={idx}>{item.parent}</ActiveText>
+            </span>
+          )
+        }
         return (
           <span>
             <Seperator>/</Seperator>
-            <ActiveText>{item.parent}</ActiveText>
+            <Link onClick={() => setState(state.splice(0, nave.length - idx))}>{item.parent}</Link>
           </span>
         )
       }
-      return (
-        <span>
-          <Seperator>/</Seperator>
-          <Link onClick={() => setState(state.splice(0, state.length - idx))}>{item.parent}</Link>
-        </span>
-      )
+    })
+
+    if (typeof organism.tree === 'undefined') {
+      browser = <EmptyStateCard text="No individuation yet" icon={() => <IconHome color="blue" />} />
+    } else {
+      browser = <Browser tree={organism.tree} />
     }
-  })
-
-  if (typeof organism.files === 'undefined') {
-    browser = <EmptyStateCard text="No individuation yet" icon={() => <IconHome color="blue" />} />
-  } else {
-    browser = <Browser data={organism.files} state={state} setState={state => setState(state)} />
+    return (
+      <Container>
+        {content}
+        {browser}
+      </Container>
+    )
   }
-
-  // const browser =
-  //   typeof organism.files !== 'undefined ' ? (
-  //     <Browser data={organism.files} state={state} setState={state => setState(state)} />
-  //   ) : (
-  //     <EmptyStateCard text="No individuation yet" icon={() => <IconHome color="blue" />} />
-  //   )
-
-  return (
-    <Container>
-      {content}
-      {browser}
-    </Container>
-  )
 }
