@@ -18,14 +18,14 @@
     "absolutePath": "/Users/osarrouy/Documents/devs/@pando/packages/scheme-democracy/contracts/import/Import.sol",
     "exportedSymbols": {
       "Import": [
-        1770
+        1804
       ]
     },
-    "id": 1771,
+    "id": 1805,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1757,
+        "id": 1791,
         "literals": [
           "solidity",
           "^",
@@ -38,10 +38,10 @@
       {
         "absolutePath": "@aragon/os/contracts/acl/ACL.sol",
         "file": "@aragon/os/contracts/acl/ACL.sol",
-        "id": 1758,
+        "id": 1792,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 4271,
+        "scope": 1805,
+        "sourceUnit": 4305,
         "src": "27:42:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -49,10 +49,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/Kernel.sol",
         "file": "@aragon/os/contracts/kernel/Kernel.sol",
-        "id": 1759,
+        "id": 1793,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 7437,
+        "scope": 1805,
+        "sourceUnit": 7471,
         "src": "70:48:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -60,10 +60,10 @@
       {
         "absolutePath": "@aragon/os/contracts/factory/DAOFactory.sol",
         "file": "@aragon/os/contracts/factory/DAOFactory.sol",
-        "id": 1760,
+        "id": 1794,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 6780,
+        "scope": 1805,
+        "sourceUnit": 6814,
         "src": "119:53:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -71,10 +71,10 @@
       {
         "absolutePath": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
         "file": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
-        "id": 1761,
+        "id": 1795,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 6887,
+        "scope": 1805,
+        "sourceUnit": 6921,
         "src": "173:67:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -82,10 +82,10 @@
       {
         "absolutePath": "@pando/core/contracts/lib/Pando.sol",
         "file": "@pando/core/contracts/lib/Pando.sol",
-        "id": 1762,
+        "id": 1796,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 7986,
+        "scope": 1805,
+        "sourceUnit": 8020,
         "src": "241:45:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -93,10 +93,10 @@
       {
         "absolutePath": "@pando/organism/contracts/Organism.sol",
         "file": "@pando/organism/contracts/Organism.sol",
-        "id": 1763,
+        "id": 1797,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 9746,
+        "scope": 1805,
+        "sourceUnit": 9780,
         "src": "287:48:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -104,10 +104,10 @@
       {
         "absolutePath": "@pando/organism/contracts/Genesis.sol",
         "file": "@pando/organism/contracts/Genesis.sol",
-        "id": 1764,
+        "id": 1798,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 8471,
+        "scope": 1805,
+        "sourceUnit": 8505,
         "src": "336:47:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -115,10 +115,10 @@
       {
         "absolutePath": "@pando/organism/contracts/Lineage.sol",
         "file": "@pando/organism/contracts/Lineage.sol",
-        "id": 1765,
+        "id": 1799,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 8702,
+        "scope": 1805,
+        "sourceUnit": 8736,
         "src": "384:47:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -129,22 +129,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1770,
+        "id": 1804,
         "linearizedBaseContracts": [
-          1770
+          1804
         ],
         "name": "Import",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1768,
+              "id": 1802,
               "nodeType": "Block",
               "src": "907:38:1",
               "statements": []
             },
             "documentation": null,
-            "id": 1769,
+            "id": 1803,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -152,26 +152,26 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1766,
+              "id": 1800,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "897:2:1"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1767,
+              "id": 1801,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "907:0:1"
             },
-            "scope": 1770,
+            "scope": 1804,
             "src": "886:59:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1771,
+        "scope": 1805,
         "src": "864:83:1"
       }
     ],
@@ -181,14 +181,14 @@
     "absolutePath": "/Users/osarrouy/Documents/devs/@pando/packages/scheme-democracy/contracts/import/Import.sol",
     "exportedSymbols": {
       "Import": [
-        1770
+        1804
       ]
     },
-    "id": 1771,
+    "id": 1805,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1757,
+        "id": 1791,
         "literals": [
           "solidity",
           "^",
@@ -201,10 +201,10 @@
       {
         "absolutePath": "@aragon/os/contracts/acl/ACL.sol",
         "file": "@aragon/os/contracts/acl/ACL.sol",
-        "id": 1758,
+        "id": 1792,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 4271,
+        "scope": 1805,
+        "sourceUnit": 4305,
         "src": "27:42:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -212,10 +212,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/Kernel.sol",
         "file": "@aragon/os/contracts/kernel/Kernel.sol",
-        "id": 1759,
+        "id": 1793,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 7437,
+        "scope": 1805,
+        "sourceUnit": 7471,
         "src": "70:48:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -223,10 +223,10 @@
       {
         "absolutePath": "@aragon/os/contracts/factory/DAOFactory.sol",
         "file": "@aragon/os/contracts/factory/DAOFactory.sol",
-        "id": 1760,
+        "id": 1794,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 6780,
+        "scope": 1805,
+        "sourceUnit": 6814,
         "src": "119:53:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -234,10 +234,10 @@
       {
         "absolutePath": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
         "file": "@aragon/os/contracts/factory/EVMScriptRegistryFactory.sol",
-        "id": 1761,
+        "id": 1795,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 6887,
+        "scope": 1805,
+        "sourceUnit": 6921,
         "src": "173:67:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -245,10 +245,10 @@
       {
         "absolutePath": "@pando/core/contracts/lib/Pando.sol",
         "file": "@pando/core/contracts/lib/Pando.sol",
-        "id": 1762,
+        "id": 1796,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 7986,
+        "scope": 1805,
+        "sourceUnit": 8020,
         "src": "241:45:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -256,10 +256,10 @@
       {
         "absolutePath": "@pando/organism/contracts/Organism.sol",
         "file": "@pando/organism/contracts/Organism.sol",
-        "id": 1763,
+        "id": 1797,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 9746,
+        "scope": 1805,
+        "sourceUnit": 9780,
         "src": "287:48:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -267,10 +267,10 @@
       {
         "absolutePath": "@pando/organism/contracts/Genesis.sol",
         "file": "@pando/organism/contracts/Genesis.sol",
-        "id": 1764,
+        "id": 1798,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 8471,
+        "scope": 1805,
+        "sourceUnit": 8505,
         "src": "336:47:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -278,10 +278,10 @@
       {
         "absolutePath": "@pando/organism/contracts/Lineage.sol",
         "file": "@pando/organism/contracts/Lineage.sol",
-        "id": 1765,
+        "id": 1799,
         "nodeType": "ImportDirective",
-        "scope": 1771,
-        "sourceUnit": 8702,
+        "scope": 1805,
+        "sourceUnit": 8736,
         "src": "384:47:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -292,22 +292,22 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 1770,
+        "id": 1804,
         "linearizedBaseContracts": [
-          1770
+          1804
         ],
         "name": "Import",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1768,
+              "id": 1802,
               "nodeType": "Block",
               "src": "907:38:1",
               "statements": []
             },
             "documentation": null,
-            "id": 1769,
+            "id": 1803,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -315,26 +315,26 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1766,
+              "id": 1800,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "897:2:1"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1767,
+              "id": 1801,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "907:0:1"
             },
-            "scope": 1770,
+            "scope": 1804,
             "src": "886:59:1",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1771,
+        "scope": 1805,
         "src": "864:83:1"
       }
     ],
@@ -346,7 +346,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.0-beta.2",
-  "updatedAt": "2019-01-21T14:18:49.193Z",
+  "updatedAt": "2019-01-24T14:32:35.417Z",
   "devdoc": {
     "methods": {}
   },

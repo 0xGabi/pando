@@ -47,14 +47,14 @@
     "absolutePath": "@pando/core/contracts/lib/Pando.sol",
     "exportedSymbols": {
       "Pando": [
-        7985
+        8019
       ]
     },
-    "id": 7986,
+    "id": 8020,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7906,
+        "id": 7940,
         "literals": [
           "solidity",
           "^",
@@ -65,7 +65,7 @@
         "src": "0:24:46"
       },
       {
-        "id": 7907,
+        "id": 7941,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -79,43 +79,43 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 7985,
+        "id": 8019,
         "linearizedBaseContracts": [
-          7985
+          8019
         ],
         "name": "Pando",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Pando.RFLState",
-            "id": 7913,
+            "id": 7947,
             "members": [
               {
-                "id": 7908,
+                "id": 7942,
                 "name": "Pending",
                 "nodeType": "EnumValue",
                 "src": "100:7:46"
               },
               {
-                "id": 7909,
+                "id": 7943,
                 "name": "Accepted",
                 "nodeType": "EnumValue",
                 "src": "109:8:46"
               },
               {
-                "id": 7910,
+                "id": 7944,
                 "name": "Issued",
                 "nodeType": "EnumValue",
                 "src": "119:6:46"
               },
               {
-                "id": 7911,
+                "id": 7945,
                 "name": "Rejected",
                 "nodeType": "EnumValue",
                 "src": "127:8:46"
               },
               {
-                "id": 7912,
+                "id": 7946,
                 "name": "Cancelled",
                 "nodeType": "EnumValue",
                 "src": "137:9:46"
@@ -127,28 +127,28 @@
           },
           {
             "canonicalName": "Pando.RFIState",
-            "id": 7918,
+            "id": 7952,
             "members": [
               {
-                "id": 7914,
+                "id": 7948,
                 "name": "Pending",
                 "nodeType": "EnumValue",
                 "src": "171:7:46"
               },
               {
-                "id": 7915,
+                "id": 7949,
                 "name": "Merged",
                 "nodeType": "EnumValue",
                 "src": "180:6:46"
               },
               {
-                "id": 7916,
+                "id": 7950,
                 "name": "Rejected",
                 "nodeType": "EnumValue",
                 "src": "188:8:46"
               },
               {
-                "id": 7917,
+                "id": 7951,
                 "name": "Cancelled",
                 "nodeType": "EnumValue",
                 "src": "198:9:46"
@@ -160,16 +160,16 @@
           },
           {
             "canonicalName": "Pando.RFISorting",
-            "id": 7921,
+            "id": 7955,
             "members": [
               {
-                "id": 7919,
+                "id": 7953,
                 "name": "Merge",
                 "nodeType": "EnumValue",
                 "src": "232:5:46"
               },
               {
-                "id": 7920,
+                "id": 7954,
                 "name": "Reject",
                 "nodeType": "EnumValue",
                 "src": "239:6:46"
@@ -181,14 +181,14 @@
           },
           {
             "canonicalName": "Pando.IID",
-            "id": 7926,
+            "id": 7960,
             "members": [
               {
                 "constant": false,
-                "id": 7923,
+                "id": 7957,
                 "name": "organism",
                 "nodeType": "VariableDeclaration",
-                "scope": 7926,
+                "scope": 7960,
                 "src": "274:16:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -197,7 +197,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 7922,
+                  "id": 7956,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "274:7:46",
@@ -211,10 +211,10 @@
               },
               {
                 "constant": false,
-                "id": 7925,
+                "id": 7959,
                 "name": "hash",
                 "nodeType": "VariableDeclaration",
-                "scope": 7926,
+                "scope": 7960,
                 "src": "300:12:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -223,7 +223,7 @@
                   "typeString": "bytes32"
                 },
                 "typeName": {
-                  "id": 7924,
+                  "id": 7958,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
                   "src": "300:7:46",
@@ -238,20 +238,20 @@
             ],
             "name": "IID",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "253:66:46",
             "visibility": "public"
           },
           {
             "canonicalName": "Pando.IIndividuation",
-            "id": 7929,
+            "id": 7963,
             "members": [
               {
                 "constant": false,
-                "id": 7928,
+                "id": 7962,
                 "name": "metadata",
                 "nodeType": "VariableDeclaration",
-                "scope": 7929,
+                "scope": 7963,
                 "src": "357:16:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -260,7 +260,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7927,
+                  "id": 7961,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "357:6:46",
@@ -275,20 +275,20 @@
             ],
             "name": "IIndividuation",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "325:55:46",
             "visibility": "public"
           },
           {
             "canonicalName": "Pando.Individuation",
-            "id": 7934,
+            "id": 7968,
             "members": [
               {
                 "constant": false,
-                "id": 7931,
+                "id": 7965,
                 "name": "blockstamp",
                 "nodeType": "VariableDeclaration",
-                "scope": 7934,
+                "scope": 7968,
                 "src": "417:18:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -297,7 +297,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7930,
+                  "id": 7964,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "417:7:46",
@@ -311,10 +311,10 @@
               },
               {
                 "constant": false,
-                "id": 7933,
+                "id": 7967,
                 "name": "metadata",
                 "nodeType": "VariableDeclaration",
-                "scope": 7934,
+                "scope": 7968,
                 "src": "445:16:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -323,7 +323,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7932,
+                  "id": 7966,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "445:6:46",
@@ -338,36 +338,36 @@
             ],
             "name": "Individuation",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "386:82:46",
             "visibility": "public"
           },
           {
             "canonicalName": "Pando.RFI",
-            "id": 7944,
+            "id": 7978,
             "members": [
               {
                 "constant": false,
-                "id": 7936,
+                "id": 7970,
                 "name": "individuation",
                 "nodeType": "VariableDeclaration",
-                "scope": 7944,
+                "scope": 7978,
                 "src": "495:28:46",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_IIndividuation_$7929_storage_ptr",
+                  "typeIdentifier": "t_struct$_IIndividuation_$7963_storage_ptr",
                   "typeString": "struct Pando.IIndividuation"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 7935,
+                  "id": 7969,
                   "name": "IIndividuation",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 7929,
+                  "referencedDeclaration": 7963,
                   "src": "495:14:46",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_IIndividuation_$7929_storage_ptr",
+                    "typeIdentifier": "t_struct$_IIndividuation_$7963_storage_ptr",
                     "typeString": "struct Pando.IIndividuation"
                   }
                 },
@@ -376,10 +376,10 @@
               },
               {
                 "constant": false,
-                "id": 7938,
+                "id": 7972,
                 "name": "blockstamp",
                 "nodeType": "VariableDeclaration",
-                "scope": 7944,
+                "scope": 7978,
                 "src": "533:25:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -388,7 +388,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7937,
+                  "id": 7971,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "533:7:46",
@@ -402,26 +402,26 @@
               },
               {
                 "constant": false,
-                "id": 7940,
+                "id": 7974,
                 "name": "state",
                 "nodeType": "VariableDeclaration",
-                "scope": 7944,
+                "scope": 7978,
                 "src": "568:20:46",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_RFIState_$7918",
+                  "typeIdentifier": "t_enum$_RFIState_$7952",
                   "typeString": "enum Pando.RFIState"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 7939,
+                  "id": 7973,
                   "name": "RFIState",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 7918,
+                  "referencedDeclaration": 7952,
                   "src": "568:8:46",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_RFIState_$7918",
+                    "typeIdentifier": "t_enum$_RFIState_$7952",
                     "typeString": "enum Pando.RFIState"
                   }
                 },
@@ -430,10 +430,10 @@
               },
               {
                 "constant": false,
-                "id": 7943,
+                "id": 7977,
                 "name": "RFLids",
                 "nodeType": "VariableDeclaration",
-                "scope": 7944,
+                "scope": 7978,
                 "src": "598:21:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -443,7 +443,7 @@
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 7941,
+                    "id": 7975,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "598:7:46",
@@ -452,7 +452,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7942,
+                  "id": 7976,
                   "length": null,
                   "nodeType": "ArrayTypeName",
                   "src": "598:9:46",
@@ -467,20 +467,20 @@
             ],
             "name": "RFI",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "474:152:46",
             "visibility": "public"
           },
           {
             "canonicalName": "Pando.ILineage",
-            "id": 7951,
+            "id": 7985,
             "members": [
               {
                 "constant": false,
-                "id": 7946,
+                "id": 7980,
                 "name": "destination",
                 "nodeType": "VariableDeclaration",
-                "scope": 7951,
+                "scope": 7985,
                 "src": "658:20:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -489,7 +489,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 7945,
+                  "id": 7979,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "658:7:46",
@@ -503,10 +503,10 @@
               },
               {
                 "constant": false,
-                "id": 7948,
+                "id": 7982,
                 "name": "minimum",
                 "nodeType": "VariableDeclaration",
-                "scope": 7951,
+                "scope": 7985,
                 "src": "688:16:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -515,7 +515,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7947,
+                  "id": 7981,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "688:7:46",
@@ -529,10 +529,10 @@
               },
               {
                 "constant": false,
-                "id": 7950,
+                "id": 7984,
                 "name": "metadata",
                 "nodeType": "VariableDeclaration",
-                "scope": 7951,
+                "scope": 7985,
                 "src": "714:17:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -541,7 +541,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7949,
+                  "id": 7983,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "714:6:46",
@@ -556,36 +556,36 @@
             ],
             "name": "ILineage",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "632:106:46",
             "visibility": "public"
           },
           {
             "canonicalName": "Pando.RFL",
-            "id": 7962,
+            "id": 7996,
             "members": [
               {
                 "constant": false,
-                "id": 7953,
+                "id": 7987,
                 "name": "lineage",
                 "nodeType": "VariableDeclaration",
-                "scope": 7962,
+                "scope": 7996,
                 "src": "765:16:46",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_ILineage_$7951_storage_ptr",
+                  "typeIdentifier": "t_struct$_ILineage_$7985_storage_ptr",
                   "typeString": "struct Pando.ILineage"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 7952,
+                  "id": 7986,
                   "name": "ILineage",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 7951,
+                  "referencedDeclaration": 7985,
                   "src": "765:8:46",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_ILineage_$7951_storage_ptr",
+                    "typeIdentifier": "t_struct$_ILineage_$7985_storage_ptr",
                     "typeString": "struct Pando.ILineage"
                   }
                 },
@@ -594,10 +594,10 @@
               },
               {
                 "constant": false,
-                "id": 7955,
+                "id": 7989,
                 "name": "blockstamp",
                 "nodeType": "VariableDeclaration",
-                "scope": 7962,
+                "scope": 7996,
                 "src": "791:19:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -606,7 +606,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7954,
+                  "id": 7988,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "791:7:46",
@@ -620,10 +620,10 @@
               },
               {
                 "constant": false,
-                "id": 7957,
+                "id": 7991,
                 "name": "value",
                 "nodeType": "VariableDeclaration",
-                "scope": 7962,
+                "scope": 7996,
                 "src": "820:14:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -632,7 +632,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7956,
+                  "id": 7990,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "820:7:46",
@@ -646,26 +646,26 @@
               },
               {
                 "constant": false,
-                "id": 7959,
+                "id": 7993,
                 "name": "state",
                 "nodeType": "VariableDeclaration",
-                "scope": 7962,
+                "scope": 7996,
                 "src": "844:14:46",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_RFLState_$7913",
+                  "typeIdentifier": "t_enum$_RFLState_$7947",
                   "typeString": "enum Pando.RFLState"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 7958,
+                  "id": 7992,
                   "name": "RFLState",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 7913,
+                  "referencedDeclaration": 7947,
                   "src": "844:8:46",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_RFLState_$7913",
+                    "typeIdentifier": "t_enum$_RFLState_$7947",
                     "typeString": "enum Pando.RFLState"
                   }
                 },
@@ -674,10 +674,10 @@
               },
               {
                 "constant": false,
-                "id": 7961,
+                "id": 7995,
                 "name": "RFIid",
                 "nodeType": "VariableDeclaration",
-                "scope": 7962,
+                "scope": 7996,
                 "src": "868:14:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -686,7 +686,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7960,
+                  "id": 7994,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "868:7:46",
@@ -701,19 +701,19 @@
             ],
             "name": "RFL",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "744:145:46",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 7965,
+              "id": 7999,
               "nodeType": "Block",
               "src": "916:2:46",
               "statements": []
             },
             "documentation": null,
-            "id": 7966,
+            "id": 8000,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -721,19 +721,19 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7963,
+              "id": 7997,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "906:2:46"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7964,
+              "id": 7998,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "916:0:46"
             },
-            "scope": 7985,
+            "scope": 8019,
             "src": "895:23:46",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -741,7 +741,7 @@
           },
           {
             "body": {
-              "id": 7983,
+              "id": 8017,
               "nodeType": "Block",
               "src": "998:162:46",
               "statements": [
@@ -756,25 +756,25 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 7976,
+                              "id": 8010,
                               "name": "_individuation",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7968,
+                              "referencedDeclaration": 8002,
                               "src": "1072:14:46",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                                "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                                 "typeString": "struct Pando.Individuation memory"
                               }
                             },
-                            "id": 7977,
+                            "id": 8011,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "blockstamp",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7931,
+                            "referencedDeclaration": 7965,
                             "src": "1072:25:46",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -785,25 +785,25 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 7978,
+                              "id": 8012,
                               "name": "_individuation",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7968,
+                              "referencedDeclaration": 8002,
                               "src": "1115:14:46",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                                "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                                 "typeString": "struct Pando.Individuation memory"
                               }
                             },
-                            "id": 7979,
+                            "id": 8013,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "metadata",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7933,
+                            "referencedDeclaration": 7967,
                             "src": "1115:23:46",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory",
@@ -824,18 +824,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 7974,
+                            "id": 8008,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9747,
+                            "referencedDeclaration": 9781,
                             "src": "1038:3:46",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
                               "typeString": "abi"
                             }
                           },
-                          "id": 7975,
+                          "id": 8009,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -849,7 +849,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 7980,
+                        "id": 8014,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -871,18 +871,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 7973,
+                      "id": 8007,
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9754,
+                      "referencedDeclaration": 9788,
                       "src": "1015:9:46",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
                         "typeString": "function () pure returns (bytes32)"
                       }
                     },
-                    "id": 7981,
+                    "id": 8015,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -896,15 +896,15 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 7972,
-                  "id": 7982,
+                  "functionReturnParameters": 8006,
+                  "id": 8016,
                   "nodeType": "Return",
                   "src": "1008:145:46"
                 }
               ]
             },
             "documentation": null,
-            "id": 7984,
+            "id": 8018,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -912,31 +912,31 @@
             "name": "hash",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7969,
+              "id": 8003,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7968,
+                  "id": 8002,
                   "name": "_individuation",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7984,
+                  "scope": 8018,
                   "src": "938:28:46",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                    "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                     "typeString": "struct Pando.Individuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7967,
+                    "id": 8001,
                     "name": "Individuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7934,
+                    "referencedDeclaration": 7968,
                     "src": "938:13:46",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                       "typeString": "struct Pando.Individuation"
                     }
                   },
@@ -948,15 +948,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 7972,
+              "id": 8006,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7971,
+                  "id": 8005,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7984,
+                  "scope": 8018,
                   "src": "989:7:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -965,7 +965,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7970,
+                    "id": 8004,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "989:7:46",
@@ -980,14 +980,14 @@
               ],
               "src": "988:9:46"
             },
-            "scope": 7985,
+            "scope": 8019,
             "src": "924:236:46",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 7986,
+        "scope": 8020,
         "src": "61:1101:46"
       }
     ],
@@ -997,14 +997,14 @@
     "absolutePath": "@pando/core/contracts/lib/Pando.sol",
     "exportedSymbols": {
       "Pando": [
-        7985
+        8019
       ]
     },
-    "id": 7986,
+    "id": 8020,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7906,
+        "id": 7940,
         "literals": [
           "solidity",
           "^",
@@ -1015,7 +1015,7 @@
         "src": "0:24:46"
       },
       {
-        "id": 7907,
+        "id": 7941,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -1029,43 +1029,43 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 7985,
+        "id": 8019,
         "linearizedBaseContracts": [
-          7985
+          8019
         ],
         "name": "Pando",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "canonicalName": "Pando.RFLState",
-            "id": 7913,
+            "id": 7947,
             "members": [
               {
-                "id": 7908,
+                "id": 7942,
                 "name": "Pending",
                 "nodeType": "EnumValue",
                 "src": "100:7:46"
               },
               {
-                "id": 7909,
+                "id": 7943,
                 "name": "Accepted",
                 "nodeType": "EnumValue",
                 "src": "109:8:46"
               },
               {
-                "id": 7910,
+                "id": 7944,
                 "name": "Issued",
                 "nodeType": "EnumValue",
                 "src": "119:6:46"
               },
               {
-                "id": 7911,
+                "id": 7945,
                 "name": "Rejected",
                 "nodeType": "EnumValue",
                 "src": "127:8:46"
               },
               {
-                "id": 7912,
+                "id": 7946,
                 "name": "Cancelled",
                 "nodeType": "EnumValue",
                 "src": "137:9:46"
@@ -1077,28 +1077,28 @@
           },
           {
             "canonicalName": "Pando.RFIState",
-            "id": 7918,
+            "id": 7952,
             "members": [
               {
-                "id": 7914,
+                "id": 7948,
                 "name": "Pending",
                 "nodeType": "EnumValue",
                 "src": "171:7:46"
               },
               {
-                "id": 7915,
+                "id": 7949,
                 "name": "Merged",
                 "nodeType": "EnumValue",
                 "src": "180:6:46"
               },
               {
-                "id": 7916,
+                "id": 7950,
                 "name": "Rejected",
                 "nodeType": "EnumValue",
                 "src": "188:8:46"
               },
               {
-                "id": 7917,
+                "id": 7951,
                 "name": "Cancelled",
                 "nodeType": "EnumValue",
                 "src": "198:9:46"
@@ -1110,16 +1110,16 @@
           },
           {
             "canonicalName": "Pando.RFISorting",
-            "id": 7921,
+            "id": 7955,
             "members": [
               {
-                "id": 7919,
+                "id": 7953,
                 "name": "Merge",
                 "nodeType": "EnumValue",
                 "src": "232:5:46"
               },
               {
-                "id": 7920,
+                "id": 7954,
                 "name": "Reject",
                 "nodeType": "EnumValue",
                 "src": "239:6:46"
@@ -1131,14 +1131,14 @@
           },
           {
             "canonicalName": "Pando.IID",
-            "id": 7926,
+            "id": 7960,
             "members": [
               {
                 "constant": false,
-                "id": 7923,
+                "id": 7957,
                 "name": "organism",
                 "nodeType": "VariableDeclaration",
-                "scope": 7926,
+                "scope": 7960,
                 "src": "274:16:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1147,7 +1147,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 7922,
+                  "id": 7956,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "274:7:46",
@@ -1161,10 +1161,10 @@
               },
               {
                 "constant": false,
-                "id": 7925,
+                "id": 7959,
                 "name": "hash",
                 "nodeType": "VariableDeclaration",
-                "scope": 7926,
+                "scope": 7960,
                 "src": "300:12:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1173,7 +1173,7 @@
                   "typeString": "bytes32"
                 },
                 "typeName": {
-                  "id": 7924,
+                  "id": 7958,
                   "name": "bytes32",
                   "nodeType": "ElementaryTypeName",
                   "src": "300:7:46",
@@ -1188,20 +1188,20 @@
             ],
             "name": "IID",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "253:66:46",
             "visibility": "public"
           },
           {
             "canonicalName": "Pando.IIndividuation",
-            "id": 7929,
+            "id": 7963,
             "members": [
               {
                 "constant": false,
-                "id": 7928,
+                "id": 7962,
                 "name": "metadata",
                 "nodeType": "VariableDeclaration",
-                "scope": 7929,
+                "scope": 7963,
                 "src": "357:16:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1210,7 +1210,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7927,
+                  "id": 7961,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "357:6:46",
@@ -1225,20 +1225,20 @@
             ],
             "name": "IIndividuation",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "325:55:46",
             "visibility": "public"
           },
           {
             "canonicalName": "Pando.Individuation",
-            "id": 7934,
+            "id": 7968,
             "members": [
               {
                 "constant": false,
-                "id": 7931,
+                "id": 7965,
                 "name": "blockstamp",
                 "nodeType": "VariableDeclaration",
-                "scope": 7934,
+                "scope": 7968,
                 "src": "417:18:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1247,7 +1247,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7930,
+                  "id": 7964,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "417:7:46",
@@ -1261,10 +1261,10 @@
               },
               {
                 "constant": false,
-                "id": 7933,
+                "id": 7967,
                 "name": "metadata",
                 "nodeType": "VariableDeclaration",
-                "scope": 7934,
+                "scope": 7968,
                 "src": "445:16:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1273,7 +1273,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7932,
+                  "id": 7966,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "445:6:46",
@@ -1288,36 +1288,36 @@
             ],
             "name": "Individuation",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "386:82:46",
             "visibility": "public"
           },
           {
             "canonicalName": "Pando.RFI",
-            "id": 7944,
+            "id": 7978,
             "members": [
               {
                 "constant": false,
-                "id": 7936,
+                "id": 7970,
                 "name": "individuation",
                 "nodeType": "VariableDeclaration",
-                "scope": 7944,
+                "scope": 7978,
                 "src": "495:28:46",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_IIndividuation_$7929_storage_ptr",
+                  "typeIdentifier": "t_struct$_IIndividuation_$7963_storage_ptr",
                   "typeString": "struct Pando.IIndividuation"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 7935,
+                  "id": 7969,
                   "name": "IIndividuation",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 7929,
+                  "referencedDeclaration": 7963,
                   "src": "495:14:46",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_IIndividuation_$7929_storage_ptr",
+                    "typeIdentifier": "t_struct$_IIndividuation_$7963_storage_ptr",
                     "typeString": "struct Pando.IIndividuation"
                   }
                 },
@@ -1326,10 +1326,10 @@
               },
               {
                 "constant": false,
-                "id": 7938,
+                "id": 7972,
                 "name": "blockstamp",
                 "nodeType": "VariableDeclaration",
-                "scope": 7944,
+                "scope": 7978,
                 "src": "533:25:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1338,7 +1338,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7937,
+                  "id": 7971,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "533:7:46",
@@ -1352,26 +1352,26 @@
               },
               {
                 "constant": false,
-                "id": 7940,
+                "id": 7974,
                 "name": "state",
                 "nodeType": "VariableDeclaration",
-                "scope": 7944,
+                "scope": 7978,
                 "src": "568:20:46",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_RFIState_$7918",
+                  "typeIdentifier": "t_enum$_RFIState_$7952",
                   "typeString": "enum Pando.RFIState"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 7939,
+                  "id": 7973,
                   "name": "RFIState",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 7918,
+                  "referencedDeclaration": 7952,
                   "src": "568:8:46",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_RFIState_$7918",
+                    "typeIdentifier": "t_enum$_RFIState_$7952",
                     "typeString": "enum Pando.RFIState"
                   }
                 },
@@ -1380,10 +1380,10 @@
               },
               {
                 "constant": false,
-                "id": 7943,
+                "id": 7977,
                 "name": "RFLids",
                 "nodeType": "VariableDeclaration",
-                "scope": 7944,
+                "scope": 7978,
                 "src": "598:21:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1393,7 +1393,7 @@
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 7941,
+                    "id": 7975,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "598:7:46",
@@ -1402,7 +1402,7 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 7942,
+                  "id": 7976,
                   "length": null,
                   "nodeType": "ArrayTypeName",
                   "src": "598:9:46",
@@ -1417,20 +1417,20 @@
             ],
             "name": "RFI",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "474:152:46",
             "visibility": "public"
           },
           {
             "canonicalName": "Pando.ILineage",
-            "id": 7951,
+            "id": 7985,
             "members": [
               {
                 "constant": false,
-                "id": 7946,
+                "id": 7980,
                 "name": "destination",
                 "nodeType": "VariableDeclaration",
-                "scope": 7951,
+                "scope": 7985,
                 "src": "658:20:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1439,7 +1439,7 @@
                   "typeString": "address"
                 },
                 "typeName": {
-                  "id": 7945,
+                  "id": 7979,
                   "name": "address",
                   "nodeType": "ElementaryTypeName",
                   "src": "658:7:46",
@@ -1453,10 +1453,10 @@
               },
               {
                 "constant": false,
-                "id": 7948,
+                "id": 7982,
                 "name": "minimum",
                 "nodeType": "VariableDeclaration",
-                "scope": 7951,
+                "scope": 7985,
                 "src": "688:16:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1465,7 +1465,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7947,
+                  "id": 7981,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "688:7:46",
@@ -1479,10 +1479,10 @@
               },
               {
                 "constant": false,
-                "id": 7950,
+                "id": 7984,
                 "name": "metadata",
                 "nodeType": "VariableDeclaration",
-                "scope": 7951,
+                "scope": 7985,
                 "src": "714:17:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1491,7 +1491,7 @@
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 7949,
+                  "id": 7983,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "714:6:46",
@@ -1506,36 +1506,36 @@
             ],
             "name": "ILineage",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "632:106:46",
             "visibility": "public"
           },
           {
             "canonicalName": "Pando.RFL",
-            "id": 7962,
+            "id": 7996,
             "members": [
               {
                 "constant": false,
-                "id": 7953,
+                "id": 7987,
                 "name": "lineage",
                 "nodeType": "VariableDeclaration",
-                "scope": 7962,
+                "scope": 7996,
                 "src": "765:16:46",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_ILineage_$7951_storage_ptr",
+                  "typeIdentifier": "t_struct$_ILineage_$7985_storage_ptr",
                   "typeString": "struct Pando.ILineage"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 7952,
+                  "id": 7986,
                   "name": "ILineage",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 7951,
+                  "referencedDeclaration": 7985,
                   "src": "765:8:46",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_ILineage_$7951_storage_ptr",
+                    "typeIdentifier": "t_struct$_ILineage_$7985_storage_ptr",
                     "typeString": "struct Pando.ILineage"
                   }
                 },
@@ -1544,10 +1544,10 @@
               },
               {
                 "constant": false,
-                "id": 7955,
+                "id": 7989,
                 "name": "blockstamp",
                 "nodeType": "VariableDeclaration",
-                "scope": 7962,
+                "scope": 7996,
                 "src": "791:19:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1556,7 +1556,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7954,
+                  "id": 7988,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "791:7:46",
@@ -1570,10 +1570,10 @@
               },
               {
                 "constant": false,
-                "id": 7957,
+                "id": 7991,
                 "name": "value",
                 "nodeType": "VariableDeclaration",
-                "scope": 7962,
+                "scope": 7996,
                 "src": "820:14:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1582,7 +1582,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7956,
+                  "id": 7990,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "820:7:46",
@@ -1596,26 +1596,26 @@
               },
               {
                 "constant": false,
-                "id": 7959,
+                "id": 7993,
                 "name": "state",
                 "nodeType": "VariableDeclaration",
-                "scope": 7962,
+                "scope": 7996,
                 "src": "844:14:46",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_enum$_RFLState_$7913",
+                  "typeIdentifier": "t_enum$_RFLState_$7947",
                   "typeString": "enum Pando.RFLState"
                 },
                 "typeName": {
                   "contractScope": null,
-                  "id": 7958,
+                  "id": 7992,
                   "name": "RFLState",
                   "nodeType": "UserDefinedTypeName",
-                  "referencedDeclaration": 7913,
+                  "referencedDeclaration": 7947,
                   "src": "844:8:46",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_enum$_RFLState_$7913",
+                    "typeIdentifier": "t_enum$_RFLState_$7947",
                     "typeString": "enum Pando.RFLState"
                   }
                 },
@@ -1624,10 +1624,10 @@
               },
               {
                 "constant": false,
-                "id": 7961,
+                "id": 7995,
                 "name": "RFIid",
                 "nodeType": "VariableDeclaration",
-                "scope": 7962,
+                "scope": 7996,
                 "src": "868:14:46",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -1636,7 +1636,7 @@
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 7960,
+                  "id": 7994,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "868:7:46",
@@ -1651,19 +1651,19 @@
             ],
             "name": "RFL",
             "nodeType": "StructDefinition",
-            "scope": 7985,
+            "scope": 8019,
             "src": "744:145:46",
             "visibility": "public"
           },
           {
             "body": {
-              "id": 7965,
+              "id": 7999,
               "nodeType": "Block",
               "src": "916:2:46",
               "statements": []
             },
             "documentation": null,
-            "id": 7966,
+            "id": 8000,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -1671,19 +1671,19 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7963,
+              "id": 7997,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "906:2:46"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7964,
+              "id": 7998,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "916:0:46"
             },
-            "scope": 7985,
+            "scope": 8019,
             "src": "895:23:46",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1691,7 +1691,7 @@
           },
           {
             "body": {
-              "id": 7983,
+              "id": 8017,
               "nodeType": "Block",
               "src": "998:162:46",
               "statements": [
@@ -1706,25 +1706,25 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 7976,
+                              "id": 8010,
                               "name": "_individuation",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7968,
+                              "referencedDeclaration": 8002,
                               "src": "1072:14:46",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                                "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                                 "typeString": "struct Pando.Individuation memory"
                               }
                             },
-                            "id": 7977,
+                            "id": 8011,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "blockstamp",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7931,
+                            "referencedDeclaration": 7965,
                             "src": "1072:25:46",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -1735,25 +1735,25 @@
                             "argumentTypes": null,
                             "expression": {
                               "argumentTypes": null,
-                              "id": 7978,
+                              "id": 8012,
                               "name": "_individuation",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 7968,
+                              "referencedDeclaration": 8002,
                               "src": "1115:14:46",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                                "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                                 "typeString": "struct Pando.Individuation memory"
                               }
                             },
-                            "id": 7979,
+                            "id": 8013,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "metadata",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7933,
+                            "referencedDeclaration": 7967,
                             "src": "1115:23:46",
                             "typeDescriptions": {
                               "typeIdentifier": "t_string_memory",
@@ -1774,18 +1774,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 7974,
+                            "id": 8008,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 9747,
+                            "referencedDeclaration": 9781,
                             "src": "1038:3:46",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
                               "typeString": "abi"
                             }
                           },
-                          "id": 7975,
+                          "id": 8009,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1799,7 +1799,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 7980,
+                        "id": 8014,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1821,18 +1821,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 7973,
+                      "id": 8007,
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 9754,
+                      "referencedDeclaration": 9788,
                       "src": "1015:9:46",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
                         "typeString": "function () pure returns (bytes32)"
                       }
                     },
-                    "id": 7981,
+                    "id": 8015,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1846,15 +1846,15 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 7972,
-                  "id": 7982,
+                  "functionReturnParameters": 8006,
+                  "id": 8016,
                   "nodeType": "Return",
                   "src": "1008:145:46"
                 }
               ]
             },
             "documentation": null,
-            "id": 7984,
+            "id": 8018,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1862,31 +1862,31 @@
             "name": "hash",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7969,
+              "id": 8003,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7968,
+                  "id": 8002,
                   "name": "_individuation",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7984,
+                  "scope": 8018,
                   "src": "938:28:46",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                    "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                     "typeString": "struct Pando.Individuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7967,
+                    "id": 8001,
                     "name": "Individuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7934,
+                    "referencedDeclaration": 7968,
                     "src": "938:13:46",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                       "typeString": "struct Pando.Individuation"
                     }
                   },
@@ -1898,15 +1898,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 7972,
+              "id": 8006,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7971,
+                  "id": 8005,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7984,
+                  "scope": 8018,
                   "src": "989:7:46",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1915,7 +1915,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7970,
+                    "id": 8004,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "989:7:46",
@@ -1930,14 +1930,14 @@
               ],
               "src": "988:9:46"
             },
-            "scope": 7985,
+            "scope": 8019,
             "src": "924:236:46",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 7986,
+        "scope": 8020,
         "src": "61:1101:46"
       }
     ],
@@ -1949,7 +1949,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.0-beta.2",
-  "updatedAt": "2019-01-21T14:18:49.273Z",
+  "updatedAt": "2019-01-24T14:32:35.499Z",
   "devdoc": {
     "methods": {}
   },

@@ -59,14 +59,14 @@
     "absolutePath": "@aragon/os/contracts/common/VaultRecoverable.sol",
     "exportedSymbols": {
       "VaultRecoverable": [
-        5755
+        5789
       ]
     },
-    "id": 5756,
+    "id": 5790,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5666,
+        "id": 5700,
         "literals": [
           "solidity",
           "^",
@@ -79,10 +79,10 @@
       {
         "absolutePath": "@aragon/os/contracts/lib/token/ERC20.sol",
         "file": "../lib/token/ERC20.sol",
-        "id": 5667,
+        "id": 5701,
         "nodeType": "ImportDirective",
-        "scope": 5756,
-        "sourceUnit": 7905,
+        "scope": 5790,
+        "sourceUnit": 7939,
         "src": "70:32:26",
         "symbolAliases": [],
         "unitAlias": ""
@@ -90,10 +90,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/EtherTokenConstant.sol",
         "file": "./EtherTokenConstant.sol",
-        "id": 5668,
+        "id": 5702,
         "nodeType": "ImportDirective",
-        "scope": 5756,
-        "sourceUnit": 5333,
+        "scope": 5790,
+        "sourceUnit": 5367,
         "src": "103:34:26",
         "symbolAliases": [],
         "unitAlias": ""
@@ -101,10 +101,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/IsContract.sol",
         "file": "./IsContract.sol",
-        "id": 5669,
+        "id": 5703,
         "nodeType": "ImportDirective",
-        "scope": 5756,
-        "sourceUnit": 5479,
+        "scope": 5790,
+        "sourceUnit": 5513,
         "src": "138:26:26",
         "symbolAliases": [],
         "unitAlias": ""
@@ -112,10 +112,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/IVaultRecoverable.sol",
         "file": "./IVaultRecoverable.sol",
-        "id": 5670,
+        "id": 5704,
         "nodeType": "ImportDirective",
-        "scope": 5756,
-        "sourceUnit": 5353,
+        "scope": 5790,
+        "sourceUnit": 5387,
         "src": "165:33:26",
         "symbolAliases": [],
         "unitAlias": ""
@@ -126,17 +126,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5671,
+              "id": 5705,
               "name": "IVaultRecoverable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5352,
+              "referencedDeclaration": 5386,
               "src": "230:17:26",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IVaultRecoverable_$5352",
+                "typeIdentifier": "t_contract$_IVaultRecoverable_$5386",
                 "typeString": "contract IVaultRecoverable"
               }
             },
-            "id": 5672,
+            "id": 5706,
             "nodeType": "InheritanceSpecifier",
             "src": "230:17:26"
           },
@@ -144,17 +144,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5673,
+              "id": 5707,
               "name": "EtherTokenConstant",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5332,
+              "referencedDeclaration": 5366,
               "src": "249:18:26",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_EtherTokenConstant_$5332",
+                "typeIdentifier": "t_contract$_EtherTokenConstant_$5366",
                 "typeString": "contract EtherTokenConstant"
               }
             },
-            "id": 5674,
+            "id": 5708,
             "nodeType": "InheritanceSpecifier",
             "src": "249:18:26"
           },
@@ -162,45 +162,45 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5675,
+              "id": 5709,
               "name": "IsContract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5478,
+              "referencedDeclaration": 5512,
               "src": "269:10:26",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IsContract_$5478",
+                "typeIdentifier": "t_contract$_IsContract_$5512",
                 "typeString": "contract IsContract"
               }
             },
-            "id": 5676,
+            "id": 5710,
             "nodeType": "InheritanceSpecifier",
             "src": "269:10:26"
           }
         ],
         "contractDependencies": [
-          5332,
-          5352,
-          5478
+          5366,
+          5386,
+          5512
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5755,
+        "id": 5789,
         "linearizedBaseContracts": [
-          5755,
-          5478,
-          5332,
-          5352
+          5789,
+          5512,
+          5366,
+          5386
         ],
         "name": "VaultRecoverable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 5679,
+            "id": 5713,
             "name": "ERROR_DISALLOWED",
             "nodeType": "VariableDeclaration",
-            "scope": 5755,
+            "scope": 5789,
             "src": "286:63:26",
             "stateVariable": true,
             "storageLocation": "default",
@@ -209,7 +209,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 5677,
+              "id": 5711,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "286:6:26",
@@ -221,7 +221,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "5245434f5645525f444953414c4c4f574544",
-              "id": 5678,
+              "id": 5712,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -240,10 +240,10 @@
           },
           {
             "constant": true,
-            "id": 5682,
+            "id": 5716,
             "name": "ERROR_VAULT_NOT_CONTRACT",
             "nodeType": "VariableDeclaration",
-            "scope": 5755,
+            "scope": 5789,
             "src": "355:79:26",
             "stateVariable": true,
             "storageLocation": "default",
@@ -252,7 +252,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 5680,
+              "id": 5714,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "355:6:26",
@@ -264,7 +264,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "5245434f5645525f5641554c545f4e4f545f434f4e5452414354",
-              "id": 5681,
+              "id": 5715,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -283,7 +283,7 @@
           },
           {
             "body": {
-              "id": 5738,
+              "id": 5772,
               "nodeType": "Block",
               "src": "737:396:26",
               "statements": [
@@ -296,11 +296,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5689,
+                            "id": 5723,
                             "name": "_token",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5684,
+                            "referencedDeclaration": 5718,
                             "src": "775:6:26",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -315,18 +315,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 5688,
+                          "id": 5722,
                           "name": "allowRecoverability",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5749,
+                          "referencedDeclaration": 5783,
                           "src": "755:19:26",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                             "typeString": "function (address) view returns (bool)"
                           }
                         },
-                        "id": 5690,
+                        "id": 5724,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -342,11 +342,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5691,
+                        "id": 5725,
                         "name": "ERROR_DISALLOWED",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5679,
+                        "referencedDeclaration": 5713,
                         "src": "784:16:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -365,21 +365,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 5687,
+                      "id": 5721,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        9763,
-                        9764
+                        9797,
+                        9798
                       ],
-                      "referencedDeclaration": 9764,
+                      "referencedDeclaration": 9798,
                       "src": "747:7:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 5692,
+                    "id": 5726,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -393,21 +393,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5693,
+                  "id": 5727,
                   "nodeType": "ExpressionStatement",
                   "src": "747:54:26"
                 },
                 {
                   "assignments": [
-                    5695
+                    5729
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5695,
+                      "id": 5729,
                       "name": "vault",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5739,
+                      "scope": 5773,
                       "src": "811:13:26",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -416,7 +416,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 5694,
+                        "id": 5728,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "811:7:26",
@@ -429,24 +429,24 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5698,
+                  "id": 5732,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 5696,
+                      "id": 5730,
                       "name": "getRecoveryVault",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5754,
+                      "referencedDeclaration": 5788,
                       "src": "827:16:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                         "typeString": "function () view returns (address)"
                       }
                     },
-                    "id": 5697,
+                    "id": 5731,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -472,11 +472,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5701,
+                            "id": 5735,
                             "name": "vault",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5695,
+                            "referencedDeclaration": 5729,
                             "src": "874:5:26",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -491,18 +491,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 5700,
+                          "id": 5734,
                           "name": "isContract",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5477,
+                          "referencedDeclaration": 5511,
                           "src": "863:10:26",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                             "typeString": "function (address) view returns (bool)"
                           }
                         },
-                        "id": 5702,
+                        "id": 5736,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -518,11 +518,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5703,
+                        "id": 5737,
                         "name": "ERROR_VAULT_NOT_CONTRACT",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5682,
+                        "referencedDeclaration": 5716,
                         "src": "882:24:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -541,21 +541,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 5699,
+                      "id": 5733,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        9763,
-                        9764
+                        9797,
+                        9798
                       ],
-                      "referencedDeclaration": 9764,
+                      "referencedDeclaration": 9798,
                       "src": "855:7:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 5704,
+                    "id": 5738,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -569,7 +569,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5705,
+                  "id": 5739,
                   "nodeType": "ExpressionStatement",
                   "src": "855:52:26"
                 },
@@ -580,18 +580,18 @@
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     },
-                    "id": 5708,
+                    "id": 5742,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 5706,
+                      "id": 5740,
                       "name": "_token",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5684,
+                      "referencedDeclaration": 5718,
                       "src": "922:6:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -602,11 +602,11 @@
                     "operator": "==",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 5707,
+                      "id": 5741,
                       "name": "ETH",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5331,
+                      "referencedDeclaration": 5365,
                       "src": "932:3:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -620,21 +620,21 @@
                     }
                   },
                   "falseBody": {
-                    "id": 5736,
+                    "id": 5770,
                     "nodeType": "Block",
                     "src": "1005:122:26",
                     "statements": [
                       {
                         "assignments": [
-                          5720
+                          5754
                         ],
                         "declarations": [
                           {
                             "constant": false,
-                            "id": 5720,
+                            "id": 5754,
                             "name": "amount",
                             "nodeType": "VariableDeclaration",
-                            "scope": 5739,
+                            "scope": 5773,
                             "src": "1019:14:26",
                             "stateVariable": false,
                             "storageLocation": "default",
@@ -643,7 +643,7 @@
                               "typeString": "uint256"
                             },
                             "typeName": {
-                              "id": 5719,
+                              "id": 5753,
                               "name": "uint256",
                               "nodeType": "ElementaryTypeName",
                               "src": "1019:7:26",
@@ -656,20 +656,20 @@
                             "visibility": "internal"
                           }
                         ],
-                        "id": 5727,
+                        "id": 5761,
                         "initialValue": {
                           "argumentTypes": null,
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 5725,
+                              "id": 5759,
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 9799,
+                              "referencedDeclaration": 9833,
                               "src": "1060:4:26",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_VaultRecoverable_$5755",
+                                "typeIdentifier": "t_contract$_VaultRecoverable_$5789",
                                 "typeString": "contract VaultRecoverable"
                               }
                             }
@@ -677,7 +677,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_VaultRecoverable_$5755",
+                                "typeIdentifier": "t_contract$_VaultRecoverable_$5789",
                                 "typeString": "contract VaultRecoverable"
                               }
                             ],
@@ -686,11 +686,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 5722,
+                                  "id": 5756,
                                   "name": "_token",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 5684,
+                                  "referencedDeclaration": 5718,
                                   "src": "1042:6:26",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -705,18 +705,18 @@
                                     "typeString": "address"
                                   }
                                 ],
-                                "id": 5721,
+                                "id": 5755,
                                 "name": "ERC20",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7904,
+                                "referencedDeclaration": 7938,
                                 "src": "1036:5:26",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_ERC20_$7904_$",
+                                  "typeIdentifier": "t_type$_t_contract$_ERC20_$7938_$",
                                   "typeString": "type(contract ERC20)"
                                 }
                               },
-                              "id": 5723,
+                              "id": 5757,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -726,25 +726,25 @@
                               "nodeType": "FunctionCall",
                               "src": "1036:13:26",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ERC20_$7904",
+                                "typeIdentifier": "t_contract$_ERC20_$7938",
                                 "typeString": "contract ERC20"
                               }
                             },
-                            "id": 5724,
+                            "id": 5758,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "balanceOf",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7849,
+                            "referencedDeclaration": 7883,
                             "src": "1036:23:26",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                               "typeString": "function (address) view external returns (uint256)"
                             }
                           },
-                          "id": 5726,
+                          "id": 5760,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -767,11 +767,11 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 5732,
+                              "id": 5766,
                               "name": "vault",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5695,
+                              "referencedDeclaration": 5729,
                               "src": "1102:5:26",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -780,11 +780,11 @@
                             },
                             {
                               "argumentTypes": null,
-                              "id": 5733,
+                              "id": 5767,
                               "name": "amount",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5720,
+                              "referencedDeclaration": 5754,
                               "src": "1109:6:26",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -808,11 +808,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 5729,
+                                  "id": 5763,
                                   "name": "_token",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 5684,
+                                  "referencedDeclaration": 5718,
                                   "src": "1085:6:26",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -827,18 +827,18 @@
                                     "typeString": "address"
                                   }
                                 ],
-                                "id": 5728,
+                                "id": 5762,
                                 "name": "ERC20",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7904,
+                                "referencedDeclaration": 7938,
                                 "src": "1079:5:26",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_ERC20_$7904_$",
+                                  "typeIdentifier": "t_type$_t_contract$_ERC20_$7938_$",
                                   "typeString": "type(contract ERC20)"
                                 }
                               },
-                              "id": 5730,
+                              "id": 5764,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -848,25 +848,25 @@
                               "nodeType": "FunctionCall",
                               "src": "1079:13:26",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ERC20_$7904",
+                                "typeIdentifier": "t_contract$_ERC20_$7938",
                                 "typeString": "contract ERC20"
                               }
                             },
-                            "id": 5731,
+                            "id": 5765,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "transfer",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7867,
+                            "referencedDeclaration": 7901,
                             "src": "1079:22:26",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                               "typeString": "function (address,uint256) external returns (bool)"
                             }
                           },
-                          "id": 5734,
+                          "id": 5768,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -880,17 +880,17 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 5735,
+                        "id": 5769,
                         "nodeType": "ExpressionStatement",
                         "src": "1079:37:26"
                       }
                     ]
                   },
-                  "id": 5737,
+                  "id": 5771,
                   "nodeType": "IfStatement",
                   "src": "918:209:26",
                   "trueBody": {
-                    "id": 5718,
+                    "id": 5752,
                     "nodeType": "Block",
                     "src": "937:62:26",
                     "statements": [
@@ -905,14 +905,14 @@
                                 "arguments": [
                                   {
                                     "argumentTypes": null,
-                                    "id": 5713,
+                                    "id": 5747,
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 9799,
+                                    "referencedDeclaration": 9833,
                                     "src": "974:4:26",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_VaultRecoverable_$5755",
+                                      "typeIdentifier": "t_contract$_VaultRecoverable_$5789",
                                       "typeString": "contract VaultRecoverable"
                                     }
                                   }
@@ -920,11 +920,11 @@
                                 "expression": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_VaultRecoverable_$5755",
+                                      "typeIdentifier": "t_contract$_VaultRecoverable_$5789",
                                       "typeString": "contract VaultRecoverable"
                                     }
                                   ],
-                                  "id": 5712,
+                                  "id": 5746,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -937,7 +937,7 @@
                                   },
                                   "typeName": "address"
                                 },
-                                "id": 5714,
+                                "id": 5748,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -951,7 +951,7 @@
                                   "typeString": "address"
                                 }
                               },
-                              "id": 5715,
+                              "id": 5749,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -975,18 +975,18 @@
                             ],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 5709,
+                              "id": 5743,
                               "name": "vault",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5695,
+                              "referencedDeclaration": 5729,
                               "src": "951:5:26",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
                                 "typeString": "address"
                               }
                             },
-                            "id": 5711,
+                            "id": 5745,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1000,7 +1000,7 @@
                               "typeString": "function (uint256)"
                             }
                           },
-                          "id": 5716,
+                          "id": 5750,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1014,7 +1014,7 @@
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 5717,
+                        "id": 5751,
                         "nodeType": "ExpressionStatement",
                         "src": "951:37:26"
                       }
@@ -1024,7 +1024,7 @@
               ]
             },
             "documentation": "@notice Send funds to recovery Vault. This contract should never receive funds,\n        but in case it does, this function allows one to recover them.\n@param _token Token balance to be sent to recovery vault.",
-            "id": 5739,
+            "id": 5773,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1032,15 +1032,15 @@
             "name": "transferToVault",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5685,
+              "id": 5719,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5684,
+                  "id": 5718,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5739,
+                  "scope": 5773,
                   "src": "712:14:26",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1049,7 +1049,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5683,
+                    "id": 5717,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "712:7:26",
@@ -1066,20 +1066,20 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 5686,
+              "id": 5720,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "737:0:26"
             },
-            "scope": 5755,
+            "scope": 5789,
             "src": "687:446:26",
             "stateMutability": "nonpayable",
-            "superFunction": 5339,
+            "superFunction": 5373,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 5748,
+              "id": 5782,
               "nodeType": "Block",
               "src": "1404:28:26",
               "statements": [
@@ -1087,7 +1087,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 5746,
+                    "id": 5780,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -1102,15 +1102,15 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 5745,
-                  "id": 5747,
+                  "functionReturnParameters": 5779,
+                  "id": 5781,
                   "nodeType": "Return",
                   "src": "1414:11:26"
                 }
               ]
             },
             "documentation": "@dev By default deriving from AragonApp makes it recoverable\n@param token Token address that would be recovered\n@return bool whether the app allows the recovery",
-            "id": 5749,
+            "id": 5783,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1118,15 +1118,15 @@
             "name": "allowRecoverability",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5742,
+              "id": 5776,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5741,
+                  "id": 5775,
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5749,
+                  "scope": 5783,
                   "src": "1362:13:26",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1135,7 +1135,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5740,
+                    "id": 5774,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1362:7:26",
@@ -1152,15 +1152,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 5745,
+              "id": 5779,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5744,
+                  "id": 5778,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5749,
+                  "scope": 5783,
                   "src": "1398:4:26",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1169,7 +1169,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5743,
+                    "id": 5777,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1398:4:26",
@@ -1184,16 +1184,16 @@
               ],
               "src": "1397:6:26"
             },
-            "scope": 5755,
+            "scope": 5789,
             "src": "1333:99:26",
             "stateMutability": "view",
-            "superFunction": 5346,
+            "superFunction": 5380,
             "visibility": "public"
           },
           {
             "body": null,
             "documentation": null,
-            "id": 5754,
+            "id": 5788,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1201,22 +1201,22 @@
             "name": "getRecoveryVault",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5750,
+              "id": 5784,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1542:2:26"
             },
             "payable": false,
             "returnParameters": {
-              "id": 5753,
+              "id": 5787,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5752,
+                  "id": 5786,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5754,
+                  "scope": 5788,
                   "src": "1566:7:26",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1225,7 +1225,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5751,
+                    "id": 5785,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1566:7:26",
@@ -1240,14 +1240,14 @@
               ],
               "src": "1565:9:26"
             },
-            "scope": 5755,
+            "scope": 5789,
             "src": "1517:58:26",
             "stateMutability": "view",
-            "superFunction": 5351,
+            "superFunction": 5385,
             "visibility": "public"
           }
         ],
-        "scope": 5756,
+        "scope": 5790,
         "src": "201:1376:26"
       }
     ],
@@ -1257,14 +1257,14 @@
     "absolutePath": "@aragon/os/contracts/common/VaultRecoverable.sol",
     "exportedSymbols": {
       "VaultRecoverable": [
-        5755
+        5789
       ]
     },
-    "id": 5756,
+    "id": 5790,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5666,
+        "id": 5700,
         "literals": [
           "solidity",
           "^",
@@ -1277,10 +1277,10 @@
       {
         "absolutePath": "@aragon/os/contracts/lib/token/ERC20.sol",
         "file": "../lib/token/ERC20.sol",
-        "id": 5667,
+        "id": 5701,
         "nodeType": "ImportDirective",
-        "scope": 5756,
-        "sourceUnit": 7905,
+        "scope": 5790,
+        "sourceUnit": 7939,
         "src": "70:32:26",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1288,10 +1288,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/EtherTokenConstant.sol",
         "file": "./EtherTokenConstant.sol",
-        "id": 5668,
+        "id": 5702,
         "nodeType": "ImportDirective",
-        "scope": 5756,
-        "sourceUnit": 5333,
+        "scope": 5790,
+        "sourceUnit": 5367,
         "src": "103:34:26",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1299,10 +1299,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/IsContract.sol",
         "file": "./IsContract.sol",
-        "id": 5669,
+        "id": 5703,
         "nodeType": "ImportDirective",
-        "scope": 5756,
-        "sourceUnit": 5479,
+        "scope": 5790,
+        "sourceUnit": 5513,
         "src": "138:26:26",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1310,10 +1310,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/IVaultRecoverable.sol",
         "file": "./IVaultRecoverable.sol",
-        "id": 5670,
+        "id": 5704,
         "nodeType": "ImportDirective",
-        "scope": 5756,
-        "sourceUnit": 5353,
+        "scope": 5790,
+        "sourceUnit": 5387,
         "src": "165:33:26",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1324,17 +1324,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5671,
+              "id": 5705,
               "name": "IVaultRecoverable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5352,
+              "referencedDeclaration": 5386,
               "src": "230:17:26",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IVaultRecoverable_$5352",
+                "typeIdentifier": "t_contract$_IVaultRecoverable_$5386",
                 "typeString": "contract IVaultRecoverable"
               }
             },
-            "id": 5672,
+            "id": 5706,
             "nodeType": "InheritanceSpecifier",
             "src": "230:17:26"
           },
@@ -1342,17 +1342,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5673,
+              "id": 5707,
               "name": "EtherTokenConstant",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5332,
+              "referencedDeclaration": 5366,
               "src": "249:18:26",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_EtherTokenConstant_$5332",
+                "typeIdentifier": "t_contract$_EtherTokenConstant_$5366",
                 "typeString": "contract EtherTokenConstant"
               }
             },
-            "id": 5674,
+            "id": 5708,
             "nodeType": "InheritanceSpecifier",
             "src": "249:18:26"
           },
@@ -1360,45 +1360,45 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 5675,
+              "id": 5709,
               "name": "IsContract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5478,
+              "referencedDeclaration": 5512,
               "src": "269:10:26",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IsContract_$5478",
+                "typeIdentifier": "t_contract$_IsContract_$5512",
                 "typeString": "contract IsContract"
               }
             },
-            "id": 5676,
+            "id": 5710,
             "nodeType": "InheritanceSpecifier",
             "src": "269:10:26"
           }
         ],
         "contractDependencies": [
-          5332,
-          5352,
-          5478
+          5366,
+          5386,
+          5512
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5755,
+        "id": 5789,
         "linearizedBaseContracts": [
-          5755,
-          5478,
-          5332,
-          5352
+          5789,
+          5512,
+          5366,
+          5386
         ],
         "name": "VaultRecoverable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 5679,
+            "id": 5713,
             "name": "ERROR_DISALLOWED",
             "nodeType": "VariableDeclaration",
-            "scope": 5755,
+            "scope": 5789,
             "src": "286:63:26",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1407,7 +1407,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 5677,
+              "id": 5711,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "286:6:26",
@@ -1419,7 +1419,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "5245434f5645525f444953414c4c4f574544",
-              "id": 5678,
+              "id": 5712,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1438,10 +1438,10 @@
           },
           {
             "constant": true,
-            "id": 5682,
+            "id": 5716,
             "name": "ERROR_VAULT_NOT_CONTRACT",
             "nodeType": "VariableDeclaration",
-            "scope": 5755,
+            "scope": 5789,
             "src": "355:79:26",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1450,7 +1450,7 @@
               "typeString": "string"
             },
             "typeName": {
-              "id": 5680,
+              "id": 5714,
               "name": "string",
               "nodeType": "ElementaryTypeName",
               "src": "355:6:26",
@@ -1462,7 +1462,7 @@
             "value": {
               "argumentTypes": null,
               "hexValue": "5245434f5645525f5641554c545f4e4f545f434f4e5452414354",
-              "id": 5681,
+              "id": 5715,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -1481,7 +1481,7 @@
           },
           {
             "body": {
-              "id": 5738,
+              "id": 5772,
               "nodeType": "Block",
               "src": "737:396:26",
               "statements": [
@@ -1494,11 +1494,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5689,
+                            "id": 5723,
                             "name": "_token",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5684,
+                            "referencedDeclaration": 5718,
                             "src": "775:6:26",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -1513,18 +1513,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 5688,
+                          "id": 5722,
                           "name": "allowRecoverability",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5749,
+                          "referencedDeclaration": 5783,
                           "src": "755:19:26",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                             "typeString": "function (address) view returns (bool)"
                           }
                         },
-                        "id": 5690,
+                        "id": 5724,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1540,11 +1540,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5691,
+                        "id": 5725,
                         "name": "ERROR_DISALLOWED",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5679,
+                        "referencedDeclaration": 5713,
                         "src": "784:16:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -1563,21 +1563,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 5687,
+                      "id": 5721,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        9763,
-                        9764
+                        9797,
+                        9798
                       ],
-                      "referencedDeclaration": 9764,
+                      "referencedDeclaration": 9798,
                       "src": "747:7:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 5692,
+                    "id": 5726,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1591,21 +1591,21 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5693,
+                  "id": 5727,
                   "nodeType": "ExpressionStatement",
                   "src": "747:54:26"
                 },
                 {
                   "assignments": [
-                    5695
+                    5729
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 5695,
+                      "id": 5729,
                       "name": "vault",
                       "nodeType": "VariableDeclaration",
-                      "scope": 5739,
+                      "scope": 5773,
                       "src": "811:13:26",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1614,7 +1614,7 @@
                         "typeString": "address"
                       },
                       "typeName": {
-                        "id": 5694,
+                        "id": 5728,
                         "name": "address",
                         "nodeType": "ElementaryTypeName",
                         "src": "811:7:26",
@@ -1627,24 +1627,24 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 5698,
+                  "id": 5732,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 5696,
+                      "id": 5730,
                       "name": "getRecoveryVault",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5754,
+                      "referencedDeclaration": 5788,
                       "src": "827:16:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                         "typeString": "function () view returns (address)"
                       }
                     },
-                    "id": 5697,
+                    "id": 5731,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1670,11 +1670,11 @@
                         "arguments": [
                           {
                             "argumentTypes": null,
-                            "id": 5701,
+                            "id": 5735,
                             "name": "vault",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 5695,
+                            "referencedDeclaration": 5729,
                             "src": "874:5:26",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -1689,18 +1689,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 5700,
+                          "id": 5734,
                           "name": "isContract",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5477,
+                          "referencedDeclaration": 5511,
                           "src": "863:10:26",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                             "typeString": "function (address) view returns (bool)"
                           }
                         },
-                        "id": 5702,
+                        "id": 5736,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1716,11 +1716,11 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 5703,
+                        "id": 5737,
                         "name": "ERROR_VAULT_NOT_CONTRACT",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 5682,
+                        "referencedDeclaration": 5716,
                         "src": "882:24:26",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -1739,21 +1739,21 @@
                           "typeString": "string memory"
                         }
                       ],
-                      "id": 5699,
+                      "id": 5733,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        9763,
-                        9764
+                        9797,
+                        9798
                       ],
-                      "referencedDeclaration": 9764,
+                      "referencedDeclaration": 9798,
                       "src": "855:7:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 5704,
+                    "id": 5738,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1767,7 +1767,7 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 5705,
+                  "id": 5739,
                   "nodeType": "ExpressionStatement",
                   "src": "855:52:26"
                 },
@@ -1778,18 +1778,18 @@
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     },
-                    "id": 5708,
+                    "id": 5742,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 5706,
+                      "id": 5740,
                       "name": "_token",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5684,
+                      "referencedDeclaration": 5718,
                       "src": "922:6:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1800,11 +1800,11 @@
                     "operator": "==",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 5707,
+                      "id": 5741,
                       "name": "ETH",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5331,
+                      "referencedDeclaration": 5365,
                       "src": "932:3:26",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1818,21 +1818,21 @@
                     }
                   },
                   "falseBody": {
-                    "id": 5736,
+                    "id": 5770,
                     "nodeType": "Block",
                     "src": "1005:122:26",
                     "statements": [
                       {
                         "assignments": [
-                          5720
+                          5754
                         ],
                         "declarations": [
                           {
                             "constant": false,
-                            "id": 5720,
+                            "id": 5754,
                             "name": "amount",
                             "nodeType": "VariableDeclaration",
-                            "scope": 5739,
+                            "scope": 5773,
                             "src": "1019:14:26",
                             "stateVariable": false,
                             "storageLocation": "default",
@@ -1841,7 +1841,7 @@
                               "typeString": "uint256"
                             },
                             "typeName": {
-                              "id": 5719,
+                              "id": 5753,
                               "name": "uint256",
                               "nodeType": "ElementaryTypeName",
                               "src": "1019:7:26",
@@ -1854,20 +1854,20 @@
                             "visibility": "internal"
                           }
                         ],
-                        "id": 5727,
+                        "id": 5761,
                         "initialValue": {
                           "argumentTypes": null,
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 5725,
+                              "id": 5759,
                               "name": "this",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 9799,
+                              "referencedDeclaration": 9833,
                               "src": "1060:4:26",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_VaultRecoverable_$5755",
+                                "typeIdentifier": "t_contract$_VaultRecoverable_$5789",
                                 "typeString": "contract VaultRecoverable"
                               }
                             }
@@ -1875,7 +1875,7 @@
                           "expression": {
                             "argumentTypes": [
                               {
-                                "typeIdentifier": "t_contract$_VaultRecoverable_$5755",
+                                "typeIdentifier": "t_contract$_VaultRecoverable_$5789",
                                 "typeString": "contract VaultRecoverable"
                               }
                             ],
@@ -1884,11 +1884,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 5722,
+                                  "id": 5756,
                                   "name": "_token",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 5684,
+                                  "referencedDeclaration": 5718,
                                   "src": "1042:6:26",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -1903,18 +1903,18 @@
                                     "typeString": "address"
                                   }
                                 ],
-                                "id": 5721,
+                                "id": 5755,
                                 "name": "ERC20",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7904,
+                                "referencedDeclaration": 7938,
                                 "src": "1036:5:26",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_ERC20_$7904_$",
+                                  "typeIdentifier": "t_type$_t_contract$_ERC20_$7938_$",
                                   "typeString": "type(contract ERC20)"
                                 }
                               },
-                              "id": 5723,
+                              "id": 5757,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -1924,25 +1924,25 @@
                               "nodeType": "FunctionCall",
                               "src": "1036:13:26",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ERC20_$7904",
+                                "typeIdentifier": "t_contract$_ERC20_$7938",
                                 "typeString": "contract ERC20"
                               }
                             },
-                            "id": 5724,
+                            "id": 5758,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "balanceOf",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7849,
+                            "referencedDeclaration": 7883,
                             "src": "1036:23:26",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_view$_t_address_$returns$_t_uint256_$",
                               "typeString": "function (address) view external returns (uint256)"
                             }
                           },
-                          "id": 5726,
+                          "id": 5760,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1965,11 +1965,11 @@
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 5732,
+                              "id": 5766,
                               "name": "vault",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5695,
+                              "referencedDeclaration": 5729,
                               "src": "1102:5:26",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
@@ -1978,11 +1978,11 @@
                             },
                             {
                               "argumentTypes": null,
-                              "id": 5733,
+                              "id": 5767,
                               "name": "amount",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5720,
+                              "referencedDeclaration": 5754,
                               "src": "1109:6:26",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -2006,11 +2006,11 @@
                               "arguments": [
                                 {
                                   "argumentTypes": null,
-                                  "id": 5729,
+                                  "id": 5763,
                                   "name": "_token",
                                   "nodeType": "Identifier",
                                   "overloadedDeclarations": [],
-                                  "referencedDeclaration": 5684,
+                                  "referencedDeclaration": 5718,
                                   "src": "1085:6:26",
                                   "typeDescriptions": {
                                     "typeIdentifier": "t_address",
@@ -2025,18 +2025,18 @@
                                     "typeString": "address"
                                   }
                                 ],
-                                "id": 5728,
+                                "id": 5762,
                                 "name": "ERC20",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7904,
+                                "referencedDeclaration": 7938,
                                 "src": "1079:5:26",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_type$_t_contract$_ERC20_$7904_$",
+                                  "typeIdentifier": "t_type$_t_contract$_ERC20_$7938_$",
                                   "typeString": "type(contract ERC20)"
                                 }
                               },
-                              "id": 5730,
+                              "id": 5764,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2046,25 +2046,25 @@
                               "nodeType": "FunctionCall",
                               "src": "1079:13:26",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_contract$_ERC20_$7904",
+                                "typeIdentifier": "t_contract$_ERC20_$7938",
                                 "typeString": "contract ERC20"
                               }
                             },
-                            "id": 5731,
+                            "id": 5765,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
                             "lValueRequested": false,
                             "memberName": "transfer",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 7867,
+                            "referencedDeclaration": 7901,
                             "src": "1079:22:26",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_external_nonpayable$_t_address_$_t_uint256_$returns$_t_bool_$",
                               "typeString": "function (address,uint256) external returns (bool)"
                             }
                           },
-                          "id": 5734,
+                          "id": 5768,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2078,17 +2078,17 @@
                             "typeString": "bool"
                           }
                         },
-                        "id": 5735,
+                        "id": 5769,
                         "nodeType": "ExpressionStatement",
                         "src": "1079:37:26"
                       }
                     ]
                   },
-                  "id": 5737,
+                  "id": 5771,
                   "nodeType": "IfStatement",
                   "src": "918:209:26",
                   "trueBody": {
-                    "id": 5718,
+                    "id": 5752,
                     "nodeType": "Block",
                     "src": "937:62:26",
                     "statements": [
@@ -2103,14 +2103,14 @@
                                 "arguments": [
                                   {
                                     "argumentTypes": null,
-                                    "id": 5713,
+                                    "id": 5747,
                                     "name": "this",
                                     "nodeType": "Identifier",
                                     "overloadedDeclarations": [],
-                                    "referencedDeclaration": 9799,
+                                    "referencedDeclaration": 9833,
                                     "src": "974:4:26",
                                     "typeDescriptions": {
-                                      "typeIdentifier": "t_contract$_VaultRecoverable_$5755",
+                                      "typeIdentifier": "t_contract$_VaultRecoverable_$5789",
                                       "typeString": "contract VaultRecoverable"
                                     }
                                   }
@@ -2118,11 +2118,11 @@
                                 "expression": {
                                   "argumentTypes": [
                                     {
-                                      "typeIdentifier": "t_contract$_VaultRecoverable_$5755",
+                                      "typeIdentifier": "t_contract$_VaultRecoverable_$5789",
                                       "typeString": "contract VaultRecoverable"
                                     }
                                   ],
-                                  "id": 5712,
+                                  "id": 5746,
                                   "isConstant": false,
                                   "isLValue": false,
                                   "isPure": true,
@@ -2135,7 +2135,7 @@
                                   },
                                   "typeName": "address"
                                 },
-                                "id": 5714,
+                                "id": 5748,
                                 "isConstant": false,
                                 "isLValue": false,
                                 "isPure": false,
@@ -2149,7 +2149,7 @@
                                   "typeString": "address"
                                 }
                               },
-                              "id": 5715,
+                              "id": 5749,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": false,
@@ -2173,18 +2173,18 @@
                             ],
                             "expression": {
                               "argumentTypes": null,
-                              "id": 5709,
+                              "id": 5743,
                               "name": "vault",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 5695,
+                              "referencedDeclaration": 5729,
                               "src": "951:5:26",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_address",
                                 "typeString": "address"
                               }
                             },
-                            "id": 5711,
+                            "id": 5745,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -2198,7 +2198,7 @@
                               "typeString": "function (uint256)"
                             }
                           },
-                          "id": 5716,
+                          "id": 5750,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2212,7 +2212,7 @@
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 5717,
+                        "id": 5751,
                         "nodeType": "ExpressionStatement",
                         "src": "951:37:26"
                       }
@@ -2222,7 +2222,7 @@
               ]
             },
             "documentation": "@notice Send funds to recovery Vault. This contract should never receive funds,\n        but in case it does, this function allows one to recover them.\n@param _token Token balance to be sent to recovery vault.",
-            "id": 5739,
+            "id": 5773,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2230,15 +2230,15 @@
             "name": "transferToVault",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5685,
+              "id": 5719,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5684,
+                  "id": 5718,
                   "name": "_token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5739,
+                  "scope": 5773,
                   "src": "712:14:26",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2247,7 +2247,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5683,
+                    "id": 5717,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "712:7:26",
@@ -2264,20 +2264,20 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 5686,
+              "id": 5720,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "737:0:26"
             },
-            "scope": 5755,
+            "scope": 5789,
             "src": "687:446:26",
             "stateMutability": "nonpayable",
-            "superFunction": 5339,
+            "superFunction": 5373,
             "visibility": "external"
           },
           {
             "body": {
-              "id": 5748,
+              "id": 5782,
               "nodeType": "Block",
               "src": "1404:28:26",
               "statements": [
@@ -2285,7 +2285,7 @@
                   "expression": {
                     "argumentTypes": null,
                     "hexValue": "74727565",
-                    "id": 5746,
+                    "id": 5780,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -2300,15 +2300,15 @@
                     },
                     "value": "true"
                   },
-                  "functionReturnParameters": 5745,
-                  "id": 5747,
+                  "functionReturnParameters": 5779,
+                  "id": 5781,
                   "nodeType": "Return",
                   "src": "1414:11:26"
                 }
               ]
             },
             "documentation": "@dev By default deriving from AragonApp makes it recoverable\n@param token Token address that would be recovered\n@return bool whether the app allows the recovery",
-            "id": 5749,
+            "id": 5783,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2316,15 +2316,15 @@
             "name": "allowRecoverability",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5742,
+              "id": 5776,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5741,
+                  "id": 5775,
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5749,
+                  "scope": 5783,
                   "src": "1362:13:26",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2333,7 +2333,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5740,
+                    "id": 5774,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1362:7:26",
@@ -2350,15 +2350,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 5745,
+              "id": 5779,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5744,
+                  "id": 5778,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5749,
+                  "scope": 5783,
                   "src": "1398:4:26",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2367,7 +2367,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5743,
+                    "id": 5777,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1398:4:26",
@@ -2382,16 +2382,16 @@
               ],
               "src": "1397:6:26"
             },
-            "scope": 5755,
+            "scope": 5789,
             "src": "1333:99:26",
             "stateMutability": "view",
-            "superFunction": 5346,
+            "superFunction": 5380,
             "visibility": "public"
           },
           {
             "body": null,
             "documentation": null,
-            "id": 5754,
+            "id": 5788,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -2399,22 +2399,22 @@
             "name": "getRecoveryVault",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5750,
+              "id": 5784,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1542:2:26"
             },
             "payable": false,
             "returnParameters": {
-              "id": 5753,
+              "id": 5787,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5752,
+                  "id": 5786,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5754,
+                  "scope": 5788,
                   "src": "1566:7:26",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2423,7 +2423,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5751,
+                    "id": 5785,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1566:7:26",
@@ -2438,14 +2438,14 @@
               ],
               "src": "1565:9:26"
             },
-            "scope": 5755,
+            "scope": 5789,
             "src": "1517:58:26",
             "stateMutability": "view",
-            "superFunction": 5351,
+            "superFunction": 5385,
             "visibility": "public"
           }
         ],
-        "scope": 5756,
+        "scope": 5790,
         "src": "201:1376:26"
       }
     ],
@@ -2457,7 +2457,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.0-beta.2",
-  "updatedAt": "2019-01-21T14:18:49.247Z",
+  "updatedAt": "2019-01-24T14:32:35.525Z",
   "devdoc": {
     "methods": {
       "allowRecoverability(address)": {

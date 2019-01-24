@@ -97,14 +97,14 @@
     "absolutePath": "@pando/core/contracts/organism/IGenesis.sol",
     "exportedSymbols": {
       "IGenesis": [
-        8011
+        8045
       ]
     },
-    "id": 8012,
+    "id": 8046,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7987,
+        "id": 8021,
         "literals": [
           "solidity",
           "^",
@@ -115,7 +115,7 @@
         "src": "0:24:47"
       },
       {
-        "id": 7988,
+        "id": 8022,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -126,10 +126,10 @@
       {
         "absolutePath": "@pando/core/contracts/lib/Pando.sol",
         "file": "../lib/Pando.sol",
-        "id": 7989,
+        "id": 8023,
         "nodeType": "ImportDirective",
-        "scope": 8012,
-        "sourceUnit": 7986,
+        "scope": 8046,
+        "sourceUnit": 8020,
         "src": "60:26:47",
         "symbolAliases": [],
         "unitAlias": ""
@@ -140,9 +140,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 8011,
+        "id": 8045,
         "linearizedBaseContracts": [
-          8011
+          8045
         ],
         "name": "IGenesis",
         "nodeType": "ContractDefinition",
@@ -150,20 +150,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 7993,
+            "id": 8027,
             "name": "Individuate",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 7992,
+              "id": 8026,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7991,
+                  "id": 8025,
                   "indexed": true,
                   "name": "hash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7993,
+                  "scope": 8027,
                   "src": "131:20:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -172,7 +172,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7990,
+                    "id": 8024,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "131:7:47",
@@ -192,7 +192,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7998,
+            "id": 8032,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -200,31 +200,31 @@
             "name": "individuate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7996,
+              "id": 8030,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7995,
+                  "id": 8029,
                   "name": "_individuation",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7998,
+                  "scope": 8032,
                   "src": "180:35:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_IIndividuation_$7929_memory_ptr",
+                    "typeIdentifier": "t_struct$_IIndividuation_$7963_memory_ptr",
                     "typeString": "struct Pando.IIndividuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7994,
+                    "id": 8028,
                     "name": "Pando.IIndividuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7929,
+                    "referencedDeclaration": 7963,
                     "src": "180:20:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_IIndividuation_$7929_storage_ptr",
+                      "typeIdentifier": "t_struct$_IIndividuation_$7963_storage_ptr",
                       "typeString": "struct Pando.IIndividuation"
                     }
                   },
@@ -236,12 +236,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 7997,
+              "id": 8031,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "223:0:47"
             },
-            "scope": 8011,
+            "scope": 8045,
             "src": "159:65:47",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -250,7 +250,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 8005,
+            "id": 8039,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -258,15 +258,15 @@
             "name": "getIndividuation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8001,
+              "id": 8035,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8000,
+                  "id": 8034,
                   "name": "_hash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8005,
+                  "scope": 8039,
                   "src": "255:13:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -275,7 +275,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7999,
+                    "id": 8033,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "255:7:47",
@@ -292,31 +292,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8004,
+              "id": 8038,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8003,
+                  "id": 8037,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8005,
+                  "scope": 8039,
                   "src": "291:19:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                    "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                     "typeString": "struct Pando.Individuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8002,
+                    "id": 8036,
                     "name": "Pando.Individuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7934,
+                    "referencedDeclaration": 7968,
                     "src": "291:19:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                       "typeString": "struct Pando.Individuation"
                     }
                   },
@@ -326,7 +326,7 @@
               ],
               "src": "290:21:47"
             },
-            "scope": 8011,
+            "scope": 8045,
             "src": "229:83:47",
             "stateMutability": "view",
             "superFunction": null,
@@ -335,7 +335,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 8010,
+            "id": 8044,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -343,38 +343,38 @@
             "name": "getHead",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8006,
+              "id": 8040,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "333:2:47"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8009,
+              "id": 8043,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8008,
+                  "id": 8042,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8010,
+                  "scope": 8044,
                   "src": "357:19:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                    "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                     "typeString": "struct Pando.Individuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8007,
+                    "id": 8041,
                     "name": "Pando.Individuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7934,
+                    "referencedDeclaration": 7968,
                     "src": "357:19:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                       "typeString": "struct Pando.Individuation"
                     }
                   },
@@ -384,14 +384,14 @@
               ],
               "src": "356:21:47"
             },
-            "scope": 8011,
+            "scope": 8045,
             "src": "317:61:47",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 8012,
+        "scope": 8046,
         "src": "89:291:47"
       }
     ],
@@ -401,14 +401,14 @@
     "absolutePath": "@pando/core/contracts/organism/IGenesis.sol",
     "exportedSymbols": {
       "IGenesis": [
-        8011
+        8045
       ]
     },
-    "id": 8012,
+    "id": 8046,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7987,
+        "id": 8021,
         "literals": [
           "solidity",
           "^",
@@ -419,7 +419,7 @@
         "src": "0:24:47"
       },
       {
-        "id": 7988,
+        "id": 8022,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -430,10 +430,10 @@
       {
         "absolutePath": "@pando/core/contracts/lib/Pando.sol",
         "file": "../lib/Pando.sol",
-        "id": 7989,
+        "id": 8023,
         "nodeType": "ImportDirective",
-        "scope": 8012,
-        "sourceUnit": 7986,
+        "scope": 8046,
+        "sourceUnit": 8020,
         "src": "60:26:47",
         "symbolAliases": [],
         "unitAlias": ""
@@ -444,9 +444,9 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 8011,
+        "id": 8045,
         "linearizedBaseContracts": [
-          8011
+          8045
         ],
         "name": "IGenesis",
         "nodeType": "ContractDefinition",
@@ -454,20 +454,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 7993,
+            "id": 8027,
             "name": "Individuate",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 7992,
+              "id": 8026,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7991,
+                  "id": 8025,
                   "indexed": true,
                   "name": "hash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7993,
+                  "scope": 8027,
                   "src": "131:20:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -476,7 +476,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7990,
+                    "id": 8024,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "131:7:47",
@@ -496,7 +496,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 7998,
+            "id": 8032,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -504,31 +504,31 @@
             "name": "individuate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7996,
+              "id": 8030,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7995,
+                  "id": 8029,
                   "name": "_individuation",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7998,
+                  "scope": 8032,
                   "src": "180:35:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_IIndividuation_$7929_memory_ptr",
+                    "typeIdentifier": "t_struct$_IIndividuation_$7963_memory_ptr",
                     "typeString": "struct Pando.IIndividuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7994,
+                    "id": 8028,
                     "name": "Pando.IIndividuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7929,
+                    "referencedDeclaration": 7963,
                     "src": "180:20:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_IIndividuation_$7929_storage_ptr",
+                      "typeIdentifier": "t_struct$_IIndividuation_$7963_storage_ptr",
                       "typeString": "struct Pando.IIndividuation"
                     }
                   },
@@ -540,12 +540,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 7997,
+              "id": 8031,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "223:0:47"
             },
-            "scope": 8011,
+            "scope": 8045,
             "src": "159:65:47",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -554,7 +554,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 8005,
+            "id": 8039,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -562,15 +562,15 @@
             "name": "getIndividuation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8001,
+              "id": 8035,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8000,
+                  "id": 8034,
                   "name": "_hash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8005,
+                  "scope": 8039,
                   "src": "255:13:47",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -579,7 +579,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 7999,
+                    "id": 8033,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "255:7:47",
@@ -596,31 +596,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8004,
+              "id": 8038,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8003,
+                  "id": 8037,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8005,
+                  "scope": 8039,
                   "src": "291:19:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                    "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                     "typeString": "struct Pando.Individuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8002,
+                    "id": 8036,
                     "name": "Pando.Individuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7934,
+                    "referencedDeclaration": 7968,
                     "src": "291:19:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                       "typeString": "struct Pando.Individuation"
                     }
                   },
@@ -630,7 +630,7 @@
               ],
               "src": "290:21:47"
             },
-            "scope": 8011,
+            "scope": 8045,
             "src": "229:83:47",
             "stateMutability": "view",
             "superFunction": null,
@@ -639,7 +639,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 8010,
+            "id": 8044,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -647,38 +647,38 @@
             "name": "getHead",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8006,
+              "id": 8040,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "333:2:47"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8009,
+              "id": 8043,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8008,
+                  "id": 8042,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8010,
+                  "scope": 8044,
                   "src": "357:19:47",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                    "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                     "typeString": "struct Pando.Individuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8007,
+                    "id": 8041,
                     "name": "Pando.Individuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7934,
+                    "referencedDeclaration": 7968,
                     "src": "357:19:47",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                       "typeString": "struct Pando.Individuation"
                     }
                   },
@@ -688,14 +688,14 @@
               ],
               "src": "356:21:47"
             },
-            "scope": 8011,
+            "scope": 8045,
             "src": "317:61:47",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 8012,
+        "scope": 8046,
         "src": "89:291:47"
       }
     ],
@@ -707,7 +707,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.0-beta.2",
-  "updatedAt": "2019-01-21T14:18:49.273Z",
+  "updatedAt": "2019-01-24T14:32:35.434Z",
   "devdoc": {
     "methods": {}
   },

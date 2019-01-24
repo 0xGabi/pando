@@ -124,14 +124,14 @@
     "absolutePath": "@aragon/os/contracts/kernel/KernelProxy.sol",
     "exportedSymbols": {
       "KernelProxy": [
-        7518
+        7552
       ]
     },
-    "id": 7519,
+    "id": 7553,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7460,
+        "id": 7494,
         "literals": [
           "solidity",
           "0.4",
@@ -143,10 +143,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/IKernel.sol",
         "file": "./IKernel.sol",
-        "id": 7461,
+        "id": 7495,
         "nodeType": "ImportDirective",
-        "scope": 7519,
-        "sourceUnit": 6938,
+        "scope": 7553,
+        "sourceUnit": 6972,
         "src": "25:23:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -154,10 +154,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/KernelConstants.sol",
         "file": "./KernelConstants.sol",
-        "id": 7462,
+        "id": 7496,
         "nodeType": "ImportDirective",
-        "scope": 7519,
-        "sourceUnit": 7459,
+        "scope": 7553,
+        "sourceUnit": 7493,
         "src": "49:31:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -165,10 +165,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/KernelStorage.sol",
         "file": "./KernelStorage.sol",
-        "id": 7463,
+        "id": 7497,
         "nodeType": "ImportDirective",
-        "scope": 7519,
-        "sourceUnit": 7530,
+        "scope": 7553,
+        "sourceUnit": 7564,
         "src": "81:29:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -176,10 +176,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/DepositableDelegateProxy.sol",
         "file": "../common/DepositableDelegateProxy.sol",
-        "id": 7464,
+        "id": 7498,
         "nodeType": "ImportDirective",
-        "scope": 7519,
-        "sourceUnit": 5293,
+        "scope": 7553,
+        "sourceUnit": 5327,
         "src": "111:48:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -187,10 +187,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/IsContract.sol",
         "file": "../common/IsContract.sol",
-        "id": 7465,
+        "id": 7499,
         "nodeType": "ImportDirective",
-        "scope": 7519,
-        "sourceUnit": 5479,
+        "scope": 7553,
+        "sourceUnit": 5513,
         "src": "160:34:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -201,17 +201,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7466,
+              "id": 7500,
               "name": "KernelStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7529,
+              "referencedDeclaration": 7563,
               "src": "221:13:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_KernelStorage_$7529",
+                "typeIdentifier": "t_contract$_KernelStorage_$7563",
                 "typeString": "contract KernelStorage"
               }
             },
-            "id": 7467,
+            "id": 7501,
             "nodeType": "InheritanceSpecifier",
             "src": "221:13:40"
           },
@@ -219,17 +219,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7468,
+              "id": 7502,
               "name": "KernelAppIds",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7448,
+              "referencedDeclaration": 7482,
               "src": "236:12:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_KernelAppIds_$7448",
+                "typeIdentifier": "t_contract$_KernelAppIds_$7482",
                 "typeString": "contract KernelAppIds"
               }
             },
-            "id": 7469,
+            "id": 7503,
             "nodeType": "InheritanceSpecifier",
             "src": "236:12:40"
           },
@@ -237,17 +237,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7470,
+              "id": 7504,
               "name": "KernelNamespaceConstants",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7458,
+              "referencedDeclaration": 7492,
               "src": "250:24:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_KernelNamespaceConstants_$7458",
+                "typeIdentifier": "t_contract$_KernelNamespaceConstants_$7492",
                 "typeString": "contract KernelNamespaceConstants"
               }
             },
-            "id": 7471,
+            "id": 7505,
             "nodeType": "InheritanceSpecifier",
             "src": "250:24:40"
           },
@@ -255,17 +255,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7472,
+              "id": 7506,
               "name": "IsContract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5478,
+              "referencedDeclaration": 5512,
               "src": "276:10:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IsContract_$5478",
+                "typeIdentifier": "t_contract$_IsContract_$5512",
                 "typeString": "contract IsContract"
               }
             },
-            "id": 7473,
+            "id": 7507,
             "nodeType": "InheritanceSpecifier",
             "src": "276:10:40"
           },
@@ -273,52 +273,52 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7474,
+              "id": 7508,
               "name": "DepositableDelegateProxy",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5292,
+              "referencedDeclaration": 5326,
               "src": "288:24:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DepositableDelegateProxy_$5292",
+                "typeIdentifier": "t_contract$_DepositableDelegateProxy_$5326",
                 "typeString": "contract DepositableDelegateProxy"
               }
             },
-            "id": 7475,
+            "id": 7509,
             "nodeType": "InheritanceSpecifier",
             "src": "288:24:40"
           }
         ],
         "contractDependencies": [
-          5230,
-          5292,
-          5324,
-          5478,
-          7448,
-          7458,
-          7529,
-          7835
+          5264,
+          5326,
+          5358,
+          5512,
+          7482,
+          7492,
+          7563,
+          7869
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 7518,
+        "id": 7552,
         "linearizedBaseContracts": [
-          7518,
-          5292,
-          5230,
-          5478,
-          7835,
-          5324,
-          7458,
-          7448,
-          7529
+          7552,
+          5326,
+          5264,
+          5512,
+          7869,
+          5358,
+          7492,
+          7482,
+          7563
         ],
         "name": "KernelProxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 7496,
+              "id": 7530,
               "nodeType": "Block",
               "src": "624:129:40",
               "statements": [
@@ -334,14 +334,14 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 7483,
+                                "id": 7517,
                                 "name": "_kernelImpl",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7477,
+                                "referencedDeclaration": 7511,
                                 "src": "661:11:40",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_IKernel_$6937",
+                                  "typeIdentifier": "t_contract$_IKernel_$6971",
                                   "typeString": "contract IKernel"
                                 }
                               }
@@ -349,11 +349,11 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_IKernel_$6937",
+                                  "typeIdentifier": "t_contract$_IKernel_$6971",
                                   "typeString": "contract IKernel"
                                 }
                               ],
-                              "id": 7482,
+                              "id": 7516,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -366,7 +366,7 @@
                               },
                               "typeName": "address"
                             },
-                            "id": 7484,
+                            "id": 7518,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -388,18 +388,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 7481,
+                          "id": 7515,
                           "name": "isContract",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5477,
+                          "referencedDeclaration": 5511,
                           "src": "642:10:40",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                             "typeString": "function (address) view returns (bool)"
                           }
                         },
-                        "id": 7485,
+                        "id": 7519,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -421,21 +421,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 7480,
+                      "id": 7514,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        9763,
-                        9764
+                        9797,
+                        9798
                       ],
-                      "referencedDeclaration": 9763,
+                      "referencedDeclaration": 9797,
                       "src": "634:7:40",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 7486,
+                    "id": 7520,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -449,14 +449,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 7487,
+                  "id": 7521,
                   "nodeType": "ExpressionStatement",
                   "src": "634:41:40"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7494,
+                    "id": 7528,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -467,25 +467,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 7488,
+                          "id": 7522,
                           "name": "apps",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7526,
+                          "referencedDeclaration": 7560,
                           "src": "685:4:40",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_bytes32_$_t_address_$_$",
                             "typeString": "mapping(bytes32 => mapping(bytes32 => address))"
                           }
                         },
-                        "id": 7491,
+                        "id": 7525,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 7489,
+                          "id": 7523,
                           "name": "KERNEL_CORE_NAMESPACE",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7451,
+                          "referencedDeclaration": 7485,
                           "src": "690:21:40",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -503,14 +503,14 @@
                           "typeString": "mapping(bytes32 => address)"
                         }
                       },
-                      "id": 7492,
+                      "id": 7526,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 7490,
+                        "id": 7524,
                         "name": "KERNEL_CORE_APP_ID",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7441,
+                        "referencedDeclaration": 7475,
                         "src": "713:18:40",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -532,14 +532,14 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 7493,
+                      "id": 7527,
                       "name": "_kernelImpl",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7477,
+                      "referencedDeclaration": 7511,
                       "src": "735:11:40",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IKernel_$6937",
+                        "typeIdentifier": "t_contract$_IKernel_$6971",
                         "typeString": "contract IKernel"
                       }
                     },
@@ -549,14 +549,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 7495,
+                  "id": 7529,
                   "nodeType": "ExpressionStatement",
                   "src": "685:61:40"
                 }
               ]
             },
             "documentation": "@dev KernelProxy is a proxy contract to a kernel implementation. The implementation\n     can update the reference, which effectively upgrades the contract\n@param _kernelImpl Address of the contract used as implementation for kernel",
-            "id": 7497,
+            "id": 7531,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -564,31 +564,31 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7478,
+              "id": 7512,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7477,
+                  "id": 7511,
                   "name": "_kernelImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7497,
+                  "scope": 7531,
                   "src": "596:19:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IKernel_$6937",
+                    "typeIdentifier": "t_contract$_IKernel_$6971",
                     "typeString": "contract IKernel"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7476,
+                    "id": 7510,
                     "name": "IKernel",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6937,
+                    "referencedDeclaration": 6971,
                     "src": "596:7:40",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IKernel_$6937",
+                      "typeIdentifier": "t_contract$_IKernel_$6971",
                       "typeString": "contract IKernel"
                     }
                   },
@@ -600,12 +600,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 7479,
+              "id": 7513,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "624:0:40"
             },
-            "scope": 7518,
+            "scope": 7552,
             "src": "584:169:40",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -613,33 +613,33 @@
           },
           {
             "body": {
-              "id": 7504,
+              "id": 7538,
               "nodeType": "Block",
               "src": "917:35:40",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7502,
+                    "id": 7536,
                     "name": "UPGRADEABLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7824,
+                    "referencedDeclaration": 7858,
                     "src": "934:11:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 7501,
-                  "id": 7503,
+                  "functionReturnParameters": 7535,
+                  "id": 7537,
                   "nodeType": "Return",
                   "src": "927:18:40"
                 }
               ]
             },
             "documentation": "@dev ERC897, whether it is a forwarding (1) or an upgradeable (2) proxy",
-            "id": 7505,
+            "id": 7539,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -647,22 +647,22 @@
             "name": "proxyType",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7498,
+              "id": 7532,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "872:2:40"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7501,
+              "id": 7535,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7500,
+                  "id": 7534,
                   "name": "proxyTypeId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7505,
+                  "scope": 7539,
                   "src": "896:19:40",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -671,7 +671,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7499,
+                    "id": 7533,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "896:7:40",
@@ -686,15 +686,15 @@
               ],
               "src": "895:21:40"
             },
-            "scope": 7518,
+            "scope": 7552,
             "src": "854:98:40",
             "stateMutability": "pure",
-            "superFunction": 7829,
+            "superFunction": 7863,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 7516,
+              "id": 7550,
               "nodeType": "Block",
               "src": "1094:71:40",
               "statements": [
@@ -705,25 +705,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 7510,
+                        "id": 7544,
                         "name": "apps",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7526,
+                        "referencedDeclaration": 7560,
                         "src": "1111:4:40",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_bytes32_$_t_address_$_$",
                           "typeString": "mapping(bytes32 => mapping(bytes32 => address))"
                         }
                       },
-                      "id": 7512,
+                      "id": 7546,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 7511,
+                        "id": 7545,
                         "name": "KERNEL_CORE_NAMESPACE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7451,
+                        "referencedDeclaration": 7485,
                         "src": "1116:21:40",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -741,14 +741,14 @@
                         "typeString": "mapping(bytes32 => address)"
                       }
                     },
-                    "id": 7514,
+                    "id": 7548,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 7513,
+                      "id": 7547,
                       "name": "KERNEL_CORE_APP_ID",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7441,
+                      "referencedDeclaration": 7475,
                       "src": "1139:18:40",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -766,15 +766,15 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 7509,
-                  "id": 7515,
+                  "functionReturnParameters": 7543,
+                  "id": 7549,
                   "nodeType": "Return",
                   "src": "1104:54:40"
                 }
               ]
             },
             "documentation": "@dev ERC897, the address the proxy would delegate calls to",
-            "id": 7517,
+            "id": 7551,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -782,22 +782,22 @@
             "name": "implementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7506,
+              "id": 7540,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1061:2:40"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7509,
+              "id": 7543,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7508,
+                  "id": 7542,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7517,
+                  "scope": 7551,
                   "src": "1085:7:40",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -806,7 +806,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7507,
+                    "id": 7541,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1085:7:40",
@@ -821,14 +821,14 @@
               ],
               "src": "1084:9:40"
             },
-            "scope": 7518,
+            "scope": 7552,
             "src": "1038:127:40",
             "stateMutability": "view",
-            "superFunction": 7834,
+            "superFunction": 7868,
             "visibility": "public"
           }
         ],
-        "scope": 7519,
+        "scope": 7553,
         "src": "197:970:40"
       }
     ],
@@ -838,14 +838,14 @@
     "absolutePath": "@aragon/os/contracts/kernel/KernelProxy.sol",
     "exportedSymbols": {
       "KernelProxy": [
-        7518
+        7552
       ]
     },
-    "id": 7519,
+    "id": 7553,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 7460,
+        "id": 7494,
         "literals": [
           "solidity",
           "0.4",
@@ -857,10 +857,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/IKernel.sol",
         "file": "./IKernel.sol",
-        "id": 7461,
+        "id": 7495,
         "nodeType": "ImportDirective",
-        "scope": 7519,
-        "sourceUnit": 6938,
+        "scope": 7553,
+        "sourceUnit": 6972,
         "src": "25:23:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -868,10 +868,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/KernelConstants.sol",
         "file": "./KernelConstants.sol",
-        "id": 7462,
+        "id": 7496,
         "nodeType": "ImportDirective",
-        "scope": 7519,
-        "sourceUnit": 7459,
+        "scope": 7553,
+        "sourceUnit": 7493,
         "src": "49:31:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -879,10 +879,10 @@
       {
         "absolutePath": "@aragon/os/contracts/kernel/KernelStorage.sol",
         "file": "./KernelStorage.sol",
-        "id": 7463,
+        "id": 7497,
         "nodeType": "ImportDirective",
-        "scope": 7519,
-        "sourceUnit": 7530,
+        "scope": 7553,
+        "sourceUnit": 7564,
         "src": "81:29:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -890,10 +890,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/DepositableDelegateProxy.sol",
         "file": "../common/DepositableDelegateProxy.sol",
-        "id": 7464,
+        "id": 7498,
         "nodeType": "ImportDirective",
-        "scope": 7519,
-        "sourceUnit": 5293,
+        "scope": 7553,
+        "sourceUnit": 5327,
         "src": "111:48:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -901,10 +901,10 @@
       {
         "absolutePath": "@aragon/os/contracts/common/IsContract.sol",
         "file": "../common/IsContract.sol",
-        "id": 7465,
+        "id": 7499,
         "nodeType": "ImportDirective",
-        "scope": 7519,
-        "sourceUnit": 5479,
+        "scope": 7553,
+        "sourceUnit": 5513,
         "src": "160:34:40",
         "symbolAliases": [],
         "unitAlias": ""
@@ -915,17 +915,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7466,
+              "id": 7500,
               "name": "KernelStorage",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7529,
+              "referencedDeclaration": 7563,
               "src": "221:13:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_KernelStorage_$7529",
+                "typeIdentifier": "t_contract$_KernelStorage_$7563",
                 "typeString": "contract KernelStorage"
               }
             },
-            "id": 7467,
+            "id": 7501,
             "nodeType": "InheritanceSpecifier",
             "src": "221:13:40"
           },
@@ -933,17 +933,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7468,
+              "id": 7502,
               "name": "KernelAppIds",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7448,
+              "referencedDeclaration": 7482,
               "src": "236:12:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_KernelAppIds_$7448",
+                "typeIdentifier": "t_contract$_KernelAppIds_$7482",
                 "typeString": "contract KernelAppIds"
               }
             },
-            "id": 7469,
+            "id": 7503,
             "nodeType": "InheritanceSpecifier",
             "src": "236:12:40"
           },
@@ -951,17 +951,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7470,
+              "id": 7504,
               "name": "KernelNamespaceConstants",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7458,
+              "referencedDeclaration": 7492,
               "src": "250:24:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_KernelNamespaceConstants_$7458",
+                "typeIdentifier": "t_contract$_KernelNamespaceConstants_$7492",
                 "typeString": "contract KernelNamespaceConstants"
               }
             },
-            "id": 7471,
+            "id": 7505,
             "nodeType": "InheritanceSpecifier",
             "src": "250:24:40"
           },
@@ -969,17 +969,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7472,
+              "id": 7506,
               "name": "IsContract",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5478,
+              "referencedDeclaration": 5512,
               "src": "276:10:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IsContract_$5478",
+                "typeIdentifier": "t_contract$_IsContract_$5512",
                 "typeString": "contract IsContract"
               }
             },
-            "id": 7473,
+            "id": 7507,
             "nodeType": "InheritanceSpecifier",
             "src": "276:10:40"
           },
@@ -987,52 +987,52 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 7474,
+              "id": 7508,
               "name": "DepositableDelegateProxy",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5292,
+              "referencedDeclaration": 5326,
               "src": "288:24:40",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_DepositableDelegateProxy_$5292",
+                "typeIdentifier": "t_contract$_DepositableDelegateProxy_$5326",
                 "typeString": "contract DepositableDelegateProxy"
               }
             },
-            "id": 7475,
+            "id": 7509,
             "nodeType": "InheritanceSpecifier",
             "src": "288:24:40"
           }
         ],
         "contractDependencies": [
-          5230,
-          5292,
-          5324,
-          5478,
-          7448,
-          7458,
-          7529,
-          7835
+          5264,
+          5326,
+          5358,
+          5512,
+          7482,
+          7492,
+          7563,
+          7869
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 7518,
+        "id": 7552,
         "linearizedBaseContracts": [
-          7518,
-          5292,
-          5230,
-          5478,
-          7835,
-          5324,
-          7458,
-          7448,
-          7529
+          7552,
+          5326,
+          5264,
+          5512,
+          7869,
+          5358,
+          7492,
+          7482,
+          7563
         ],
         "name": "KernelProxy",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 7496,
+              "id": 7530,
               "nodeType": "Block",
               "src": "624:129:40",
               "statements": [
@@ -1048,14 +1048,14 @@
                             "arguments": [
                               {
                                 "argumentTypes": null,
-                                "id": 7483,
+                                "id": 7517,
                                 "name": "_kernelImpl",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 7477,
+                                "referencedDeclaration": 7511,
                                 "src": "661:11:40",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_contract$_IKernel_$6937",
+                                  "typeIdentifier": "t_contract$_IKernel_$6971",
                                   "typeString": "contract IKernel"
                                 }
                               }
@@ -1063,11 +1063,11 @@
                             "expression": {
                               "argumentTypes": [
                                 {
-                                  "typeIdentifier": "t_contract$_IKernel_$6937",
+                                  "typeIdentifier": "t_contract$_IKernel_$6971",
                                   "typeString": "contract IKernel"
                                 }
                               ],
-                              "id": 7482,
+                              "id": 7516,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -1080,7 +1080,7 @@
                               },
                               "typeName": "address"
                             },
-                            "id": 7484,
+                            "id": 7518,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": false,
@@ -1102,18 +1102,18 @@
                               "typeString": "address"
                             }
                           ],
-                          "id": 7481,
+                          "id": 7515,
                           "name": "isContract",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 5477,
+                          "referencedDeclaration": 5511,
                           "src": "642:10:40",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_internal_view$_t_address_$returns$_t_bool_$",
                             "typeString": "function (address) view returns (bool)"
                           }
                         },
-                        "id": 7485,
+                        "id": 7519,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1135,21 +1135,21 @@
                           "typeString": "bool"
                         }
                       ],
-                      "id": 7480,
+                      "id": 7514,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        9763,
-                        9764
+                        9797,
+                        9798
                       ],
-                      "referencedDeclaration": 9763,
+                      "referencedDeclaration": 9797,
                       "src": "634:7:40",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$returns$__$",
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 7486,
+                    "id": 7520,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1163,14 +1163,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 7487,
+                  "id": 7521,
                   "nodeType": "ExpressionStatement",
                   "src": "634:41:40"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7494,
+                    "id": 7528,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1181,25 +1181,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 7488,
+                          "id": 7522,
                           "name": "apps",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7526,
+                          "referencedDeclaration": 7560,
                           "src": "685:4:40",
                           "typeDescriptions": {
                             "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_bytes32_$_t_address_$_$",
                             "typeString": "mapping(bytes32 => mapping(bytes32 => address))"
                           }
                         },
-                        "id": 7491,
+                        "id": 7525,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 7489,
+                          "id": 7523,
                           "name": "KERNEL_CORE_NAMESPACE",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 7451,
+                          "referencedDeclaration": 7485,
                           "src": "690:21:40",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -1217,14 +1217,14 @@
                           "typeString": "mapping(bytes32 => address)"
                         }
                       },
-                      "id": 7492,
+                      "id": 7526,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 7490,
+                        "id": 7524,
                         "name": "KERNEL_CORE_APP_ID",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7441,
+                        "referencedDeclaration": 7475,
                         "src": "713:18:40",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -1246,14 +1246,14 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 7493,
+                      "id": 7527,
                       "name": "_kernelImpl",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7477,
+                      "referencedDeclaration": 7511,
                       "src": "735:11:40",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_IKernel_$6937",
+                        "typeIdentifier": "t_contract$_IKernel_$6971",
                         "typeString": "contract IKernel"
                       }
                     },
@@ -1263,14 +1263,14 @@
                       "typeString": "address"
                     }
                   },
-                  "id": 7495,
+                  "id": 7529,
                   "nodeType": "ExpressionStatement",
                   "src": "685:61:40"
                 }
               ]
             },
             "documentation": "@dev KernelProxy is a proxy contract to a kernel implementation. The implementation\n     can update the reference, which effectively upgrades the contract\n@param _kernelImpl Address of the contract used as implementation for kernel",
-            "id": 7497,
+            "id": 7531,
             "implemented": true,
             "isConstructor": true,
             "isDeclaredConst": false,
@@ -1278,31 +1278,31 @@
             "name": "",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7478,
+              "id": 7512,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7477,
+                  "id": 7511,
                   "name": "_kernelImpl",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7497,
+                  "scope": 7531,
                   "src": "596:19:40",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_IKernel_$6937",
+                    "typeIdentifier": "t_contract$_IKernel_$6971",
                     "typeString": "contract IKernel"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 7476,
+                    "id": 7510,
                     "name": "IKernel",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 6937,
+                    "referencedDeclaration": 6971,
                     "src": "596:7:40",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_IKernel_$6937",
+                      "typeIdentifier": "t_contract$_IKernel_$6971",
                       "typeString": "contract IKernel"
                     }
                   },
@@ -1314,12 +1314,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 7479,
+              "id": 7513,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "624:0:40"
             },
-            "scope": 7518,
+            "scope": 7552,
             "src": "584:169:40",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -1327,33 +1327,33 @@
           },
           {
             "body": {
-              "id": 7504,
+              "id": 7538,
               "nodeType": "Block",
               "src": "917:35:40",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 7502,
+                    "id": 7536,
                     "name": "UPGRADEABLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 7824,
+                    "referencedDeclaration": 7858,
                     "src": "934:11:40",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 7501,
-                  "id": 7503,
+                  "functionReturnParameters": 7535,
+                  "id": 7537,
                   "nodeType": "Return",
                   "src": "927:18:40"
                 }
               ]
             },
             "documentation": "@dev ERC897, whether it is a forwarding (1) or an upgradeable (2) proxy",
-            "id": 7505,
+            "id": 7539,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1361,22 +1361,22 @@
             "name": "proxyType",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7498,
+              "id": 7532,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "872:2:40"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7501,
+              "id": 7535,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7500,
+                  "id": 7534,
                   "name": "proxyTypeId",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7505,
+                  "scope": 7539,
                   "src": "896:19:40",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1385,7 +1385,7 @@
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 7499,
+                    "id": 7533,
                     "name": "uint256",
                     "nodeType": "ElementaryTypeName",
                     "src": "896:7:40",
@@ -1400,15 +1400,15 @@
               ],
               "src": "895:21:40"
             },
-            "scope": 7518,
+            "scope": 7552,
             "src": "854:98:40",
             "stateMutability": "pure",
-            "superFunction": 7829,
+            "superFunction": 7863,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 7516,
+              "id": 7550,
               "nodeType": "Block",
               "src": "1094:71:40",
               "statements": [
@@ -1419,25 +1419,25 @@
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 7510,
+                        "id": 7544,
                         "name": "apps",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7526,
+                        "referencedDeclaration": 7560,
                         "src": "1111:4:40",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_bytes32_$_t_mapping$_t_bytes32_$_t_address_$_$",
                           "typeString": "mapping(bytes32 => mapping(bytes32 => address))"
                         }
                       },
-                      "id": 7512,
+                      "id": 7546,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 7511,
+                        "id": 7545,
                         "name": "KERNEL_CORE_NAMESPACE",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7451,
+                        "referencedDeclaration": 7485,
                         "src": "1116:21:40",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -1455,14 +1455,14 @@
                         "typeString": "mapping(bytes32 => address)"
                       }
                     },
-                    "id": 7514,
+                    "id": 7548,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 7513,
+                      "id": 7547,
                       "name": "KERNEL_CORE_APP_ID",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 7441,
+                      "referencedDeclaration": 7475,
                       "src": "1139:18:40",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -1480,15 +1480,15 @@
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 7509,
-                  "id": 7515,
+                  "functionReturnParameters": 7543,
+                  "id": 7549,
                   "nodeType": "Return",
                   "src": "1104:54:40"
                 }
               ]
             },
             "documentation": "@dev ERC897, the address the proxy would delegate calls to",
-            "id": 7517,
+            "id": 7551,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1496,22 +1496,22 @@
             "name": "implementation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 7506,
+              "id": 7540,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1061:2:40"
             },
             "payable": false,
             "returnParameters": {
-              "id": 7509,
+              "id": 7543,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 7508,
+                  "id": 7542,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 7517,
+                  "scope": 7551,
                   "src": "1085:7:40",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1520,7 +1520,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 7507,
+                    "id": 7541,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1085:7:40",
@@ -1535,14 +1535,14 @@
               ],
               "src": "1084:9:40"
             },
-            "scope": 7518,
+            "scope": 7552,
             "src": "1038:127:40",
             "stateMutability": "view",
-            "superFunction": 7834,
+            "superFunction": 7868,
             "visibility": "public"
           }
         ],
-        "scope": 7519,
+        "scope": 7553,
         "src": "197:970:40"
       }
     ],
@@ -1554,7 +1554,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.0-beta.2",
-  "updatedAt": "2019-01-21T14:18:49.271Z",
+  "updatedAt": "2019-01-24T14:32:35.483Z",
   "devdoc": {
     "methods": {
       "implementation()": {

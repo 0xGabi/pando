@@ -59,14 +59,14 @@
     "absolutePath": "@aragon/os/contracts/common/IVaultRecoverable.sol",
     "exportedSymbols": {
       "IVaultRecoverable": [
-        5352
+        5386
       ]
     },
-    "id": 5353,
+    "id": 5387,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5334,
+        "id": 5368,
         "literals": [
           "solidity",
           "^",
@@ -82,9 +82,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5352,
+        "id": 5386,
         "linearizedBaseContracts": [
-          5352
+          5386
         ],
         "name": "IVaultRecoverable",
         "nodeType": "ContractDefinition",
@@ -92,7 +92,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5339,
+            "id": 5373,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -100,15 +100,15 @@
             "name": "transferToVault",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5337,
+              "id": 5371,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5336,
+                  "id": 5370,
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5339,
+                  "scope": 5373,
                   "src": "130:13:19",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -117,7 +117,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5335,
+                    "id": 5369,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "130:7:19",
@@ -134,12 +134,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 5338,
+              "id": 5372,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "153:0:19"
             },
-            "scope": 5352,
+            "scope": 5386,
             "src": "105:49:19",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -148,7 +148,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5346,
+            "id": 5380,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -156,15 +156,15 @@
             "name": "allowRecoverability",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5342,
+              "id": 5376,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5341,
+                  "id": 5375,
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5346,
+                  "scope": 5380,
                   "src": "189:13:19",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -173,7 +173,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5340,
+                    "id": 5374,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "189:7:19",
@@ -190,15 +190,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 5345,
+              "id": 5379,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5344,
+                  "id": 5378,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5346,
+                  "scope": 5380,
                   "src": "227:4:19",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -207,7 +207,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5343,
+                    "id": 5377,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "227:4:19",
@@ -222,7 +222,7 @@
               ],
               "src": "226:6:19"
             },
-            "scope": 5352,
+            "scope": 5386,
             "src": "160:73:19",
             "stateMutability": "view",
             "superFunction": null,
@@ -231,7 +231,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5351,
+            "id": 5385,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -239,22 +239,22 @@
             "name": "getRecoveryVault",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5347,
+              "id": 5381,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "263:2:19"
             },
             "payable": false,
             "returnParameters": {
-              "id": 5350,
+              "id": 5384,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5349,
+                  "id": 5383,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5351,
+                  "scope": 5385,
                   "src": "289:7:19",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -263,7 +263,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5348,
+                    "id": 5382,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "289:7:19",
@@ -278,14 +278,14 @@
               ],
               "src": "288:9:19"
             },
-            "scope": 5352,
+            "scope": 5386,
             "src": "238:60:19",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 5353,
+        "scope": 5387,
         "src": "71:229:19"
       }
     ],
@@ -295,14 +295,14 @@
     "absolutePath": "@aragon/os/contracts/common/IVaultRecoverable.sol",
     "exportedSymbols": {
       "IVaultRecoverable": [
-        5352
+        5386
       ]
     },
-    "id": 5353,
+    "id": 5387,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 5334,
+        "id": 5368,
         "literals": [
           "solidity",
           "^",
@@ -318,9 +318,9 @@
         "contractKind": "interface",
         "documentation": null,
         "fullyImplemented": false,
-        "id": 5352,
+        "id": 5386,
         "linearizedBaseContracts": [
-          5352
+          5386
         ],
         "name": "IVaultRecoverable",
         "nodeType": "ContractDefinition",
@@ -328,7 +328,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5339,
+            "id": 5373,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -336,15 +336,15 @@
             "name": "transferToVault",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5337,
+              "id": 5371,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5336,
+                  "id": 5370,
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5339,
+                  "scope": 5373,
                   "src": "130:13:19",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -353,7 +353,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5335,
+                    "id": 5369,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "130:7:19",
@@ -370,12 +370,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 5338,
+              "id": 5372,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "153:0:19"
             },
-            "scope": 5352,
+            "scope": 5386,
             "src": "105:49:19",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -384,7 +384,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5346,
+            "id": 5380,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -392,15 +392,15 @@
             "name": "allowRecoverability",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5342,
+              "id": 5376,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5341,
+                  "id": 5375,
                   "name": "token",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5346,
+                  "scope": 5380,
                   "src": "189:13:19",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -409,7 +409,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5340,
+                    "id": 5374,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "189:7:19",
@@ -426,15 +426,15 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 5345,
+              "id": 5379,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5344,
+                  "id": 5378,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5346,
+                  "scope": 5380,
                   "src": "227:4:19",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -443,7 +443,7 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 5343,
+                    "id": 5377,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "227:4:19",
@@ -458,7 +458,7 @@
               ],
               "src": "226:6:19"
             },
-            "scope": 5352,
+            "scope": 5386,
             "src": "160:73:19",
             "stateMutability": "view",
             "superFunction": null,
@@ -467,7 +467,7 @@
           {
             "body": null,
             "documentation": null,
-            "id": 5351,
+            "id": 5385,
             "implemented": false,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -475,22 +475,22 @@
             "name": "getRecoveryVault",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 5347,
+              "id": 5381,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "263:2:19"
             },
             "payable": false,
             "returnParameters": {
-              "id": 5350,
+              "id": 5384,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 5349,
+                  "id": 5383,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 5351,
+                  "scope": 5385,
                   "src": "289:7:19",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -499,7 +499,7 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 5348,
+                    "id": 5382,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "289:7:19",
@@ -514,14 +514,14 @@
               ],
               "src": "288:9:19"
             },
-            "scope": 5352,
+            "scope": 5386,
             "src": "238:60:19",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 5353,
+        "scope": 5387,
         "src": "71:229:19"
       }
     ],
@@ -533,7 +533,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.0-beta.2",
-  "updatedAt": "2019-01-21T14:18:49.245Z",
+  "updatedAt": "2019-01-24T14:32:35.431Z",
   "devdoc": {
     "methods": {}
   },

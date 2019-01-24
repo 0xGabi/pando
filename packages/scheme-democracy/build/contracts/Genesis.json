@@ -380,14 +380,14 @@
     "absolutePath": "@pando/organism/contracts/Genesis.sol",
     "exportedSymbols": {
       "Genesis": [
-        8470
+        8504
       ]
     },
-    "id": 8471,
+    "id": 8505,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8351,
+        "id": 8385,
         "literals": [
           "solidity",
           "^",
@@ -398,7 +398,7 @@
         "src": "0:24:51"
       },
       {
-        "id": 8352,
+        "id": 8386,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -409,10 +409,10 @@
       {
         "absolutePath": "@aragon/os/contracts/apps/AragonApp.sol",
         "file": "@aragon/os/contracts/apps/AragonApp.sol",
-        "id": 8353,
+        "id": 8387,
         "nodeType": "ImportDirective",
-        "scope": 8471,
-        "sourceUnit": 5187,
+        "scope": 8505,
+        "sourceUnit": 5221,
         "src": "60:49:51",
         "symbolAliases": [],
         "unitAlias": ""
@@ -420,10 +420,10 @@
       {
         "absolutePath": "@pando/core/contracts/lib/Pando.sol",
         "file": "@pando/core/contracts/lib/Pando.sol",
-        "id": 8354,
+        "id": 8388,
         "nodeType": "ImportDirective",
-        "scope": 8471,
-        "sourceUnit": 7986,
+        "scope": 8505,
+        "sourceUnit": 8020,
         "src": "110:45:51",
         "symbolAliases": [],
         "unitAlias": ""
@@ -431,10 +431,10 @@
       {
         "absolutePath": "@pando/core/contracts/organism/IGenesis.sol",
         "file": "@pando/core/contracts/organism/IGenesis.sol",
-        "id": 8355,
+        "id": 8389,
         "nodeType": "ImportDirective",
-        "scope": 8471,
-        "sourceUnit": 8012,
+        "scope": 8505,
+        "sourceUnit": 8046,
         "src": "156:53:51",
         "symbolAliases": [],
         "unitAlias": ""
@@ -445,17 +445,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 8356,
+              "id": 8390,
               "name": "IGenesis",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8011,
+              "referencedDeclaration": 8045,
               "src": "232:8:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IGenesis_$8011",
+                "typeIdentifier": "t_contract$_IGenesis_$8045",
                 "typeString": "contract IGenesis"
               }
             },
-            "id": 8357,
+            "id": 8391,
             "nodeType": "InheritanceSpecifier",
             "src": "232:8:51"
           },
@@ -463,69 +463,69 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 8358,
+              "id": 8392,
               "name": "AragonApp",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5186,
+              "referencedDeclaration": 5220,
               "src": "242:9:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AragonApp_$5186",
+                "typeIdentifier": "t_contract$_AragonApp_$5220",
                 "typeString": "contract AragonApp"
               }
             },
-            "id": 8359,
+            "id": 8393,
             "nodeType": "InheritanceSpecifier",
             "src": "242:9:51"
           }
         ],
         "contractDependencies": [
-          4689,
-          5058,
-          5186,
-          5199,
-          5332,
-          5352,
-          5450,
-          5478,
-          5511,
-          5558,
-          5755,
-          6165,
-          6192,
-          7458,
-          8011
+          4723,
+          5092,
+          5220,
+          5233,
+          5366,
+          5386,
+          5484,
+          5512,
+          5545,
+          5592,
+          5789,
+          6199,
+          6226,
+          7492,
+          8045
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 8470,
+        "id": 8504,
         "linearizedBaseContracts": [
-          8470,
-          5186,
-          4689,
-          6165,
-          7458,
-          6192,
-          5755,
-          5478,
-          5332,
-          5352,
-          5199,
-          5511,
-          5450,
-          5558,
-          5058,
-          8011
+          8504,
+          5220,
+          4723,
+          6199,
+          7492,
+          6226,
+          5789,
+          5512,
+          5366,
+          5386,
+          5233,
+          5545,
+          5484,
+          5592,
+          5092,
+          8045
         ],
         "name": "Genesis",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 8364,
+            "id": 8398,
             "name": "INDIVIDUATE_ROLE",
             "nodeType": "VariableDeclaration",
-            "scope": 8470,
+            "scope": 8504,
             "src": "258:72:51",
             "stateVariable": true,
             "storageLocation": "default",
@@ -534,7 +534,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 8360,
+              "id": 8394,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "258:7:51",
@@ -549,7 +549,7 @@
                 {
                   "argumentTypes": null,
                   "hexValue": "494e4449564944554154455f524f4c45",
-                  "id": 8362,
+                  "id": 8396,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -572,18 +572,18 @@
                     "typeString": "literal_string \"INDIVIDUATE_ROLE\""
                   }
                 ],
-                "id": 8361,
+                "id": 8395,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 9754,
+                "referencedDeclaration": 9788,
                 "src": "301:9:51",
                 "typeDescriptions": {
                   "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
                   "typeString": "function () pure returns (bytes32)"
                 }
               },
-              "id": 8363,
+              "id": 8397,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -601,26 +601,26 @@
           },
           {
             "constant": false,
-            "id": 8366,
+            "id": 8400,
             "name": "pando",
             "nodeType": "VariableDeclaration",
-            "scope": 8470,
+            "scope": 8504,
             "src": "337:18:51",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Pando_$7985",
+              "typeIdentifier": "t_contract$_Pando_$8019",
               "typeString": "contract Pando"
             },
             "typeName": {
               "contractScope": null,
-              "id": 8365,
+              "id": 8399,
               "name": "Pando",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7985,
+              "referencedDeclaration": 8019,
               "src": "337:5:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Pando_$7985",
+                "typeIdentifier": "t_contract$_Pando_$8019",
                 "typeString": "contract Pando"
               }
             },
@@ -629,10 +629,10 @@
           },
           {
             "constant": false,
-            "id": 8368,
+            "id": 8402,
             "name": "head",
             "nodeType": "VariableDeclaration",
-            "scope": 8470,
+            "scope": 8504,
             "src": "361:19:51",
             "stateVariable": true,
             "storageLocation": "default",
@@ -641,7 +641,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 8367,
+              "id": 8401,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "361:7:51",
@@ -655,21 +655,21 @@
           },
           {
             "constant": false,
-            "id": 8372,
+            "id": 8406,
             "name": "individuations",
             "nodeType": "VariableDeclaration",
-            "scope": 8470,
+            "scope": 8504,
             "src": "386:61:51",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
               "typeString": "mapping(bytes32 => struct Pando.Individuation)"
             },
             "typeName": {
-              "id": 8371,
+              "id": 8405,
               "keyType": {
-                "id": 8369,
+                "id": 8403,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "394:7:51",
@@ -681,18 +681,18 @@
               "nodeType": "Mapping",
               "src": "386:39:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
                 "typeString": "mapping(bytes32 => struct Pando.Individuation)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 8370,
+                "id": 8404,
                 "name": "Pando.Individuation",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 7934,
+                "referencedDeclaration": 7968,
                 "src": "405:19:51",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                  "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                   "typeString": "struct Pando.Individuation"
                 }
               }
@@ -703,20 +703,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 8376,
+            "id": 8410,
             "name": "Individuate",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 8375,
+              "id": 8409,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8374,
+                  "id": 8408,
                   "indexed": false,
                   "name": "hash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8376,
+                  "scope": 8410,
                   "src": "472:12:51",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -725,7 +725,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 8373,
+                    "id": 8407,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "472:7:51",
@@ -744,7 +744,7 @@
           },
           {
             "body": {
-              "id": 8390,
+              "id": 8424,
               "nodeType": "Block",
               "src": "545:54:51",
               "statements": [
@@ -754,18 +754,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 8383,
+                      "id": 8417,
                       "name": "initialized",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5435,
+                      "referencedDeclaration": 5469,
                       "src": "555:11:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 8384,
+                    "id": 8418,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -779,28 +779,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8385,
+                  "id": 8419,
                   "nodeType": "ExpressionStatement",
                   "src": "555:13:51"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8388,
+                    "id": 8422,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8386,
+                      "id": 8420,
                       "name": "pando",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8366,
+                      "referencedDeclaration": 8400,
                       "src": "578:5:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Pando_$7985",
+                        "typeIdentifier": "t_contract$_Pando_$8019",
                         "typeString": "contract Pando"
                       }
                     },
@@ -808,45 +808,45 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 8387,
+                      "id": 8421,
                       "name": "_pando",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8378,
+                      "referencedDeclaration": 8412,
                       "src": "586:6:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Pando_$7985",
+                        "typeIdentifier": "t_contract$_Pando_$8019",
                         "typeString": "contract Pando"
                       }
                     },
                     "src": "578:14:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Pando_$7985",
+                      "typeIdentifier": "t_contract$_Pando_$8019",
                       "typeString": "contract Pando"
                     }
                   },
-                  "id": 8389,
+                  "id": 8423,
                   "nodeType": "ExpressionStatement",
                   "src": "578:14:51"
                 }
               ]
             },
             "documentation": null,
-            "id": 8391,
+            "id": 8425,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 8381,
+                "id": 8415,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8380,
+                  "id": 8414,
                   "name": "onlyInit",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 5382,
+                  "referencedDeclaration": 5416,
                   "src": "536:8:51",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -860,31 +860,31 @@
             "name": "initialize",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8379,
+              "id": 8413,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8378,
+                  "id": 8412,
                   "name": "_pando",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8391,
+                  "scope": 8425,
                   "src": "513:12:51",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Pando_$7985",
+                    "typeIdentifier": "t_contract$_Pando_$8019",
                     "typeString": "contract Pando"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8377,
+                    "id": 8411,
                     "name": "Pando",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7985,
+                    "referencedDeclaration": 8019,
                     "src": "513:5:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Pando_$7985",
+                      "typeIdentifier": "t_contract$_Pando_$8019",
                       "typeString": "contract Pando"
                     }
                   },
@@ -896,12 +896,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8382,
+              "id": 8416,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "545:0:51"
             },
-            "scope": 8470,
+            "scope": 8504,
             "src": "493:106:51",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -909,37 +909,37 @@
           },
           {
             "body": {
-              "id": 8442,
+              "id": 8476,
               "nodeType": "Block",
               "src": "693:391:51",
               "statements": [
                 {
                   "assignments": [
-                    8402
+                    8436
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8402,
+                      "id": 8436,
                       "name": "individuation",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8443,
+                      "scope": 8477,
                       "src": "703:40:51",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                        "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                         "typeString": "struct Pando.Individuation"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 8401,
+                        "id": 8435,
                         "name": "Pando.Individuation",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 7934,
+                        "referencedDeclaration": 7968,
                         "src": "703:19:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                           "typeString": "struct Pando.Individuation"
                         }
                       },
@@ -947,7 +947,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8410,
+                  "id": 8444,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -955,18 +955,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 8405,
+                          "id": 8439,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 9750,
+                          "referencedDeclaration": 9784,
                           "src": "779:5:51",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_block",
                             "typeString": "block"
                           }
                         },
-                        "id": 8406,
+                        "id": 8440,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -984,25 +984,25 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 8407,
+                          "id": 8441,
                           "name": "_individuation",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8393,
+                          "referencedDeclaration": 8427,
                           "src": "805:14:51",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_IIndividuation_$7929_memory_ptr",
+                            "typeIdentifier": "t_struct$_IIndividuation_$7963_memory_ptr",
                             "typeString": "struct Pando.IIndividuation memory"
                           }
                         },
-                        "id": 8408,
+                        "id": 8442,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "metadata",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7928,
+                        "referencedDeclaration": 7962,
                         "src": "805:23:51",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -1023,32 +1023,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8403,
+                        "id": 8437,
                         "name": "Pando",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7985,
+                        "referencedDeclaration": 8019,
                         "src": "746:5:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Pando_$7985_$",
+                          "typeIdentifier": "t_type$_t_contract$_Pando_$8019_$",
                           "typeString": "type(contract Pando)"
                         }
                       },
-                      "id": 8404,
+                      "id": 8438,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "Individuation",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7934,
+                      "referencedDeclaration": 7968,
                       "src": "746:19:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Individuation_$7934_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Individuation_$7968_storage_ptr_$",
                         "typeString": "type(struct Pando.Individuation storage pointer)"
                       }
                     },
-                    "id": 8409,
+                    "id": 8443,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1058,7 +1058,7 @@
                     "nodeType": "FunctionCall",
                     "src": "746:92:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_memory",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_memory",
                       "typeString": "struct Pando.Individuation memory"
                     }
                   },
@@ -1067,15 +1067,15 @@
                 },
                 {
                   "assignments": [
-                    8412
+                    8446
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8412,
+                      "id": 8446,
                       "name": "hash",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8443,
+                      "scope": 8477,
                       "src": "849:12:51",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1084,7 +1084,7 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 8411,
+                        "id": 8445,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
                         "src": "849:7:51",
@@ -1097,20 +1097,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8417,
+                  "id": 8451,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8415,
+                        "id": 8449,
                         "name": "individuation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8402,
+                        "referencedDeclaration": 8436,
                         "src": "875:13:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                           "typeString": "struct Pando.Individuation memory"
                         }
                       }
@@ -1118,38 +1118,38 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                           "typeString": "struct Pando.Individuation memory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8413,
+                        "id": 8447,
                         "name": "pando",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8366,
+                        "referencedDeclaration": 8400,
                         "src": "864:5:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Pando_$7985",
+                          "typeIdentifier": "t_contract$_Pando_$8019",
                           "typeString": "contract Pando"
                         }
                       },
-                      "id": 8414,
+                      "id": 8448,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "hash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7984,
+                      "referencedDeclaration": 8018,
                       "src": "864:10:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_pure$_t_struct$_Individuation_$7934_memory_ptr_$returns$_t_bytes32_$",
+                        "typeIdentifier": "t_function_external_pure$_t_struct$_Individuation_$7968_memory_ptr_$returns$_t_bytes32_$",
                         "typeString": "function (struct Pando.Individuation memory) pure external returns (bytes32)"
                       }
                     },
-                    "id": 8416,
+                    "id": 8450,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1169,7 +1169,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8424,
+                    "id": 8458,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1180,25 +1180,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 8418,
+                          "id": 8452,
                           "name": "individuations",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8372,
+                          "referencedDeclaration": 8406,
                           "src": "900:14:51",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
                             "typeString": "mapping(bytes32 => struct Pando.Individuation storage ref)"
                           }
                         },
-                        "id": 8420,
+                        "id": 8454,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 8419,
+                          "id": 8453,
                           "name": "hash",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8412,
+                          "referencedDeclaration": 8446,
                           "src": "915:4:51",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -1212,18 +1212,18 @@
                         "nodeType": "IndexAccess",
                         "src": "900:20:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_storage",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_storage",
                           "typeString": "struct Pando.Individuation storage ref"
                         }
                       },
-                      "id": 8421,
+                      "id": 8455,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "blockstamp",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7931,
+                      "referencedDeclaration": 7965,
                       "src": "900:31:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1236,25 +1236,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8422,
+                        "id": 8456,
                         "name": "individuation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8402,
+                        "referencedDeclaration": 8436,
                         "src": "934:13:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                           "typeString": "struct Pando.Individuation memory"
                         }
                       },
-                      "id": 8423,
+                      "id": 8457,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "blockstamp",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7931,
+                      "referencedDeclaration": 7965,
                       "src": "934:24:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -1267,14 +1267,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 8425,
+                  "id": 8459,
                   "nodeType": "ExpressionStatement",
                   "src": "900:58:51"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8432,
+                    "id": 8466,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1285,25 +1285,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 8426,
+                          "id": 8460,
                           "name": "individuations",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8372,
+                          "referencedDeclaration": 8406,
                           "src": "968:14:51",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
                             "typeString": "mapping(bytes32 => struct Pando.Individuation storage ref)"
                           }
                         },
-                        "id": 8428,
+                        "id": 8462,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 8427,
+                          "id": 8461,
                           "name": "hash",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8412,
+                          "referencedDeclaration": 8446,
                           "src": "983:4:51",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -1317,18 +1317,18 @@
                         "nodeType": "IndexAccess",
                         "src": "968:20:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_storage",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_storage",
                           "typeString": "struct Pando.Individuation storage ref"
                         }
                       },
-                      "id": 8429,
+                      "id": 8463,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "metadata",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7933,
+                      "referencedDeclaration": 7967,
                       "src": "968:29:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -1341,25 +1341,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8430,
+                        "id": 8464,
                         "name": "individuation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8402,
+                        "referencedDeclaration": 8436,
                         "src": "1000:13:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                           "typeString": "struct Pando.Individuation memory"
                         }
                       },
-                      "id": 8431,
+                      "id": 8465,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "metadata",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7933,
+                      "referencedDeclaration": 7967,
                       "src": "1000:22:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory",
@@ -1372,25 +1372,25 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 8433,
+                  "id": 8467,
                   "nodeType": "ExpressionStatement",
                   "src": "968:54:51"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8436,
+                    "id": 8470,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8434,
+                      "id": 8468,
                       "name": "head",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8368,
+                      "referencedDeclaration": 8402,
                       "src": "1033:4:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -1401,11 +1401,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 8435,
+                      "id": 8469,
                       "name": "hash",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8412,
+                      "referencedDeclaration": 8446,
                       "src": "1040:4:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -1418,7 +1418,7 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 8437,
+                  "id": 8471,
                   "nodeType": "ExpressionStatement",
                   "src": "1033:11:51"
                 },
@@ -1428,11 +1428,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8439,
+                        "id": 8473,
                         "name": "hash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8412,
+                        "referencedDeclaration": 8446,
                         "src": "1072:4:51",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -1447,20 +1447,20 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 8438,
+                      "id": 8472,
                       "name": "Individuate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8376
+                        8410
                       ],
-                      "referencedDeclaration": 8376,
+                      "referencedDeclaration": 8410,
                       "src": "1060:11:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$returns$__$",
                         "typeString": "function (bytes32)"
                       }
                     },
-                    "id": 8440,
+                    "id": 8474,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1474,14 +1474,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8441,
+                  "id": 8475,
                   "nodeType": "EmitStatement",
                   "src": "1055:22:51"
                 }
               ]
             },
             "documentation": null,
-            "id": 8443,
+            "id": 8477,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1490,11 +1490,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 8396,
+                    "id": 8430,
                     "name": "INDIVIDUATE_ROLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8364,
+                    "referencedDeclaration": 8398,
                     "src": "675:16:51",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
@@ -1502,14 +1502,14 @@
                     }
                   }
                 ],
-                "id": 8397,
+                "id": 8431,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8395,
+                  "id": 8429,
                   "name": "auth",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 5098,
+                  "referencedDeclaration": 5132,
                   "src": "670:4:51",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_bytes32_$",
@@ -1523,31 +1523,31 @@
             "name": "individuate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8394,
+              "id": 8428,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8393,
+                  "id": 8427,
                   "name": "_individuation",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8443,
+                  "scope": 8477,
                   "src": "626:35:51",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_IIndividuation_$7929_memory_ptr",
+                    "typeIdentifier": "t_struct$_IIndividuation_$7963_memory_ptr",
                     "typeString": "struct Pando.IIndividuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8392,
+                    "id": 8426,
                     "name": "Pando.IIndividuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7929,
+                    "referencedDeclaration": 7963,
                     "src": "626:20:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_IIndividuation_$7929_storage_ptr",
+                      "typeIdentifier": "t_struct$_IIndividuation_$7963_storage_ptr",
                       "typeString": "struct Pando.IIndividuation"
                     }
                   },
@@ -1559,20 +1559,20 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8398,
+              "id": 8432,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "693:0:51"
             },
-            "scope": 8470,
+            "scope": 8504,
             "src": "605:479:51",
             "stateMutability": "nonpayable",
-            "superFunction": 7998,
+            "superFunction": 8032,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 8456,
+              "id": 8490,
               "nodeType": "Block",
               "src": "1187:45:51",
               "statements": [
@@ -1581,25 +1581,25 @@
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 8452,
+                      "id": 8486,
                       "name": "individuations",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8372,
+                      "referencedDeclaration": 8406,
                       "src": "1204:14:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
                         "typeString": "mapping(bytes32 => struct Pando.Individuation storage ref)"
                       }
                     },
-                    "id": 8454,
+                    "id": 8488,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 8453,
+                      "id": 8487,
                       "name": "_hash",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8445,
+                      "referencedDeclaration": 8479,
                       "src": "1219:5:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -1613,33 +1613,33 @@
                     "nodeType": "IndexAccess",
                     "src": "1204:21:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage",
                       "typeString": "struct Pando.Individuation storage ref"
                     }
                   },
-                  "functionReturnParameters": 8451,
-                  "id": 8455,
+                  "functionReturnParameters": 8485,
+                  "id": 8489,
                   "nodeType": "Return",
                   "src": "1197:28:51"
                 }
               ]
             },
             "documentation": null,
-            "id": 8457,
+            "id": 8491,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 8448,
+                "id": 8482,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8447,
+                  "id": 8481,
                   "name": "isInitialized",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 5392,
+                  "referencedDeclaration": 5426,
                   "src": "1143:13:51",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1653,15 +1653,15 @@
             "name": "getIndividuation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8446,
+              "id": 8480,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8445,
+                  "id": 8479,
                   "name": "_hash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8457,
+                  "scope": 8491,
                   "src": "1116:13:51",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1670,7 +1670,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 8444,
+                    "id": 8478,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1116:7:51",
@@ -1687,31 +1687,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8451,
+              "id": 8485,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8450,
+                  "id": 8484,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8457,
+                  "scope": 8491,
                   "src": "1166:19:51",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                    "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                     "typeString": "struct Pando.Individuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8449,
+                    "id": 8483,
                     "name": "Pando.Individuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7934,
+                    "referencedDeclaration": 7968,
                     "src": "1166:19:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                       "typeString": "struct Pando.Individuation"
                     }
                   },
@@ -1721,15 +1721,15 @@
               ],
               "src": "1165:21:51"
             },
-            "scope": 8470,
+            "scope": 8504,
             "src": "1090:142:51",
             "stateMutability": "view",
-            "superFunction": 8005,
+            "superFunction": 8039,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 8468,
+              "id": 8502,
               "nodeType": "Block",
               "src": "1313:44:51",
               "statements": [
@@ -1738,25 +1738,25 @@
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 8464,
+                      "id": 8498,
                       "name": "individuations",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8372,
+                      "referencedDeclaration": 8406,
                       "src": "1330:14:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
                         "typeString": "mapping(bytes32 => struct Pando.Individuation storage ref)"
                       }
                     },
-                    "id": 8466,
+                    "id": 8500,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 8465,
+                      "id": 8499,
                       "name": "head",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8368,
+                      "referencedDeclaration": 8402,
                       "src": "1345:4:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -1770,33 +1770,33 @@
                     "nodeType": "IndexAccess",
                     "src": "1330:20:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage",
                       "typeString": "struct Pando.Individuation storage ref"
                     }
                   },
-                  "functionReturnParameters": 8463,
-                  "id": 8467,
+                  "functionReturnParameters": 8497,
+                  "id": 8501,
                   "nodeType": "Return",
                   "src": "1323:27:51"
                 }
               ]
             },
             "documentation": null,
-            "id": 8469,
+            "id": 8503,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 8460,
+                "id": 8494,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8459,
+                  "id": 8493,
                   "name": "isInitialized",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 5392,
+                  "referencedDeclaration": 5426,
                   "src": "1269:13:51",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -1810,38 +1810,38 @@
             "name": "getHead",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8458,
+              "id": 8492,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1254:2:51"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8463,
+              "id": 8497,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8462,
+                  "id": 8496,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8469,
+                  "scope": 8503,
                   "src": "1292:19:51",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                    "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                     "typeString": "struct Pando.Individuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8461,
+                    "id": 8495,
                     "name": "Pando.Individuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7934,
+                    "referencedDeclaration": 7968,
                     "src": "1292:19:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                       "typeString": "struct Pando.Individuation"
                     }
                   },
@@ -1851,14 +1851,14 @@
               ],
               "src": "1291:21:51"
             },
-            "scope": 8470,
+            "scope": 8504,
             "src": "1238:119:51",
             "stateMutability": "view",
-            "superFunction": 8010,
+            "superFunction": 8044,
             "visibility": "public"
           }
         ],
-        "scope": 8471,
+        "scope": 8505,
         "src": "212:1148:51"
       }
     ],
@@ -1868,14 +1868,14 @@
     "absolutePath": "@pando/organism/contracts/Genesis.sol",
     "exportedSymbols": {
       "Genesis": [
-        8470
+        8504
       ]
     },
-    "id": 8471,
+    "id": 8505,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 8351,
+        "id": 8385,
         "literals": [
           "solidity",
           "^",
@@ -1886,7 +1886,7 @@
         "src": "0:24:51"
       },
       {
-        "id": 8352,
+        "id": 8386,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -1897,10 +1897,10 @@
       {
         "absolutePath": "@aragon/os/contracts/apps/AragonApp.sol",
         "file": "@aragon/os/contracts/apps/AragonApp.sol",
-        "id": 8353,
+        "id": 8387,
         "nodeType": "ImportDirective",
-        "scope": 8471,
-        "sourceUnit": 5187,
+        "scope": 8505,
+        "sourceUnit": 5221,
         "src": "60:49:51",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1908,10 +1908,10 @@
       {
         "absolutePath": "@pando/core/contracts/lib/Pando.sol",
         "file": "@pando/core/contracts/lib/Pando.sol",
-        "id": 8354,
+        "id": 8388,
         "nodeType": "ImportDirective",
-        "scope": 8471,
-        "sourceUnit": 7986,
+        "scope": 8505,
+        "sourceUnit": 8020,
         "src": "110:45:51",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1919,10 +1919,10 @@
       {
         "absolutePath": "@pando/core/contracts/organism/IGenesis.sol",
         "file": "@pando/core/contracts/organism/IGenesis.sol",
-        "id": 8355,
+        "id": 8389,
         "nodeType": "ImportDirective",
-        "scope": 8471,
-        "sourceUnit": 8012,
+        "scope": 8505,
+        "sourceUnit": 8046,
         "src": "156:53:51",
         "symbolAliases": [],
         "unitAlias": ""
@@ -1933,17 +1933,17 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 8356,
+              "id": 8390,
               "name": "IGenesis",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 8011,
+              "referencedDeclaration": 8045,
               "src": "232:8:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_IGenesis_$8011",
+                "typeIdentifier": "t_contract$_IGenesis_$8045",
                 "typeString": "contract IGenesis"
               }
             },
-            "id": 8357,
+            "id": 8391,
             "nodeType": "InheritanceSpecifier",
             "src": "232:8:51"
           },
@@ -1951,69 +1951,69 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 8358,
+              "id": 8392,
               "name": "AragonApp",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 5186,
+              "referencedDeclaration": 5220,
               "src": "242:9:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_AragonApp_$5186",
+                "typeIdentifier": "t_contract$_AragonApp_$5220",
                 "typeString": "contract AragonApp"
               }
             },
-            "id": 8359,
+            "id": 8393,
             "nodeType": "InheritanceSpecifier",
             "src": "242:9:51"
           }
         ],
         "contractDependencies": [
-          4689,
-          5058,
-          5186,
-          5199,
-          5332,
-          5352,
-          5450,
-          5478,
-          5511,
-          5558,
-          5755,
-          6165,
-          6192,
-          7458,
-          8011
+          4723,
+          5092,
+          5220,
+          5233,
+          5366,
+          5386,
+          5484,
+          5512,
+          5545,
+          5592,
+          5789,
+          6199,
+          6226,
+          7492,
+          8045
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 8470,
+        "id": 8504,
         "linearizedBaseContracts": [
-          8470,
-          5186,
-          4689,
-          6165,
-          7458,
-          6192,
-          5755,
-          5478,
-          5332,
-          5352,
-          5199,
-          5511,
-          5450,
-          5558,
-          5058,
-          8011
+          8504,
+          5220,
+          4723,
+          6199,
+          7492,
+          6226,
+          5789,
+          5512,
+          5366,
+          5386,
+          5233,
+          5545,
+          5484,
+          5592,
+          5092,
+          8045
         ],
         "name": "Genesis",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": true,
-            "id": 8364,
+            "id": 8398,
             "name": "INDIVIDUATE_ROLE",
             "nodeType": "VariableDeclaration",
-            "scope": 8470,
+            "scope": 8504,
             "src": "258:72:51",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2022,7 +2022,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 8360,
+              "id": 8394,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "258:7:51",
@@ -2037,7 +2037,7 @@
                 {
                   "argumentTypes": null,
                   "hexValue": "494e4449564944554154455f524f4c45",
-                  "id": 8362,
+                  "id": 8396,
                   "isConstant": false,
                   "isLValue": false,
                   "isPure": true,
@@ -2060,18 +2060,18 @@
                     "typeString": "literal_string \"INDIVIDUATE_ROLE\""
                   }
                 ],
-                "id": 8361,
+                "id": 8395,
                 "name": "keccak256",
                 "nodeType": "Identifier",
                 "overloadedDeclarations": [],
-                "referencedDeclaration": 9754,
+                "referencedDeclaration": 9788,
                 "src": "301:9:51",
                 "typeDescriptions": {
                   "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
                   "typeString": "function () pure returns (bytes32)"
                 }
               },
-              "id": 8363,
+              "id": 8397,
               "isConstant": false,
               "isLValue": false,
               "isPure": true,
@@ -2089,26 +2089,26 @@
           },
           {
             "constant": false,
-            "id": 8366,
+            "id": 8400,
             "name": "pando",
             "nodeType": "VariableDeclaration",
-            "scope": 8470,
+            "scope": 8504,
             "src": "337:18:51",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_contract$_Pando_$7985",
+              "typeIdentifier": "t_contract$_Pando_$8019",
               "typeString": "contract Pando"
             },
             "typeName": {
               "contractScope": null,
-              "id": 8365,
+              "id": 8399,
               "name": "Pando",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 7985,
+              "referencedDeclaration": 8019,
               "src": "337:5:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Pando_$7985",
+                "typeIdentifier": "t_contract$_Pando_$8019",
                 "typeString": "contract Pando"
               }
             },
@@ -2117,10 +2117,10 @@
           },
           {
             "constant": false,
-            "id": 8368,
+            "id": 8402,
             "name": "head",
             "nodeType": "VariableDeclaration",
-            "scope": 8470,
+            "scope": 8504,
             "src": "361:19:51",
             "stateVariable": true,
             "storageLocation": "default",
@@ -2129,7 +2129,7 @@
               "typeString": "bytes32"
             },
             "typeName": {
-              "id": 8367,
+              "id": 8401,
               "name": "bytes32",
               "nodeType": "ElementaryTypeName",
               "src": "361:7:51",
@@ -2143,21 +2143,21 @@
           },
           {
             "constant": false,
-            "id": 8372,
+            "id": 8406,
             "name": "individuations",
             "nodeType": "VariableDeclaration",
-            "scope": 8470,
+            "scope": 8504,
             "src": "386:61:51",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+              "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
               "typeString": "mapping(bytes32 => struct Pando.Individuation)"
             },
             "typeName": {
-              "id": 8371,
+              "id": 8405,
               "keyType": {
-                "id": 8369,
+                "id": 8403,
                 "name": "bytes32",
                 "nodeType": "ElementaryTypeName",
                 "src": "394:7:51",
@@ -2169,18 +2169,18 @@
               "nodeType": "Mapping",
               "src": "386:39:51",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+                "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
                 "typeString": "mapping(bytes32 => struct Pando.Individuation)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 8370,
+                "id": 8404,
                 "name": "Pando.Individuation",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 7934,
+                "referencedDeclaration": 7968,
                 "src": "405:19:51",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                  "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                   "typeString": "struct Pando.Individuation"
                 }
               }
@@ -2191,20 +2191,20 @@
           {
             "anonymous": false,
             "documentation": null,
-            "id": 8376,
+            "id": 8410,
             "name": "Individuate",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 8375,
+              "id": 8409,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8374,
+                  "id": 8408,
                   "indexed": false,
                   "name": "hash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8376,
+                  "scope": 8410,
                   "src": "472:12:51",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -2213,7 +2213,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 8373,
+                    "id": 8407,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "472:7:51",
@@ -2232,7 +2232,7 @@
           },
           {
             "body": {
-              "id": 8390,
+              "id": 8424,
               "nodeType": "Block",
               "src": "545:54:51",
               "statements": [
@@ -2242,18 +2242,18 @@
                     "arguments": [],
                     "expression": {
                       "argumentTypes": [],
-                      "id": 8383,
+                      "id": 8417,
                       "name": "initialized",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 5435,
+                      "referencedDeclaration": 5469,
                       "src": "555:11:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_internal_nonpayable$__$returns$__$",
                         "typeString": "function ()"
                       }
                     },
-                    "id": 8384,
+                    "id": 8418,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2267,28 +2267,28 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8385,
+                  "id": 8419,
                   "nodeType": "ExpressionStatement",
                   "src": "555:13:51"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8388,
+                    "id": 8422,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8386,
+                      "id": 8420,
                       "name": "pando",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8366,
+                      "referencedDeclaration": 8400,
                       "src": "578:5:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Pando_$7985",
+                        "typeIdentifier": "t_contract$_Pando_$8019",
                         "typeString": "contract Pando"
                       }
                     },
@@ -2296,45 +2296,45 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 8387,
+                      "id": 8421,
                       "name": "_pando",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8378,
+                      "referencedDeclaration": 8412,
                       "src": "586:6:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_contract$_Pando_$7985",
+                        "typeIdentifier": "t_contract$_Pando_$8019",
                         "typeString": "contract Pando"
                       }
                     },
                     "src": "578:14:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Pando_$7985",
+                      "typeIdentifier": "t_contract$_Pando_$8019",
                       "typeString": "contract Pando"
                     }
                   },
-                  "id": 8389,
+                  "id": 8423,
                   "nodeType": "ExpressionStatement",
                   "src": "578:14:51"
                 }
               ]
             },
             "documentation": null,
-            "id": 8391,
+            "id": 8425,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 8381,
+                "id": 8415,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8380,
+                  "id": 8414,
                   "name": "onlyInit",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 5382,
+                  "referencedDeclaration": 5416,
                   "src": "536:8:51",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -2348,31 +2348,31 @@
             "name": "initialize",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8379,
+              "id": 8413,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8378,
+                  "id": 8412,
                   "name": "_pando",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8391,
+                  "scope": 8425,
                   "src": "513:12:51",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_contract$_Pando_$7985",
+                    "typeIdentifier": "t_contract$_Pando_$8019",
                     "typeString": "contract Pando"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8377,
+                    "id": 8411,
                     "name": "Pando",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7985,
+                    "referencedDeclaration": 8019,
                     "src": "513:5:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_contract$_Pando_$7985",
+                      "typeIdentifier": "t_contract$_Pando_$8019",
                       "typeString": "contract Pando"
                     }
                   },
@@ -2384,12 +2384,12 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8382,
+              "id": 8416,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "545:0:51"
             },
-            "scope": 8470,
+            "scope": 8504,
             "src": "493:106:51",
             "stateMutability": "nonpayable",
             "superFunction": null,
@@ -2397,37 +2397,37 @@
           },
           {
             "body": {
-              "id": 8442,
+              "id": 8476,
               "nodeType": "Block",
               "src": "693:391:51",
               "statements": [
                 {
                   "assignments": [
-                    8402
+                    8436
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8402,
+                      "id": 8436,
                       "name": "individuation",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8443,
+                      "scope": 8477,
                       "src": "703:40:51",
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                        "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                         "typeString": "struct Pando.Individuation"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 8401,
+                        "id": 8435,
                         "name": "Pando.Individuation",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 7934,
+                        "referencedDeclaration": 7968,
                         "src": "703:19:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                           "typeString": "struct Pando.Individuation"
                         }
                       },
@@ -2435,7 +2435,7 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8410,
+                  "id": 8444,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
@@ -2443,18 +2443,18 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 8405,
+                          "id": 8439,
                           "name": "block",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 9750,
+                          "referencedDeclaration": 9784,
                           "src": "779:5:51",
                           "typeDescriptions": {
                             "typeIdentifier": "t_magic_block",
                             "typeString": "block"
                           }
                         },
-                        "id": 8406,
+                        "id": 8440,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2472,25 +2472,25 @@
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 8407,
+                          "id": 8441,
                           "name": "_individuation",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8393,
+                          "referencedDeclaration": 8427,
                           "src": "805:14:51",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_struct$_IIndividuation_$7929_memory_ptr",
+                            "typeIdentifier": "t_struct$_IIndividuation_$7963_memory_ptr",
                             "typeString": "struct Pando.IIndividuation memory"
                           }
                         },
-                        "id": 8408,
+                        "id": 8442,
                         "isConstant": false,
                         "isLValue": true,
                         "isPure": false,
                         "lValueRequested": false,
                         "memberName": "metadata",
                         "nodeType": "MemberAccess",
-                        "referencedDeclaration": 7928,
+                        "referencedDeclaration": 7962,
                         "src": "805:23:51",
                         "typeDescriptions": {
                           "typeIdentifier": "t_string_memory",
@@ -2511,32 +2511,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8403,
+                        "id": 8437,
                         "name": "Pando",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 7985,
+                        "referencedDeclaration": 8019,
                         "src": "746:5:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_type$_t_contract$_Pando_$7985_$",
+                          "typeIdentifier": "t_type$_t_contract$_Pando_$8019_$",
                           "typeString": "type(contract Pando)"
                         }
                       },
-                      "id": 8404,
+                      "id": 8438,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "Individuation",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7934,
+                      "referencedDeclaration": 7968,
                       "src": "746:19:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_type$_t_struct$_Individuation_$7934_storage_ptr_$",
+                        "typeIdentifier": "t_type$_t_struct$_Individuation_$7968_storage_ptr_$",
                         "typeString": "type(struct Pando.Individuation storage pointer)"
                       }
                     },
-                    "id": 8409,
+                    "id": 8443,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2546,7 +2546,7 @@
                     "nodeType": "FunctionCall",
                     "src": "746:92:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_memory",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_memory",
                       "typeString": "struct Pando.Individuation memory"
                     }
                   },
@@ -2555,15 +2555,15 @@
                 },
                 {
                   "assignments": [
-                    8412
+                    8446
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 8412,
+                      "id": 8446,
                       "name": "hash",
                       "nodeType": "VariableDeclaration",
-                      "scope": 8443,
+                      "scope": 8477,
                       "src": "849:12:51",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -2572,7 +2572,7 @@
                         "typeString": "bytes32"
                       },
                       "typeName": {
-                        "id": 8411,
+                        "id": 8445,
                         "name": "bytes32",
                         "nodeType": "ElementaryTypeName",
                         "src": "849:7:51",
@@ -2585,20 +2585,20 @@
                       "visibility": "internal"
                     }
                   ],
-                  "id": 8417,
+                  "id": 8451,
                   "initialValue": {
                     "argumentTypes": null,
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8415,
+                        "id": 8449,
                         "name": "individuation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8402,
+                        "referencedDeclaration": 8436,
                         "src": "875:13:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                           "typeString": "struct Pando.Individuation memory"
                         }
                       }
@@ -2606,38 +2606,38 @@
                     "expression": {
                       "argumentTypes": [
                         {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                           "typeString": "struct Pando.Individuation memory"
                         }
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8413,
+                        "id": 8447,
                         "name": "pando",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8366,
+                        "referencedDeclaration": 8400,
                         "src": "864:5:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_Pando_$7985",
+                          "typeIdentifier": "t_contract$_Pando_$8019",
                           "typeString": "contract Pando"
                         }
                       },
-                      "id": 8414,
+                      "id": 8448,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "hash",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7984,
+                      "referencedDeclaration": 8018,
                       "src": "864:10:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_function_external_pure$_t_struct$_Individuation_$7934_memory_ptr_$returns$_t_bytes32_$",
+                        "typeIdentifier": "t_function_external_pure$_t_struct$_Individuation_$7968_memory_ptr_$returns$_t_bytes32_$",
                         "typeString": "function (struct Pando.Individuation memory) pure external returns (bytes32)"
                       }
                     },
-                    "id": 8416,
+                    "id": 8450,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2657,7 +2657,7 @@
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8424,
+                    "id": 8458,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2668,25 +2668,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 8418,
+                          "id": 8452,
                           "name": "individuations",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8372,
+                          "referencedDeclaration": 8406,
                           "src": "900:14:51",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
                             "typeString": "mapping(bytes32 => struct Pando.Individuation storage ref)"
                           }
                         },
-                        "id": 8420,
+                        "id": 8454,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 8419,
+                          "id": 8453,
                           "name": "hash",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8412,
+                          "referencedDeclaration": 8446,
                           "src": "915:4:51",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -2700,18 +2700,18 @@
                         "nodeType": "IndexAccess",
                         "src": "900:20:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_storage",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_storage",
                           "typeString": "struct Pando.Individuation storage ref"
                         }
                       },
-                      "id": 8421,
+                      "id": 8455,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "blockstamp",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7931,
+                      "referencedDeclaration": 7965,
                       "src": "900:31:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2724,25 +2724,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8422,
+                        "id": 8456,
                         "name": "individuation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8402,
+                        "referencedDeclaration": 8436,
                         "src": "934:13:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                           "typeString": "struct Pando.Individuation memory"
                         }
                       },
-                      "id": 8423,
+                      "id": 8457,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "blockstamp",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7931,
+                      "referencedDeclaration": 7965,
                       "src": "934:24:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2755,14 +2755,14 @@
                       "typeString": "uint256"
                     }
                   },
-                  "id": 8425,
+                  "id": 8459,
                   "nodeType": "ExpressionStatement",
                   "src": "900:58:51"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8432,
+                    "id": 8466,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2773,25 +2773,25 @@
                         "argumentTypes": null,
                         "baseExpression": {
                           "argumentTypes": null,
-                          "id": 8426,
+                          "id": 8460,
                           "name": "individuations",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8372,
+                          "referencedDeclaration": 8406,
                           "src": "968:14:51",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+                            "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
                             "typeString": "mapping(bytes32 => struct Pando.Individuation storage ref)"
                           }
                         },
-                        "id": 8428,
+                        "id": 8462,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 8427,
+                          "id": 8461,
                           "name": "hash",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 8412,
+                          "referencedDeclaration": 8446,
                           "src": "983:4:51",
                           "typeDescriptions": {
                             "typeIdentifier": "t_bytes32",
@@ -2805,18 +2805,18 @@
                         "nodeType": "IndexAccess",
                         "src": "968:20:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_storage",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_storage",
                           "typeString": "struct Pando.Individuation storage ref"
                         }
                       },
-                      "id": 8429,
+                      "id": 8463,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "metadata",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7933,
+                      "referencedDeclaration": 7967,
                       "src": "968:29:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -2829,25 +2829,25 @@
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 8430,
+                        "id": 8464,
                         "name": "individuation",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8402,
+                        "referencedDeclaration": 8436,
                         "src": "1000:13:51",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                          "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                           "typeString": "struct Pando.Individuation memory"
                         }
                       },
-                      "id": 8431,
+                      "id": 8465,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "metadata",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 7933,
+                      "referencedDeclaration": 7967,
                       "src": "1000:22:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory",
@@ -2860,25 +2860,25 @@
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 8433,
+                  "id": 8467,
                   "nodeType": "ExpressionStatement",
                   "src": "968:54:51"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 8436,
+                    "id": 8470,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 8434,
+                      "id": 8468,
                       "name": "head",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8368,
+                      "referencedDeclaration": 8402,
                       "src": "1033:4:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -2889,11 +2889,11 @@
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 8435,
+                      "id": 8469,
                       "name": "hash",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8412,
+                      "referencedDeclaration": 8446,
                       "src": "1040:4:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -2906,7 +2906,7 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "id": 8437,
+                  "id": 8471,
                   "nodeType": "ExpressionStatement",
                   "src": "1033:11:51"
                 },
@@ -2916,11 +2916,11 @@
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 8439,
+                        "id": 8473,
                         "name": "hash",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 8412,
+                        "referencedDeclaration": 8446,
                         "src": "1072:4:51",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
@@ -2935,20 +2935,20 @@
                           "typeString": "bytes32"
                         }
                       ],
-                      "id": 8438,
+                      "id": 8472,
                       "name": "Individuate",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        8376
+                        8410
                       ],
-                      "referencedDeclaration": 8376,
+                      "referencedDeclaration": 8410,
                       "src": "1060:11:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_bytes32_$returns$__$",
                         "typeString": "function (bytes32)"
                       }
                     },
-                    "id": 8440,
+                    "id": 8474,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2962,14 +2962,14 @@
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 8441,
+                  "id": 8475,
                   "nodeType": "EmitStatement",
                   "src": "1055:22:51"
                 }
               ]
             },
             "documentation": null,
-            "id": 8443,
+            "id": 8477,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -2978,11 +2978,11 @@
                 "arguments": [
                   {
                     "argumentTypes": null,
-                    "id": 8396,
+                    "id": 8430,
                     "name": "INDIVIDUATE_ROLE",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 8364,
+                    "referencedDeclaration": 8398,
                     "src": "675:16:51",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
@@ -2990,14 +2990,14 @@
                     }
                   }
                 ],
-                "id": 8397,
+                "id": 8431,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8395,
+                  "id": 8429,
                   "name": "auth",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 5098,
+                  "referencedDeclaration": 5132,
                   "src": "670:4:51",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_bytes32_$",
@@ -3011,31 +3011,31 @@
             "name": "individuate",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8394,
+              "id": 8428,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8393,
+                  "id": 8427,
                   "name": "_individuation",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8443,
+                  "scope": 8477,
                   "src": "626:35:51",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_IIndividuation_$7929_memory_ptr",
+                    "typeIdentifier": "t_struct$_IIndividuation_$7963_memory_ptr",
                     "typeString": "struct Pando.IIndividuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8392,
+                    "id": 8426,
                     "name": "Pando.IIndividuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7929,
+                    "referencedDeclaration": 7963,
                     "src": "626:20:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_IIndividuation_$7929_storage_ptr",
+                      "typeIdentifier": "t_struct$_IIndividuation_$7963_storage_ptr",
                       "typeString": "struct Pando.IIndividuation"
                     }
                   },
@@ -3047,20 +3047,20 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8398,
+              "id": 8432,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "693:0:51"
             },
-            "scope": 8470,
+            "scope": 8504,
             "src": "605:479:51",
             "stateMutability": "nonpayable",
-            "superFunction": 7998,
+            "superFunction": 8032,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 8456,
+              "id": 8490,
               "nodeType": "Block",
               "src": "1187:45:51",
               "statements": [
@@ -3069,25 +3069,25 @@
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 8452,
+                      "id": 8486,
                       "name": "individuations",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8372,
+                      "referencedDeclaration": 8406,
                       "src": "1204:14:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
                         "typeString": "mapping(bytes32 => struct Pando.Individuation storage ref)"
                       }
                     },
-                    "id": 8454,
+                    "id": 8488,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 8453,
+                      "id": 8487,
                       "name": "_hash",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8445,
+                      "referencedDeclaration": 8479,
                       "src": "1219:5:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -3101,33 +3101,33 @@
                     "nodeType": "IndexAccess",
                     "src": "1204:21:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage",
                       "typeString": "struct Pando.Individuation storage ref"
                     }
                   },
-                  "functionReturnParameters": 8451,
-                  "id": 8455,
+                  "functionReturnParameters": 8485,
+                  "id": 8489,
                   "nodeType": "Return",
                   "src": "1197:28:51"
                 }
               ]
             },
             "documentation": null,
-            "id": 8457,
+            "id": 8491,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 8448,
+                "id": 8482,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8447,
+                  "id": 8481,
                   "name": "isInitialized",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 5392,
+                  "referencedDeclaration": 5426,
                   "src": "1143:13:51",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -3141,15 +3141,15 @@
             "name": "getIndividuation",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8446,
+              "id": 8480,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8445,
+                  "id": 8479,
                   "name": "_hash",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8457,
+                  "scope": 8491,
                   "src": "1116:13:51",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3158,7 +3158,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 8444,
+                    "id": 8478,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "1116:7:51",
@@ -3175,31 +3175,31 @@
             },
             "payable": false,
             "returnParameters": {
-              "id": 8451,
+              "id": 8485,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8450,
+                  "id": 8484,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8457,
+                  "scope": 8491,
                   "src": "1166:19:51",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                    "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                     "typeString": "struct Pando.Individuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8449,
+                    "id": 8483,
                     "name": "Pando.Individuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7934,
+                    "referencedDeclaration": 7968,
                     "src": "1166:19:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                       "typeString": "struct Pando.Individuation"
                     }
                   },
@@ -3209,15 +3209,15 @@
               ],
               "src": "1165:21:51"
             },
-            "scope": 8470,
+            "scope": 8504,
             "src": "1090:142:51",
             "stateMutability": "view",
-            "superFunction": 8005,
+            "superFunction": 8039,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 8468,
+              "id": 8502,
               "nodeType": "Block",
               "src": "1313:44:51",
               "statements": [
@@ -3226,25 +3226,25 @@
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 8464,
+                      "id": 8498,
                       "name": "individuations",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8372,
+                      "referencedDeclaration": 8406,
                       "src": "1330:14:51",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7934_storage_$",
+                        "typeIdentifier": "t_mapping$_t_bytes32_$_t_struct$_Individuation_$7968_storage_$",
                         "typeString": "mapping(bytes32 => struct Pando.Individuation storage ref)"
                       }
                     },
-                    "id": 8466,
+                    "id": 8500,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 8465,
+                      "id": 8499,
                       "name": "head",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 8368,
+                      "referencedDeclaration": 8402,
                       "src": "1345:4:51",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bytes32",
@@ -3258,33 +3258,33 @@
                     "nodeType": "IndexAccess",
                     "src": "1330:20:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage",
                       "typeString": "struct Pando.Individuation storage ref"
                     }
                   },
-                  "functionReturnParameters": 8463,
-                  "id": 8467,
+                  "functionReturnParameters": 8497,
+                  "id": 8501,
                   "nodeType": "Return",
                   "src": "1323:27:51"
                 }
               ]
             },
             "documentation": null,
-            "id": 8469,
+            "id": 8503,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
             "modifiers": [
               {
                 "arguments": null,
-                "id": 8460,
+                "id": 8494,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 8459,
+                  "id": 8493,
                   "name": "isInitialized",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 5392,
+                  "referencedDeclaration": 5426,
                   "src": "1269:13:51",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -3298,38 +3298,38 @@
             "name": "getHead",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 8458,
+              "id": 8492,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1254:2:51"
             },
             "payable": false,
             "returnParameters": {
-              "id": 8463,
+              "id": 8497,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 8462,
+                  "id": 8496,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 8469,
+                  "scope": 8503,
                   "src": "1292:19:51",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_struct$_Individuation_$7934_memory_ptr",
+                    "typeIdentifier": "t_struct$_Individuation_$7968_memory_ptr",
                     "typeString": "struct Pando.Individuation"
                   },
                   "typeName": {
                     "contractScope": null,
-                    "id": 8461,
+                    "id": 8495,
                     "name": "Pando.Individuation",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 7934,
+                    "referencedDeclaration": 7968,
                     "src": "1292:19:51",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Individuation_$7934_storage_ptr",
+                      "typeIdentifier": "t_struct$_Individuation_$7968_storage_ptr",
                       "typeString": "struct Pando.Individuation"
                     }
                   },
@@ -3339,14 +3339,14 @@
               ],
               "src": "1291:21:51"
             },
-            "scope": 8470,
+            "scope": 8504,
             "src": "1238:119:51",
             "stateMutability": "view",
-            "superFunction": 8010,
+            "superFunction": 8044,
             "visibility": "public"
           }
         ],
-        "scope": 8471,
+        "scope": 8505,
         "src": "212:1148:51"
       }
     ],
@@ -3358,7 +3358,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.0-beta.2",
-  "updatedAt": "2019-01-21T14:18:49.275Z",
+  "updatedAt": "2019-01-24T14:32:35.571Z",
   "devdoc": {
     "methods": {
       "allowRecoverability(address)": {

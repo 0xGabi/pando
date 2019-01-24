@@ -15,6 +15,8 @@ contract DemocracyScheme is IPandoScheme, AragonApp {
 
     bytes32 public constant UPDATE_PARAMETERS_ROLE = keccak256("UPDATE_PARAMETERS_ROLE");
 
+    uint64 public constant PCT_BASE = 10 ** 18; // 0% = 0; 1% = 10^16; 100% = 10^18
+
     enum VoteState  { Pending, Executed, Cancelled }
     enum VoterState { Absent, Yea, Nay }
 
@@ -99,8 +101,8 @@ contract DemocracyScheme is IPandoScheme, AragonApp {
         initialized();
 
         token = _token;
-        quorum = _quorum;
-        required = _required;
+        quorum = _quorum.mul(10**16);
+        required = _required.mul(10**16);
     }
 
     function createRFI(IOrganism _organism, Pando.IIndividuation _individuation, Pando.ILineage[] _lineages) isInitialized {
@@ -170,9 +172,9 @@ contract DemocracyScheme is IPandoScheme, AragonApp {
         return _organism.getRFL(_RFLid).lineage.minimum;
     } */
 
-    function getRFL(IOrganism _organism, uint256 _RFLid) public view RFLVoteExists(_organism, _RFLid) returns (Pando.RFL) {
+    /* function getRFL(IOrganism _organism, uint256 _RFLid) public view RFLVoteExists(_organism, _RFLid) returns (Pando.RFL) {
         return _organism.getRFL(_RFLid);
-    }
+    } */
 
     /*--------------------*/
 
@@ -206,8 +208,8 @@ contract DemocracyScheme is IPandoScheme, AragonApp {
         vote.RFIid = _RFIid;
         vote.blockstamp = block.number - 1; // avoid double voting in this very block
         vote.supply = token.totalSupplyAt(vote.blockstamp);
-        vote.quorum = quorum.mul(vote.supply).div(100);
-        vote.required = required.mul(vote.supply).div(100);
+        vote.quorum = quorum;
+        vote.required = required;
         vote.yea = 0;
         vote.nay = 0;
         vote.participation = 0;
@@ -273,7 +275,7 @@ contract DemocracyScheme is IPandoScheme, AragonApp {
     function _executeRFIVote(IOrganism _organism, uint256 _RFIid) internal {
         RFIVote storage vote = RFIVotes[address(_organism)][_RFIid];
 
-        if (vote.yea >= vote.required) {
+        if (_isValuePct(vote.yea, vote.supply, vote.required)) {
             _organism.mergeRFI(_RFIid);
         } else {
             Pando.RFI memory RFI = _organism.getRFI(_RFIid);
@@ -306,8 +308,8 @@ contract DemocracyScheme is IPandoScheme, AragonApp {
         vote.RFLid = _RFLid;
         vote.blockstamp = block.number - 1; // avoid double voting in this very block
         vote.supply = token.totalSupplyAt(vote.blockstamp);
-        vote.quorum = quorum.mul(vote.supply).div(100);
-        vote.required = required.mul(vote.supply).div(100);
+        vote.quorum = quorum;
+        vote.required = required;
         vote.yea = 0;
         vote.nay = 0;
         vote.total = 0;
@@ -370,7 +372,7 @@ contract DemocracyScheme is IPandoScheme, AragonApp {
 
         vote.state = VoteState.Executed;
 
-        if (vote.yea >= vote.required) {
+        if (_isValuePct(vote.yea, vote.supply, vote.required)) {
             _organism.acceptRFL(_RFLid, vote.total.div(vote.yea));
         } else {
             _cancelRFIVote(_organism, _organism.getRFL(_RFLid).RFIid);
@@ -402,8 +404,8 @@ contract DemocracyScheme is IPandoScheme, AragonApp {
             return false;
         }
 
-        if (vote.participation >= vote.quorum) {
-            if (vote.yea >= vote.required) {
+        if (_isValuePct(vote.participation, vote.supply, vote.quorum)) {
+            if (_isValuePct(vote.yea, vote.supply, vote.required)) {
                 for (uint256 i = 0; i < RFI.RFLids.length; i++) {
                     Pando.RFL memory RFL = _organism.getRFL(RFI.RFLids[i]);
                     if (RFL.state != Pando.RFLState.Accepted) {
@@ -424,10 +426,22 @@ contract DemocracyScheme is IPandoScheme, AragonApp {
             return false;
         }
 
-        if (vote.participation >= vote.quorum) {
+        if (_isValuePct(vote.participation, vote.supply, vote.quorum)) {
             return true;
         }
 
         return false;
+    }
+
+    /**
+    * @dev Calculates whether `_value` is more than a percentage `_pct` of `_total`
+    */
+    function _isValuePct(uint256 _value, uint256 _total, uint256 _pct) internal pure returns (bool) {
+        if (_total == 0) {
+            return false;
+        }
+
+        uint256 computedPct = _value.mul(PCT_BASE) / _total;
+        return computedPct > _pct;
     }
 }
