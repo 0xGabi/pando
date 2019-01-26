@@ -5,7 +5,7 @@
 # dist/
 
 # Contracts build output
-# build/
+build/
 
 .docz
 
