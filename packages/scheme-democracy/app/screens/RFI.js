@@ -146,12 +146,24 @@ export default class App extends React.Component {
                     </Box>
                   )}
                   {currentRFI.state === '1' && (
-                    <StyledBox width="100%" display="flex">
-                      <Box mr="1rem">
-                        <IconCheck />
-                      </Box>
-                      <Text color={theme.positive}>Executed</Text>
-                    </StyledBox>
+                    <Box width="100%">
+                      {!!currentRFI.status && (
+                        <StyledBox display="flex">
+                          <Box mr="1rem">
+                            <IconCheck />
+                          </Box>
+                          <Text color={theme.positive}>Accepted</Text>
+                        </StyledBox>
+                      )}
+                      {!currentRFI.status && (
+                        <StyledBox display="flex">
+                          <Box mr="1rem">
+                            <IconCross />
+                          </Box>
+                          <Text color={theme.negative}>Rejected</Text>
+                        </StyledBox>
+                      )}
+                    </Box>
                   )}
                   {currentRFI.state === '2' && (
                     <StyledBox width="100%" display="flex">
@@ -176,6 +188,7 @@ export default class App extends React.Component {
                   <TableHeader title="Receiver" />
                   <TableHeader title="For" />
                   <TableHeader title="Minimum" />
+                  <TableHeader title="Total" />
                   <TableHeader title="Actions" />
                 </TableRow>
               }
@@ -193,12 +206,13 @@ export default class App extends React.Component {
                     ? 1
                     : 0
                 })
-                .map(({ organism, RFLid, metadata, state }) => (
+                .map(({ organism, RFLid, metadata, state, total, status }) => (
                   <TableRow>
                     <TableCell>RFL #{RFLid}</TableCell>
                     <TableCell>{metadata.destination}</TableCell>
                     <TableCell>Developer</TableCell>
                     <TableCell>{metadata.minimum} NLT</TableCell>
+                    <TableCell>{total} NLT</TableCell>
                     <TableCell>
                       {state === '0' && (
                         <Box display="flex" alignItems="center">
@@ -229,12 +243,24 @@ export default class App extends React.Component {
                         </Box>
                       )}
                       {state === '1' && (
-                        <StyledBox width="100%" display="flex">
-                          <Box mr="1rem">
-                            <IconCheck />
-                          </Box>
-                          <Text color={theme.positive}>Executed</Text>
-                        </StyledBox>
+                        <Box width="100%">
+                          {!!status && (
+                            <StyledBox display="flex">
+                              <Box mr="1rem">
+                                <IconCheck />
+                              </Box>
+                              <Text color={theme.positive}>Accepted</Text>
+                            </StyledBox>
+                          )}
+                          {!status && (
+                            <StyledBox display="flex">
+                              <Box mr="1rem">
+                                <IconCross />
+                              </Box>
+                              <Text color={theme.negative}>Rejected</Text>
+                            </StyledBox>
+                          )}
+                        </Box>
                       )}
                       {state === '2' && (
                         <StyledBox width="100%" display="flex">

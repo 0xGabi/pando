@@ -10,29 +10,24 @@ const ipfs = IPFS({ host: 'localhost', port: '5001', protocol: 'http' })
 
 app.store(async (state, event) => {
   if (!state) {
-    state = { rfiVotes: [], rflVotes: [], organisms: [], transactionHashes: [] }
+    state = { rfiVotes: [], rflVotes: [], organisms: {}, cache: {} }
   }
 
   console.log('event', event)
 
   switch (event.event) {
     case 'NewRFIVote':
-      if (
-        !state.organisms.length ||
-        !state.organisms.filter(
-          organism => organism === event.returnValues.organism
-        ).length
-      ) {
-        state.organisms.push(event.returnValues.organism)
+      // if (!state.organisms[event.returnValues.organism]) {
+      //   state.organisms[event.returnValues.organism] = true
 
-        const organism = app.external(
-          event.returnValues.organism,
-          IOrganism.abi
-        )
-        organism.events().subscribe(test => {
-          console.log('organism', test)
-        })
-      }
+      //   const organism = app.external(
+      //     event.returnValues.organism,
+      //     IOrganism.abi
+      //   )
+      //   organism.events().subscribe(test => {
+      //     console.log('organism', test)
+      //   })
+      // }
 
       const rfiCondition = state.rfiVotes.filter(
         ({ organism, RFIid }) =>
@@ -76,12 +71,8 @@ app.store(async (state, event) => {
 
       return state
     case 'CastRFIVote':
-      if (
-        !state.organisms.length ||
-        !state.transactionHashes.filter(hash => hash === event.transactionHash)
-          .length
-      ) {
-        state.transactionHashes.push(event.transactionHash)
+      if (!state.cache[event.id]) {
+        state.cache[event.id] = true
 
         state.rfiVotes.map(vote => {
           if (
@@ -95,7 +86,7 @@ app.store(async (state, event) => {
                   supports: event.returnValues.supports,
                 },
               ]
-              return
+              return vote
             }
             if (
               vote.participants.filter(
@@ -130,11 +121,8 @@ app.store(async (state, event) => {
 
       return state
     case 'CastRFLVote':
-      if (
-        !state.transactionHashes.filter(hash => hash === event.transactionHash)
-          .length
-      ) {
-        state.transactionHashes.push(event.transactionHash)
+      if (!state.cache[event.id]) {
+        state.cache[event.id] = true
 
         state.rflVotes.map(vote => {
           if (
@@ -149,7 +137,7 @@ app.store(async (state, event) => {
                   stake: event.returnValues.stake,
                 },
               ]
-              return
+              return vote
             }
             if (
               vote.participants.filter(
@@ -171,13 +159,17 @@ app.store(async (state, event) => {
               })
             }
 
-            vote.participation = vote.participants.length
-            vote.yea = vote.participants.filter(
-              person => person.supports
-            ).length
-            vote.nay = vote.participants.filter(
-              person => !person.supports
-            ).length
+            // vote.participation = vote.participants.length
+            // vote.yea = vote.participants.filter(
+            //   person => person.supports
+            // ).length
+            // vote.nay = vote.participants.filter(
+            //   person => !person.supports
+            // ).length
+
+            vote.total = vote.participants.reduce(
+              (acc, person) => acc + person.stake
+            )
 
             return vote
           }
@@ -186,53 +178,133 @@ app.store(async (state, event) => {
 
       return state
     case 'ExecuteRFIVote':
-      state.rfiVotes.map(vote => {
-        if (
-          vote.organism === event.returnValues.organism &&
-          vote.RFIid === event.returnValues.id
-        ) {
-          vote.state = '1'
-        }
-        return vote
-      })
+      if (!state.cache[event.id]) {
+        state.cache[event.id] = true
+
+        state.rfiVotes.map(vote => {
+          if (
+            vote.organism === event.returnValues.organism &&
+            vote.RFIid === event.returnValues.id
+          ) {
+            vote.state = '1'
+          }
+          return vote
+        })
+      }
 
       return state
     case 'CancelRFIVote':
-      state.rfiVotes.map(vote => {
-        if (
-          vote.organism === event.returnValues.organism &&
-          vote.RFIid === event.returnValues.id
-        ) {
-          vote.state = '2'
-        }
-        return vote
-      })
+      if (!state.cache[event.id]) {
+        state.cache[event.id] = true
+
+        state.rfiVotes.map(vote => {
+          if (
+            vote.organism === event.returnValues.organism &&
+            vote.RFIid === event.returnValues.id
+          ) {
+            vote.state = '2'
+          }
+          return vote
+        })
+      }
 
       return state
     case 'ExecuteRFLVote':
-      state.rflVotes.map(vote => {
-        if (
-          vote.organism === event.returnValues.organism &&
-          vote.RFLid === event.returnValues.id
-        ) {
-          vote.state = '1'
-        }
-        return vote
-      })
+      if (!state.cache[event.id]) {
+        state.cache[event.id] = true
+
+        state.rflVotes.map(vote => {
+          if (
+            vote.organism === event.returnValues.organism &&
+            vote.RFLid === event.returnValues.id
+          ) {
+            vote.state = '1'
+          }
+          return vote
+        })
+      }
 
       return state
     case 'CancelRFLVote':
-      state.rflVotes.map(vote => {
-        if (
-          vote.organism === event.returnValues.organism &&
-          vote.RFLid === event.returnValues.id
-        ) {
-          vote.state = '2'
-        }
-        return vote
-      })
+      if (!state.cache[event.id]) {
+        state.cache[event.id] = true
+
+        state.rflVotes.map(vote => {
+          if (
+            vote.organism === event.returnValues.organism &&
+            vote.RFLid === event.returnValues.id
+          ) {
+            vote.state = '2'
+          }
+          return vote
+        })
+
+        return state
+      }
+
+    case 'MergeRFI':
+      if (!state.cache[event.id]) {
+        state.cache[event.id] = true
+
+        state.rfiVotes.map(vote => {
+          if (
+            vote.organism === event.returnValues.organism &&
+            vote.RFIid === event.returnValues.id
+          ) {
+            vote.status = 1
+          }
+        })
+      }
 
       return state
+    case 'RejectRFI':
+      if (!state.cache[event.id]) {
+        state.cache[event.id] = true
+
+        state.rfiVotes.map(vote => {
+          if (
+            vote.organism === event.returnValues.organism &&
+            vote.RFIid === event.returnValues.id
+          ) {
+            vote.status = 0
+          }
+        })
+      }
+
+      return state
+
+    case 'AcceptRFL':
+      if (!state.cache[event.id]) {
+        state.cache[event.id] = true
+
+        state.rflVotes.map(vote => {
+          if (
+            vote.organism === event.returnValues.organism &&
+            vote.RFLid === event.returnValues.id
+          ) {
+            vote.status = 1
+          }
+        })
+      }
+
+      return state
+
+    case 'RejectRFL':
+      if (!state.cache[event.id]) {
+        state.cache[event.id] = true
+
+        state.rflVotes.map(vote => {
+          if (
+            vote.organism === event.returnValues.organism &&
+            vote.RFLid === event.returnValues.id
+          ) {
+            vote.status = 0
+          }
+        })
+      }
+
+      return state
+
     default:
       return state
   }

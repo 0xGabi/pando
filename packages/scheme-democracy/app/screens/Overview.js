@@ -129,7 +129,7 @@ export default props => (
         >
           {props.rfiVotes
             .filter(({ state }) => state !== '0')
-            .map(({ RFIid, participation, state, metadata }) => (
+            .map(({ RFIid, participation, state, metadata, status }) => (
               <StyledTableRow
                 onClick={() =>
                   props.forward(`RFI #${RFIid}`, Number(RFIid) - 1)
@@ -144,12 +144,24 @@ export default props => (
                 </TableCell>
                 <StyledTableCell>
                   {state === '1' && (
-                    <StyledBox width="100%" display="flex">
-                      <Box mr="1rem">
-                        <IconCheck />
-                      </Box>
-                      <Text color={theme.positive}>Executed</Text>
-                    </StyledBox>
+                    <Box width="100%">
+                      {!!status && (
+                        <StyledBox display="flex">
+                          <Box mr="1rem">
+                            <IconCheck />
+                          </Box>
+                          <Text color={theme.positive}>Accepted</Text>
+                        </StyledBox>
+                      )}
+                      {!status && (
+                        <StyledBox display="flex">
+                          <Box mr="1rem">
+                            <IconCross />
+                          </Box>
+                          <Text color={theme.negative}>Rejected</Text>
+                        </StyledBox>
+                      )}
+                    </Box>
                   )}
                   {state === '2' && (
                     <StyledBox width="100%" display="flex">
