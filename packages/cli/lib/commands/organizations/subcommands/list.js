@@ -87,9 +87,9 @@ var handler = function (argv) { return __awaiter(_this, void 0, void 0, function
 exports.list = {
     command: 'list',
     aliases: ['ls'],
-    desc: 'List fibers',
+    desc: 'List organizations',
     builder: builder,
-    handler: handler
+    handler: handler,
 };
 /* tslint:enable:object-literal-sort-keys */
 //# sourceMappingURL=list.js.map

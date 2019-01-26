@@ -10,7 +10,7 @@ const builder = () => {
     .version(false)
 }
 
-const handler = async (argv) => {
+const handler = async argv => {
   const pando = await Pando.create(argv.configuration)
 
   try {
@@ -33,8 +33,8 @@ const handler = async (argv) => {
 export const list = {
   command: 'list',
   aliases: ['ls'],
-  desc: 'List fibers',
+  desc: 'List organizations',
   builder,
-  handler
+  handler,
 }
 /* tslint:enable:object-literal-sort-keys */

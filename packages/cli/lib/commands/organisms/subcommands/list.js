@@ -47,7 +47,7 @@ var builder = function () {
         .option('organization', {
         alias: 'o',
         description: 'The organization to list organisms in',
-        required: true
+        required: true,
     })
         .help()
         .strict(false)
@@ -75,9 +75,6 @@ var handler = function (argv) { return __awaiter(_this, void 0, void 0, function
                 for (_i = 0, organisms_1 = organisms; _i < organisms_1.length; _i++) {
                     organism = organisms_1[_i];
                     console.log(chalk_1.default.cyan.bold.underline(organism.name) + ' ' + chalk_1.default.magenta.bold(organism.address));
-                    // console.log(chalk.white('ACL   ') + ' ' + chalk.dim(organization.acl))
-                    // console.log(chalk.white('Colony') + ' ' + chalk.dim(organization.colony))
-                    // console.log(chalk.white('Scheme') + ' ' + chalk.dim(organization.scheme))
                     console.log('');
                 }
                 return [3 /*break*/, 7];
@@ -95,9 +92,9 @@ var handler = function (argv) { return __awaiter(_this, void 0, void 0, function
 exports.list = {
     command: 'list',
     aliases: ['ls'],
-    desc: 'List organizations',
+    desc: 'List organisms',
     builder: builder,
-    handler: handler
+    handler: handler,
 };
 /* tslint:enable:object-literal-sort-keys */
 //# sourceMappingURL=list.js.map
