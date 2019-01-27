@@ -40,7 +40,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var pando_js_1 = __importDefault(require("@pando/pando.js"));
-var listr_1 = __importDefault(require("listr"));
+var chalk_1 = __importDefault(require("chalk"));
+var ora_1 = __importDefault(require("ora"));
 var yargs_1 = __importDefault(require("yargs"));
 var builder = function () {
     return yargs_1.default
@@ -49,11 +50,12 @@ var builder = function () {
         .version(false);
 };
 var handler = function (argv) { return __awaiter(_this, void 0, void 0, function () {
-    var pando, plant_1, tasks, err_1;
-    var _this = this;
+    var spinner, pando, plant, err_1;
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, pando_js_1.default.create(argv.configuration)];
+            case 0:
+                spinner = ora_1.default(chalk_1.default.dim("Switching to fiber " + argv.name)).start();
+                return [4 /*yield*/, pando_js_1.default.create(argv.configuration)];
             case 1:
                 pando = _a.sent();
                 _a.label = 2;
@@ -61,27 +63,15 @@ var handler = function (argv) { return __awaiter(_this, void 0, void 0, function
                 _a.trys.push([2, 5, , 6]);
                 return [4 /*yield*/, pando.plants.load()];
             case 3:
-                plant_1 = _a.sent();
-                tasks = new listr_1.default([{
-                        title: 'Swtiching to fiber ' + argv.name,
-                        task: function () { return __awaiter(_this, void 0, void 0, function () {
-                            return __generator(this, function (_a) {
-                                switch (_a.label) {
-                                    case 0: return [4 /*yield*/, plant_1.fibers.switch(argv.name)];
-                                    case 1: return [4 /*yield*/, _a.sent()];
-                                    case 2:
-                                        _a.sent();
-                                        return [2 /*return*/];
-                                }
-                            });
-                        }); }
-                    }]);
-                return [4 /*yield*/, tasks.run()];
+                plant = _a.sent();
+                return [4 /*yield*/, plant.fibers.switch(argv.name)];
             case 4:
                 _a.sent();
+                spinner.succeed(chalk_1.default.dim("Switched to fiber " + argv.name));
                 return [3 /*break*/, 6];
             case 5:
                 err_1 = _a.sent();
+                spinner.fail(chalk_1.default.dim(err_1.message));
                 return [3 /*break*/, 6];
             case 6: return [4 /*yield*/, pando.close()];
             case 7:
@@ -95,7 +85,6 @@ exports.switch_ = {
     command: 'switch <name>',
     desc: 'Switch fibers',
     builder: builder,
-    handler: handler
+    handler: handler,
 };
-/* tslint:enable:object-literal-sort-keys */
 //# sourceMappingURL=index.js.map

@@ -49,11 +49,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var inquirer = __importStar(require("inquirer"));
 var web3_1 = __importDefault(require("web3"));
 var _provider = function (configuration) {
-    var url = configuration.ethereum.gateway.protocol +
-        '://' +
-        configuration.ethereum.gateway.host +
-        ':' +
-        configuration.ethereum.gateway.port;
+    var url = configuration.ethereum.gateway.protocol + '://' + configuration.ethereum.gateway.host + ':' + configuration.ethereum.gateway.port;
     return new web3_1.default.providers.WebsocketProvider(url);
 };
 var questions = {
@@ -65,7 +61,7 @@ var questions = {
                 type: 'list',
                 message: 'Ethereum gateway protocol',
                 choices: ['ws', 'ipc'],
-                default: 'ws'
+                default: 'ws',
             },
             host: {
                 name: 'result',
@@ -78,7 +74,7 @@ var questions = {
                 type: 'input',
                 message: 'Ethereum gateway port',
                 default: '8545',
-            }
+            },
         },
         account: function (provider) { return __awaiter(_this, void 0, void 0, function () {
             var question;
@@ -101,12 +97,12 @@ var questions = {
                             }
                         });
                     }); },
-                    default: 0
+                    default: 0,
                 };
                 return [2 /*return*/, question];
             });
-        }); }
-    }
+        }); },
+    },
 };
 exports.prompt = {
     configure: function () { return __awaiter(_this, void 0, void 0, function () {
@@ -120,9 +116,9 @@ exports.prompt = {
                             gateway: {
                                 protocol: undefined,
                                 host: undefined,
-                                port: undefined
-                            }
-                        }
+                                port: undefined,
+                            },
+                        },
                     };
                     _a = configuration.ethereum.gateway;
                     return [4 /*yield*/, inquirer.prompt(questions.ethereum.gateway.protocol)];
@@ -147,8 +143,7 @@ exports.prompt = {
                     return [2 /*return*/, configuration];
             }
         });
-    }); }
+    }); },
 };
-/* tslint:enable:object-literal-sort-keys */
 exports.default = exports.prompt;
 //# sourceMappingURL=inquirer.js.map

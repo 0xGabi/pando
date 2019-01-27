@@ -1,7 +1,9 @@
+/* tslint:disable:no-console */
 import Pando from '@pando/pando.js'
 import chalk from 'chalk'
 import figures from 'figures'
 import yargs from 'yargs'
+import * as ui from '../../../ui/display'
 
 const builder = () => {
   return yargs
@@ -16,7 +18,6 @@ const handler = async argv => {
   try {
     const plant = await pando.plants.load()
     const organizations = await plant.organizations.list()
-
     for (const organization of organizations) {
       console.log(chalk.cyan.bold.underline(organization.name) + ' ' + chalk.magenta.bold(organization.address))
       console.log(chalk.white('ACL   ') + ' ' + chalk.dim(organization.acl))
@@ -24,7 +25,9 @@ const handler = async argv => {
       console.log(chalk.white('Scheme') + ' ' + chalk.dim(organization.scheme))
       console.log('')
     }
-  } catch (err) {}
+  } catch (err) {
+    ui.error(err.message)
+  }
 
   await pando.close()
 }

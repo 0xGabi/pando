@@ -1,6 +1,6 @@
 import Pando from '@pando/pando.js'
 import chalk from 'chalk'
-import Listr from 'listr'
+import ora from 'ora'
 import yargs from 'yargs'
 
 const builder = () => {
@@ -8,29 +8,27 @@ const builder = () => {
     .option('snapshot', {
       alias: 's',
       description: 'Snapshot id to revert to',
-      required: true
+      required: true,
     })
     .help()
     .strict(false)
     .version(false)
 }
 
-const handler = async (argv) => {
-  const pando = await Pando.create(argv.configuration)
+const handler = async argv => {
+  let spinner
+  let pando
 
   try {
+    spinner = ora(chalk.dim(`Reverting to snapshot ${argv.snapshot}`)).start()
+    pando = await Pando.create(argv.configuration)
     const plant = await pando.plants.load()
     const fiber = await plant.fibers.current()
-
-    const tasks = new Listr([{
-      title: 'Reverting to snapshot ' + argv.snapshot,
-      task: async () => {
-        await fiber.revert(argv.snapshot, argv.files)
-      }
-    }])
-
-    await tasks.run()
-  } catch (err) {}
+    await fiber.revert(argv.snapshot, argv.files)
+    spinner.succeed(chalk.dim(`Reverted to snapshot ${argv.name}`))
+  } catch (err) {
+    spinner.fail(chalk.dim(err.message))
+  }
 
   await pando.close()
 }
@@ -40,6 +38,6 @@ export const revert = {
   command: 'revert [files...]',
   desc: 'Revert to older version',
   builder,
-  handler
+  handler,
 }
 /* tslint:enable:object-literal-sort-keys */

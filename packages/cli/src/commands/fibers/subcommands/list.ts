@@ -1,3 +1,4 @@
+/* tslint:disable:no-console */
 import Pando from '@pando/pando.js'
 import chalk from 'chalk'
 import figures from 'figures'
@@ -19,7 +20,9 @@ const handler = async argv => {
     const plant = await pando.plants.load()
     const fibers = await plant.fibers.list()
     display.list(fibers)
-  } catch (err) {}
+  } catch (err) {
+    console.log(err)
+  }
 
   await pando.close()
 }

@@ -1,5 +1,6 @@
 import Pando from '@pando/pando.js'
-import Listr from 'listr'
+import chalk from 'chalk'
+import ora from 'ora'
 import yargs from 'yargs'
 
 const builder = () => {
@@ -9,24 +10,19 @@ const builder = () => {
     .version(false)
 }
 
-const handler = async (argv) => {
-  const pando = await Pando.create(argv.configuration)
+const handler = async argv => {
+  let pando
+  let spinner
 
   try {
+    spinner = ora(chalk.dim(`Deploying '${argv.name}'`)).start()
+    pando = await Pando.create(argv.configuration)
     const plant = await pando.plants.load()
-
-    // const organization = await plant.organizations.deploy(argv.name)
-
-    const tasks = new Listr([{
-      title: `Deploying '${argv.name}'`,
-      task: async (ctx, task) => {
-        const organization = await plant.organizations.deploy(argv.name)
-        task.title = `'${argv.name}' deployed at address ${organization.address}`
-      }
-    }])
-
-    await tasks.run()
-  } catch (err) {}
+    await plant.organizations.deploy(argv.name)
+    spinner.succeed(chalk.dim(`Organization '${argv.name}' deployed`))
+  } catch (err) {
+    spinner.fail(chalk.dim(err.message))
+  }
 
   await pando.close()
 }
@@ -36,6 +32,6 @@ export const deploy = {
   command: 'deploy <name>',
   desc: 'Deploy a new Aragon organization',
   builder,
-  handler
+  handler,
 }
 /* tslint:enable:object-literal-sort-keys */

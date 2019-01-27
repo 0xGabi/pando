@@ -16,8 +16,8 @@ const builder = () => {
 }
 
 const handler = async argv => {
-  let pando
   let spinner
+  let pando
 
   try {
     spinner = ora(chalk.dim(`Adding organization '${argv.name}'`)).start()
@@ -39,4 +39,3 @@ export const add = {
   builder,
   handler,
 }
-/* tslint:enable:object-literal-sort-keys */

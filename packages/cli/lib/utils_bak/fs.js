@@ -20,3 +20,4 @@ exports.write = function (path, data) {
 exports.read = function (path) {
     return fs.readFileSync(path);
 };
+//# sourceMappingURL=fs.js.map

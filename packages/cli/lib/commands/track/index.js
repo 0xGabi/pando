@@ -40,7 +40,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
 var pando_js_1 = __importDefault(require("@pando/pando.js"));
-var listr_1 = __importDefault(require("listr"));
+var chalk_1 = __importDefault(require("chalk"));
+var ora_1 = __importDefault(require("ora"));
 var yargs_1 = __importDefault(require("yargs"));
 var builder = function () {
     return yargs_1.default
@@ -49,54 +50,35 @@ var builder = function () {
         .version(false);
 };
 var handler = function (argv) { return __awaiter(_this, void 0, void 0, function () {
-    var pando, plant, fiber_1, list, _loop_1, _i, _a, path, tasks, err_1;
-    var _this = this;
-    return __generator(this, function (_b) {
-        switch (_b.label) {
-            case 0: return [4 /*yield*/, pando_js_1.default.create(argv.configuration)];
+    var spinner, pando, plant, fiber, err_1;
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0:
+                spinner = ora_1.default(chalk_1.default.dim("Tracking " + argv.files)).start();
+                return [4 /*yield*/, pando_js_1.default.create(argv.configuration)];
             case 1:
-                pando = _b.sent();
-                _b.label = 2;
+                pando = _a.sent();
+                _a.label = 2;
             case 2:
-                _b.trys.push([2, 6, , 7]);
+                _a.trys.push([2, 6, , 7]);
                 return [4 /*yield*/, pando.plants.load()];
             case 3:
-                plant = _b.sent();
+                plant = _a.sent();
                 return [4 /*yield*/, plant.fibers.current()];
             case 4:
-                fiber_1 = _b.sent();
-                list = [];
-                _loop_1 = function (path) {
-                    var task = {
-                        title: 'tracking ' + path,
-                        task: function () { return __awaiter(_this, void 0, void 0, function () {
-                            return __generator(this, function (_a) {
-                                switch (_a.label) {
-                                    case 0: return [4 /*yield*/, fiber_1.index.track([path])];
-                                    case 1:
-                                        _a.sent();
-                                        return [2 /*return*/];
-                                }
-                            });
-                        }); }
-                    };
-                    list.push(task);
-                };
-                for (_i = 0, _a = argv.files; _i < _a.length; _i++) {
-                    path = _a[_i];
-                    _loop_1(path);
-                }
-                tasks = new listr_1.default(list);
-                return [4 /*yield*/, tasks.run()];
+                fiber = _a.sent();
+                return [4 /*yield*/, fiber.index.track(argv.files)];
             case 5:
-                _b.sent();
+                _a.sent();
+                spinner.succeed(chalk_1.default.dim("Tracked " + argv.files));
                 return [3 /*break*/, 7];
             case 6:
-                err_1 = _b.sent();
+                err_1 = _a.sent();
+                spinner.fail(chalk_1.default.dim(err_1.message));
                 return [3 /*break*/, 7];
             case 7: return [4 /*yield*/, pando.close()];
             case 8:
-                _b.sent();
+                _a.sent();
                 return [2 /*return*/];
         }
     });
@@ -106,7 +88,7 @@ exports.track = {
     command: 'track <files...>',
     desc: 'Track files for modifications',
     builder: builder,
-    handler: handler
+    handler: handler,
 };
 /* tslint:enable:object-literal-sort-keys */
 //# sourceMappingURL=index.js.map

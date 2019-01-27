@@ -19,7 +19,7 @@ const handler = async argv => {
     pando = await Pando.create(argv.configuration)
     const plant = await pando.plants.load()
 
-    let [organizationName, organismName] = argv.organism.split(':')
+    const [organizationName, organismName] = argv.organism.split(':')
     await plant.extract(organizationName, organismName)
 
     spinner.succeed(chalk.dim(`${argv.organism} extracted locally`))
@@ -37,4 +37,3 @@ export const extract = {
   builder,
   handler,
 }
-/* tslint:enable:object-literal-sort-keys */

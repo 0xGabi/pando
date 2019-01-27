@@ -46,6 +46,7 @@ var __importStar = (this && this.__importStar) || function (mod) {
 };
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
+/* tslint:disable:no-console */
 var pando_js_1 = __importDefault(require("@pando/pando.js"));
 var yargs_1 = __importDefault(require("yargs"));
 var display = __importStar(require("../../../ui/display"));
@@ -74,6 +75,7 @@ var handler = function (argv) { return __awaiter(_this, void 0, void 0, function
                 return [3 /*break*/, 5];
             case 4:
                 err_1 = _a.sent();
+                console.log(err_1);
                 return [3 /*break*/, 5];
             case 5: return [4 /*yield*/, pando.close()];
             case 6:

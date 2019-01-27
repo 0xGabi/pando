@@ -1,6 +1,6 @@
 import chalk from 'chalk'
 import figures from 'figures'
-
+import ora from 'ora'
 /* tslint:disable:no-console */
 // export const info = (message: string) => {
 //   console.log(chalk.blue(message))
@@ -14,6 +14,10 @@ export const list = (entries: any[]) => {
       console.log(figures('  ') + entry.name)
     }
   }
+}
+
+export const error = (message: string) => {
+  return ora(chalk.dim(message)).fail()
 }
 //
 // export const success = (message: string) => {

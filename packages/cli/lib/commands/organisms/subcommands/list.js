@@ -37,11 +37,20 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
+/* tslint:disable:no-console */
 var pando_js_1 = __importDefault(require("@pando/pando.js"));
 var chalk_1 = __importDefault(require("chalk"));
 var yargs_1 = __importDefault(require("yargs"));
+var ui = __importStar(require("../../../ui/display"));
 var builder = function () {
     return yargs_1.default
         .option('organization', {
@@ -80,6 +89,7 @@ var handler = function (argv) { return __awaiter(_this, void 0, void 0, function
                 return [3 /*break*/, 7];
             case 6:
                 err_1 = _a.sent();
+                ui.error(err_1.message);
                 return [3 /*break*/, 7];
             case 7: return [4 /*yield*/, pando.close()];
             case 8:
@@ -96,5 +106,4 @@ exports.list = {
     builder: builder,
     handler: handler,
 };
-/* tslint:enable:object-literal-sort-keys */
 //# sourceMappingURL=list.js.map

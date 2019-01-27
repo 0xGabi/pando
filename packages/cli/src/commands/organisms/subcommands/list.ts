@@ -1,7 +1,9 @@
+/* tslint:disable:no-console */
 import Pando from '@pando/pando.js'
 import chalk from 'chalk'
 import figures from 'figures'
 import yargs from 'yargs'
+import * as ui from '../../../ui/display'
 
 const builder = () => {
   return yargs
@@ -27,7 +29,9 @@ const handler = async argv => {
       console.log(chalk.cyan.bold.underline(organism.name) + ' ' + chalk.magenta.bold(organism.address))
       console.log('')
     }
-  } catch (err) {}
+  } catch (err) {
+    ui.error(err.message)
+  }
 
   await pando.close()
 }
@@ -40,4 +44,3 @@ export const list = {
   builder,
   handler,
 }
-/* tslint:enable:object-literal-sort-keys */

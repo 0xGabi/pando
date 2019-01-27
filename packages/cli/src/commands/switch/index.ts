@@ -1,5 +1,6 @@
 import Pando from '@pando/pando.js'
-import Listr from 'listr'
+import chalk from 'chalk'
+import ora from 'ora'
 import yargs from 'yargs'
 
 const builder = () => {
@@ -9,21 +10,17 @@ const builder = () => {
     .version(false)
 }
 
-const handler = async (argv) => {
+const handler = async argv => {
+  const spinner = ora(chalk.dim(`Switching to fiber ${argv.name}`)).start()
   const pando = await Pando.create(argv.configuration)
 
   try {
     const plant = await pando.plants.load()
-
-    const tasks = new Listr([{
-      title: 'Swtiching to fiber ' + argv.name,
-      task: async () => {
-        await await plant.fibers.switch(argv.name)
-      }
-    }])
-
-    await tasks.run()
-  } catch (err) {}
+    await plant.fibers.switch(argv.name)
+    spinner.succeed(chalk.dim(`Switched to fiber ${argv.name}`))
+  } catch (err) {
+    spinner.fail(chalk.dim(err.message))
+  }
 
   await pando.close()
 }
@@ -33,6 +30,5 @@ export const switch_ = {
   command: 'switch <name>',
   desc: 'Switch fibers',
   builder,
-  handler
+  handler,
 }
-/* tslint:enable:object-literal-sort-keys */

@@ -27,7 +27,7 @@ const handler = async argv => {
       await json.writeFile(path.join(process.cwd(), '.pando', '.pandorc'), configuration)
     }
   } catch (err) {
-    console.log(err)
+    throw err
   }
 }
 

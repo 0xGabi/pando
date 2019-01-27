@@ -76,8 +76,7 @@ var handler = function (argv) { return __awaiter(_this, void 0, void 0, function
             case 5: return [3 /*break*/, 7];
             case 6:
                 err_1 = _a.sent();
-                console.log(err_1);
-                return [3 /*break*/, 7];
+                throw err_1;
             case 7: return [2 /*return*/];
         }
     });

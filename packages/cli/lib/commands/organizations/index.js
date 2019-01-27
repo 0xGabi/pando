@@ -27,6 +27,7 @@ var builder = function () {
 /* tslint:disable:object-literal-sort-keys */
 exports.organizations = {
     command: 'organizations <subcommand>',
+    aliases: ['dao'],
     desc: 'Handle Aragon organizations',
     builder: builder,
 };

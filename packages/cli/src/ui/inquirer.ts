@@ -1,16 +1,10 @@
 import { PWebsocketProvider } from '@pando/types'
 import * as inquirer from 'inquirer'
-import HDWalletProvider from 'truffle-hdwallet-provider'
 import Web3 from 'web3'
 import * as display from './display'
 
 const _provider = (configuration): PWebsocketProvider => {
-  const url =
-    configuration.ethereum.gateway.protocol +
-    '://' +
-    configuration.ethereum.gateway.host +
-    ':' +
-    configuration.ethereum.gateway.port
+  const url = configuration.ethereum.gateway.protocol + '://' + configuration.ethereum.gateway.host + ':' + configuration.ethereum.gateway.port
 
   return new Web3.providers.WebsocketProvider(url) as PWebsocketProvider
 }
@@ -24,7 +18,7 @@ const questions = {
         type: 'list',
         message: 'Ethereum gateway protocol',
         choices: ['ws', 'ipc'],
-        default: 'ws'
+        default: 'ws',
       },
       host: {
         name: 'result',
@@ -37,7 +31,7 @@ const questions = {
         type: 'input',
         message: 'Ethereum gateway port',
         default: '8545',
-      }
+      },
     },
     account: async (provider: any): Promise<any> => {
       const question = {
@@ -45,15 +39,15 @@ const questions = {
         type: 'list',
         message: 'Ethereum account',
         choices: async (): Promise<string[]> => {
-          const web3     = new Web3(provider)
+          const web3 = new Web3(provider)
           const accounts = await web3.eth.getAccounts()
           return accounts
         },
-        default: 0
+        default: 0,
       }
       return question
-    }
-  }
+    },
+  },
 }
 
 export const prompt = {
@@ -64,9 +58,9 @@ export const prompt = {
         gateway: {
           protocol: undefined,
           host: undefined,
-          port: undefined
-        }
-      }
+          port: undefined,
+        },
+      },
     }
 
     configuration.ethereum.gateway.protocol = (await inquirer.prompt(questions.ethereum.gateway.protocol)).result
@@ -78,7 +72,7 @@ export const prompt = {
     provider.connection.close()
 
     return configuration
-  }
+  },
 }
-/* tslint:enable:object-literal-sort-keys */
+
 export default prompt

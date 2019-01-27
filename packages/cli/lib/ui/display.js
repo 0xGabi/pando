@@ -5,6 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var chalk_1 = __importDefault(require("chalk"));
 var figures_1 = __importDefault(require("figures"));
+var ora_1 = __importDefault(require("ora"));
 /* tslint:disable:no-console */
 // export const info = (message: string) => {
 //   console.log(chalk.blue(message))
@@ -20,6 +21,9 @@ exports.list = function (entries) {
             console.log(figures_1.default('  ') + entry.name);
         }
     }
+};
+exports.error = function (message) {
+    return ora_1.default(chalk_1.default.dim(message)).fail();
 };
 //
 // export const success = (message: string) => {

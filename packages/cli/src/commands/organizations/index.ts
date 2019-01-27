@@ -16,6 +16,7 @@ const builder = () => {
 /* tslint:disable:object-literal-sort-keys */
 export const organizations = {
   command: 'organizations <subcommand>',
+  aliases: ['dao'],
   desc: 'Handle Aragon organizations',
   builder,
 }

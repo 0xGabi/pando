@@ -1,18 +1,10 @@
 import Pando from '@pando/pando.js'
 import chalk from 'chalk'
-import Listr from 'listr'
+import ora from 'ora'
 import yargs from 'yargs'
 
 const builder = () => {
   return yargs
-    .option('organization', {
-      description: 'The organization the organism lives in',
-      required: true,
-    })
-    .option('organism', {
-      description: 'The organism to push the individuation to',
-      required: true,
-    })
     .option('message', {
       alias: 'm',
       description: 'A message describing the individuation',
@@ -24,30 +16,28 @@ const builder = () => {
 }
 
 const handler = async argv => {
-  const pando = await Pando.create(argv.configuration)
+  let pando
+  let spinner
 
   try {
+    spinner = ora(chalk.dim(`Pushing individuation to ${argv.organism}`)).start()
+    pando = await Pando.create(argv.configuration)
+
     const plant = await pando.plants.load()
+    const [organizationName, organismName] = argv.organism.split(':')
+    await plant.publish(organizationName, organismName, argv.message)
 
-    const tasks = new Listr([
-      {
-        title: `Pushing individuation to '${argv.organization}:${argv.organism}'`,
-        task: async (ctx, task) => {
-          await plant.publish(argv.organization, argv.organism, argv.message)
-          task.title = `Individuation pushed to '${argv.organization}:${argv.organism}'`
-        },
-      },
-    ])
-
-    await tasks.run()
-  } catch (err) {}
+    spinner.succeed(chalk.dim(`Individuation pushed to ${argv.organism}`))
+  } catch (err) {
+    spinner.fail(chalk.dim(err.message))
+  }
 
   await pando.close()
 }
 
 /* tslint:disable:object-literal-sort-keys */
 export const individuate = {
-  command: 'individuate',
+  command: 'individuate <organism>',
   alias: 'indiv',
   desc: 'Individuate organism',
   builder,

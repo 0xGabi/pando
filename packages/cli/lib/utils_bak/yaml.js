@@ -18,3 +18,4 @@ exports.read = function (path) {
 exports.write = function (path, data, opts) {
     return fs.write(path, js_yaml_1.default.safeDump(data, opts));
 };
+//# sourceMappingURL=yaml.js.map

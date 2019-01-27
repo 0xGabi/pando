@@ -86,5 +86,4 @@ exports.extract = {
     builder: builder,
     handler: handler,
 };
-/* tslint:enable:object-literal-sort-keys */
 //# sourceMappingURL=index.js.map

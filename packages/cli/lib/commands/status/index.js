@@ -37,11 +37,20 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
+var __importStar = (this && this.__importStar) || function (mod) {
+    if (mod && mod.__esModule) return mod;
+    var result = {};
+    if (mod != null) for (var k in mod) if (Object.hasOwnProperty.call(mod, k)) result[k] = mod[k];
+    result["default"] = mod;
+    return result;
+};
 var _this = this;
 Object.defineProperty(exports, "__esModule", { value: true });
+/* tslint:disable:no-console */
 var pando_js_1 = __importDefault(require("@pando/pando.js"));
 var chalk_1 = __importDefault(require("chalk"));
 var yargs_1 = __importDefault(require("yargs"));
+var ui = __importStar(require("../../ui/display"));
 var builder = function () {
     return yargs_1.default
         .strict(false)
@@ -49,7 +58,7 @@ var builder = function () {
         .version(false);
 };
 var handler = function (argv) { return __awaiter(_this, void 0, void 0, function () {
-    var pando, plant, fiber, status_1, _i, _a, file, _b, _c, file, err_1;
+    var pando, plant, fiber, status_, _i, _a, file, _b, _c, file, err_1;
     return __generator(this, function (_d) {
         switch (_d.label) {
             case 0: return [4 /*yield*/, pando_js_1.default.create(argv.configuration)];
@@ -64,29 +73,26 @@ var handler = function (argv) { return __awaiter(_this, void 0, void 0, function
                 return [4 /*yield*/, plant.fibers.current()];
             case 4:
                 fiber = _d.sent();
-                return [4 /*yield*/, fiber.status()
-                    // console.log(status)
-                ];
+                return [4 /*yield*/, fiber.status()];
             case 5:
-                status_1 = _d.sent();
-                // console.log(status)
-                if (status_1.modified.length > 0) {
+                status_ = _d.sent();
+                if (status_.modified.length > 0) {
                     console.log(chalk_1.default.green.bold.underline('Tracked files with modifications'));
                     console.log('➜ these files will be automatically considered for snapshot');
                     console.log("➜ use pando untrack <f> if you don't want to track modifications to file f");
                     console.log('');
-                    for (_i = 0, _a = status_1.modified; _i < _a.length; _i++) {
+                    for (_i = 0, _a = status_.modified; _i < _a.length; _i++) {
                         file = _a[_i];
                         console.log('+ ' + file);
                     }
                     console.log('');
                 }
-                if (status_1.untracked.length > 0) {
+                if (status_.untracked.length > 0) {
                     console.log(chalk_1.default.yellow.bold.underline('Untracked files'));
                     console.log("➜ these files won't be considered for snapshot");
-                    console.log("➜ use pando track <f> if you want to track modifications to file f");
+                    console.log('➜ use pando track <f> if you want to track modifications to file f');
                     console.log('');
-                    for (_b = 0, _c = status_1.untracked; _b < _c.length; _b++) {
+                    for (_b = 0, _c = status_.untracked; _b < _c.length; _b++) {
                         file = _c[_b];
                         console.log('+ ' + file);
                     }
@@ -95,6 +101,7 @@ var handler = function (argv) { return __awaiter(_this, void 0, void 0, function
                 return [3 /*break*/, 7];
             case 6:
                 err_1 = _d.sent();
+                ui.error(err_1.message);
                 return [3 /*break*/, 7];
             case 7: return [4 /*yield*/, pando.close()];
             case 8:
@@ -108,7 +115,6 @@ exports.status = {
     command: 'status',
     desc: 'Show plant status',
     builder: builder,
-    handler: handler
+    handler: handler,
 };
-/* tslint:enable:object-literal-sort-keys */
 //# sourceMappingURL=index.js.map

@@ -18,7 +18,6 @@ const handler = async argv => {
     spinner = ora(chalk.dim('Initializing plant')).start()
     pando = await Pando.create(argv.configuration)
     await pando.plants.create()
-
     spinner.succeed(chalk.dim('Plant initialized'))
   } catch (err) {
     spinner.fail(chalk.dim(err.message))
