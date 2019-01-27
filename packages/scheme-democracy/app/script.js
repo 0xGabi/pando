@@ -10,25 +10,13 @@ const ipfs = IPFS({ host: 'localhost', port: '5001', protocol: 'http' })
 
 app.store(async (state, event) => {
   if (!state) {
-    state = { rfiVotes: [], rflVotes: [], organisms: {}, cache: {} }
+    state = { rfiVotes: [], rflVotes: [], cache: {} }
   }
 
   console.log('event', event)
 
   switch (event.event) {
     case 'NewRFIVote':
-      // if (!state.organisms[event.returnValues.organism]) {
-      //   state.organisms[event.returnValues.organism] = true
-
-      //   const organism = app.external(
-      //     event.returnValues.organism,
-      //     IOrganism.abi
-      //   )
-      //   organism.events().subscribe(test => {
-      //     console.log('organism', test)
-      //   })
-      // }
-
       const rfiCondition = state.rfiVotes.filter(
         ({ organism, RFIid }) =>
           organism === event.returnValues.organism &&
@@ -40,6 +28,7 @@ app.store(async (state, event) => {
           event.returnValues.organism,
           event.returnValues.id
         )
+        rfiPayload.participants = []
         rfiPayload.organism = event.returnValues.organism
         rfiPayload.metadata = await getRFIMetadata(
           event.returnValues.organism,
@@ -61,6 +50,7 @@ app.store(async (state, event) => {
           event.returnValues.organism,
           event.returnValues.id
         )
+        rflPayload.participants = []
         rflPayload.organism = event.returnValues.organism
         rflPayload.metadata = await getRFL(
           event.returnValues.organism,
@@ -79,15 +69,6 @@ app.store(async (state, event) => {
             vote.organism === event.returnValues.organism &&
             vote.RFIid === event.returnValues.id
           ) {
-            if (!vote.participants) {
-              vote.participants = [
-                {
-                  address: event.returnValues.voter,
-                  supports: event.returnValues.supports,
-                },
-              ]
-              return vote
-            }
             if (
               vote.participants.filter(
                 person => person.address === event.returnValues.voter
@@ -129,16 +110,6 @@ app.store(async (state, event) => {
             vote.organism === event.returnValues.organism &&
             vote.RFLid === event.returnValues.id
           ) {
-            if (!vote.participants) {
-              vote.participants = [
-                {
-                  address: event.returnValues.voter,
-                  supports: event.returnValues.supports,
-                  stake: event.returnValues.stake,
-                },
-              ]
-              return vote
-            }
             if (
               vote.participants.filter(
                 person => person.address === event.returnValues.voter
@@ -147,7 +118,8 @@ app.store(async (state, event) => {
               vote.participants = vote.participants.map(person => {
                 if (person.address === event.returnValues.voter) {
                   person.supports = event.returnValues.supports
-                  person.stake = event.returnValues.stake
+                  person.stake = Number(event.returnValues.stake)
+                  person.value = Number(event.returnValues.value)
                   return person
                 }
               })
@@ -155,21 +127,22 @@ app.store(async (state, event) => {
               vote.participants.push({
                 address: event.returnValues.voter,
                 supports: event.returnValues.supports,
-                stake: event.returnValues.stake,
+                stake: Number(event.returnValues.stake),
+                value: Number(event.returnValues.value),
               })
             }
 
-            // vote.participation = vote.participants.length
-            // vote.yea = vote.participants.filter(
-            //   person => person.supports
-            // ).length
-            // vote.nay = vote.participants.filter(
-            //   person => !person.supports
-            // ).length
+            const totalStakeAndValue = vote.participants
+              .filter(person => person.supports)
+              .reduce((acc, person) => {
+                console.log(person)
+                return acc + person.stake * person.value
+              }, 0)
+            const totalStake = vote.participants
+              .filter(person => person.supports)
+              .reduce((acc, person) => acc + person.stake, 0)
 
-            vote.total = vote.participants.reduce(
-              (acc, person) => acc + person.stake
-            )
+            vote.total = totalStakeAndValue / totalStake
 
             return vote
           }
